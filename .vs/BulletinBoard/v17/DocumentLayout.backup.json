@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74E895-88F3-4618-9290-01656ABB3C48}|UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\userservice\\bulletinboard.userservice.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B74E895-88F3-4618-9290-01656ABB3C48}|UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|solutionrelative:userservice\\bulletinboard.userservice.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74E895-88F3-4618-9290-01656ABB3C48}|UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\userservice\\bulletinboard.userservice.domain\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B74E895-88F3-4618-9290-01656ABB3C48}|UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|solutionrelative:userservice\\bulletinboard.userservice.domain\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B74E895-88F3-4618-9290-01656ABB3C48}|UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\userservice\\bulletinboard.userservice.domain\\bulletinboard.userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B74E895-88F3-4618-9290-01656ABB3C48}|UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|solutionrelative:userservice\\bulletinboard.userservice.domain\\bulletinboard.userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\bulletinboard.userservice.appservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\bulletinboard.userservice.appservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T13:08:02.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "RelativeToolTip": "UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T13:06:35.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BulletinBoard.UserService.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj",
+              "RelativeDocumentMoniker": "UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj",
+              "RelativeToolTip": "UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-16T12:35:56.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BulletinBoard.UserService.AppServices.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-16T09:27:37.046Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
