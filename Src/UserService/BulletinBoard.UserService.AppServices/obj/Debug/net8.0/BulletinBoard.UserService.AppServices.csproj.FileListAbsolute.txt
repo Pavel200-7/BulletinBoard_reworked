@@ -1,0 +1,13 @@
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.UserService.AppServices.deps.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.UserService.AppServices.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.UserService.AppServices.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.csproj.AssemblyReference.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.AssemblyInfo.cs
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.sourcelink.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\refint\BulletinBoard.UserService.AppServices.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\BulletinBoard.UserService.AppServices.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\ref\BulletinBoard.UserService.AppServices.dll

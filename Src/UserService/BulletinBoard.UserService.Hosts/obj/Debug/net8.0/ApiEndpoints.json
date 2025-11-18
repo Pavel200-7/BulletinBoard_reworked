@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "BulletinBoard.UserService.Hosts.Controllers.ExampleController.ExampleController",
+    "Method": "ExampleEndpoint",
+    "RelativePath": "api/Example",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requests",
+        "Type": "BulletinBoard.UserService.Hosts.Controllers.ExampleController.Requests.ExampleRequests",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

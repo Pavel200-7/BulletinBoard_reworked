@@ -7,13 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\User\" />
-    <Folder Include="Commands\Auth\" />
-    <Folder Include="Queries\" />
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <Folder Include="Auth\Command\" />
+    <Folder Include="Auth\Queries\" />
+    <Folder Include="Auth\Mappers\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Mapper\" />
   </ItemGroup>
 
 </Project>
