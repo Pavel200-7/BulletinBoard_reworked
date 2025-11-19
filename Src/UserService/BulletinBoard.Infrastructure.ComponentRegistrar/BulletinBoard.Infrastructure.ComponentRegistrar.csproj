@@ -8,6 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+	<PackageReference Include="Extensions.Hosting.AsyncInitialization" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\UserService\BulletinBoard.UserService.Infrastructure\BulletinBoard.UserService.Infrastructure.csproj" />
+    <ProjectReference Include="..\BulletinBoard.Infrastructure.DataAccess\BulletinBoard.Infrastructure.DataAccess.csproj" />
+    <ProjectReference Include="..\BulletinBoard.UserService.AppServices\BulletinBoard.UserService.AppServices.csproj" />
   </ItemGroup>
 
 </Project>

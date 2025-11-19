@@ -1,0 +1,54 @@
+services:
+  user_service:
+    build:
+      context: .
+      dockerfile: Src/UserService/BulletinBoard.UserService.Hosts/Dockerfile
+    networks:
+      app_net:
+        ipv4_address: 192.168.0.3
+    ports:
+     - "8090:8080"
+    depends_on:
+     - postgre_user_db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
+
+  postgre_user_db:
+    image: postgres:17
+    volumes:
+      - user_db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: bulletinboard
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      app_net: 
+        ipv4_address: 192.168.0.4
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    ports:
+      - "5050:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    networks:
+      app_net:
+        ipv4_address: 192.168.0.5
+    depends_on:
+      - postgre_user_db
+     
+networks:
+  app_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.0.0/24
+          gateway: 192.168.0.1
+
+volumes:
+  user_db:     

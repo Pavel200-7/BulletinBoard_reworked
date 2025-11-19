@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4b9537af-870c-4729-a848-9bb892465443")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.UserService.Hosts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c64f241d653042f655b1e55bdf43276c4376bdc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccfae9b6b1b89368b1d4623d996b47e2e0fdc3cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.UserService.Hosts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.UserService.Hosts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
