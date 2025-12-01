@@ -19,9 +19,4 @@ public class UserDto
     /// Номер телефона.
     /// </summary>
     public string PhoneNumber { get; set; }
-
-    /// <summary>
-    /// Пароль пользователя.
-    /// </summary>
-    public string Password { get; set; }
 }

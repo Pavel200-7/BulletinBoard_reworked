@@ -1,9 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.Auth.Repositories.IAuthServiceAdapter.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BulletinBoard.UserService.AppServices.Auth.Repositories.IAuthServiceAdapter;
 
@@ -12,10 +8,8 @@ namespace BulletinBoard.UserService.AppServices.Auth.Repositories.IAuthServiceAd
 /// </summary>
 public interface IAuthServiceAdapter
 {
-    /// <summary>
-    /// Создать в БД сущность пользователя.
-    /// </summary>
-    /// <param name="userDto">Данные пользователя</param>
-    /// <returns>Был ли создан пользователь</returns>
-    public Task<bool> RegisterAsync(UserDto userDto);
+    public Task<bool> RegisterAsync(UserCreateDto userDto, CancellationToken cancellationToken);
+    public Task<UserDto?> GetByLoginAsync(string login, CancellationToken cancellationToken);
+    public Task<UserDto?> GetByEmailAsync(string email, CancellationToken cancellationToken);
+    public Task<bool> AddRoleByEmailAsync(string email, string role, CancellationToken cancellationToken);
 }

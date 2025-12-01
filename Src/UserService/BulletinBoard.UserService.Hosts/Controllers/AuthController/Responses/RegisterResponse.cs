@@ -8,5 +8,5 @@ public class RegisterResponse
     /// <summary>
     /// Был ли создан пользователь.
     /// </summary>
-    public bool IsCreated { get; set; }
+    public bool IsSucceed { get; set; }
 }

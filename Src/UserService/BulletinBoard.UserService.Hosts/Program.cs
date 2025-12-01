@@ -1,5 +1,14 @@
 using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
+using BulletinBoard.Infrastructure.DataAccess.Mapper;
+using BulletinBoard.Infrastructure.DataAccess.User.WriteContext;
+using BulletinBoard.UserService.AppServices.Auth.Command.AddUserCommand;
+using BulletinBoard.UserService.AppServices.Common.AssembliesNovigation;
+using BulletinBoard.UserService.AppServices.Mapper;
+using BulletinBoard.UserService.Hosts.Mapper;
+using BulletinBoard.UserService.Infrastructure.Identity.Entities;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
@@ -8,9 +17,27 @@ IConfiguration configuration = builder.Configuration;
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
+var assemblies =
 // Add services to the container.
-builder.Services.RegistrarInitializers();
-builder.Services.RegistrarDbContext(configuration);
+builder.Services
+    .RegistrarDbContext(configuration);
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<UserContext>() 
+    .AddDefaultTokenProviders();
+
+builder.Services
+    .AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(new[]
+        {
+            typeof(AssembliesNovigationClass).Assembly, // Hosts
+        }))
+    .AddAutoMapper(
+        typeof(HostMappingProfile),
+        typeof(AuthMappingProfile),
+        typeof(InfrastructureMappingProfile))
+    .RegistrarComponents()
+    .RegistrarInfrastructureComponents()
+    .RegistrarInitializers();
 
 builder.Services.AddControllers();
 

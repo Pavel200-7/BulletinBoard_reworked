@@ -19,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BulletinBoard.Infrastructure.ComponentRegistrar\BulletinBoard.Infrastructure.ComponentRegistrar.csproj" />
+    <ProjectReference Include="..\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj" />
   </ItemGroup>
+
+
 
 </Project>
