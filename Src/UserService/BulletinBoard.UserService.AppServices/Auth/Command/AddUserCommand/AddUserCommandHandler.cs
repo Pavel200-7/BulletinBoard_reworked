@@ -30,27 +30,16 @@ public class AddUserCommandHandler : IRequestHandler<AddUserCommand, AddUserResp
     public async Task<AddUserResponse> Handle(AddUserCommand request, CancellationToken cancellationToken)
     {
         var result = await _validator.ValidateAsync(request, cancellationToken);
-
         if (!result.IsValid)
-        {
             throw new Common.Exceptions.ValidationException(result.Errors);
-        }
-
         if (await IsLoginAvailable(request.UserName, cancellationToken) == false)
-        {
             throw new BusinessRuleException(nameof(request.UserName), "Данное имя пользователя уже занято");
-        }
-
         if (await IsEmailAvailable(request.Email, cancellationToken) == false)
-        {
             throw new BusinessRuleException(nameof(request.Email), "Данная почта уже занята");
-        }
 
         UserCreateDto userDto = _mapper.Map<UserCreateDto>(request);
         bool succed = await _authServiceAdapter.RegisterAsync(userDto, cancellationToken);
-        AddUserResponse response = new AddUserResponse() { IsSucceed = succed };
-
-        return response;
+        return new AddUserResponse() { IsSucceed = succed };
     }
 
     private async Task<bool> IsLoginAvailable(string userName, CancellationToken cancellationToken)

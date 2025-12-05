@@ -27,6 +27,13 @@ public class AuthServiceAdapter : IAuthServiceAdapter
     {
         ApplicationUser user = _mapper.Map<ApplicationUser>(userDto);
         var result = await _userManager.CreateAsync(user, userDto.Password);
+
+
+        _logger.LogInformation("Результат регистрации успешен: {succeeded}", result.Succeeded);
+        if (!result.Succeeded) result.Errors
+                .ToList()
+                .ForEach(e => _logger.LogInformation("Код ошибки: {code}, Описание: {description}", e.Code, e.Description));
+
         return result.Succeeded;
     }
 

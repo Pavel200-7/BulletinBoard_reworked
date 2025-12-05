@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.UserService.Infrastructure")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.UserService.Generators")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1abbeaff39c0ef79c353cff63b25014a16774080")]
-[assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.UserService.Infrastructure")]
-[assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.UserService.Infrastructure")]
+[assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.UserService.Generators")]
+[assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.UserService.Generators")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

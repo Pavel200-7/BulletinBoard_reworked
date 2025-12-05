@@ -22,7 +22,21 @@ var assemblies =
 builder.Services
     .RegistrarDbContext(configuration);
 
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+    {
+        // Настройки пароля полностью пустые.
+        options.Password.RequiredLength = 1;               
+        options.Password.RequiredUniqueChars = 0;          
+        options.Password.RequireNonAlphanumeric = false;   
+        options.Password.RequireDigit = false;             
+        options.Password.RequireLowercase = false;         
+        options.Password.RequireUppercase = false;
+
+        // Настройки блокировки.
+        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+        options.Lockout.MaxFailedAccessAttempts = 5;
+        options.Lockout.AllowedForNewUsers = true;
+    })
     .AddEntityFrameworkStores<UserContext>() 
     .AddDefaultTokenProviders();
 
@@ -47,6 +61,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
