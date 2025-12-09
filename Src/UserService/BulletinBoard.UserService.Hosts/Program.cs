@@ -5,6 +5,8 @@ using BulletinBoard.Infrastructure.DataAccess.User.WriteContext;
 using BulletinBoard.UserService.AppServices.Auth.Command.AddUserCommand;
 using BulletinBoard.UserService.AppServices.Common.AssembliesNovigation;
 using BulletinBoard.UserService.AppServices.Mapper;
+using BulletinBoard.UserService.AppServices.Study;
+using BulletinBoard.UserService.AppServices.Study.Helpers;
 using BulletinBoard.UserService.Hosts.Mapper;
 using BulletinBoard.UserService.Infrastructure.Identity.Entities;
 using Microsoft.AspNetCore.Hosting;
@@ -17,8 +19,9 @@ IConfiguration configuration = builder.Configuration;
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
-var assemblies =
+//var assemblies =
 // Add services to the container.
+
 builder.Services
     .RegistrarDbContext(configuration);
 
@@ -52,6 +55,12 @@ builder.Services
     .RegistrarComponents()
     .RegistrarInfrastructureComponents()
     .RegistrarInitializers();
+
+builder.Services.AddScoped<ISomeHelper, SomeHelper>();
+builder.Services.AddScoped<IStudyService, StudyService>();
+builder.Services.Decorate<IStudyService, StudyServiceLoggingDecorator>();
+
+
 
 builder.Services.AddControllers();
 

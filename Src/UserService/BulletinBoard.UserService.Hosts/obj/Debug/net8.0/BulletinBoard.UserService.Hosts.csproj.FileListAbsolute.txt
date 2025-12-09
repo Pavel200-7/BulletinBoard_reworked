@@ -138,3 +138,8 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.H
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\BulletinBoard.UserService.Hosts.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\BulletinBoard.UserService.Hosts.genruntimeconfig.cache
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\ref\BulletinBoard.UserService.Hosts.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\Scrutor.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

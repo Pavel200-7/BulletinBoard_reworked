@@ -1,0 +1,6 @@
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\net8.0\BulletinBoard.UserService.Generators.csproj.AssemblyReference.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\net8.0\BulletinBoard.UserService.Generators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\net8.0\BulletinBoard.UserService.Generators.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\net8.0\BulletinBoard.UserService.Generators.AssemblyInfo.cs
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\net8.0\BulletinBoard.UserService.Generators.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\net8.0\BulletinBoard.UserService.Generators.sourcelink.json

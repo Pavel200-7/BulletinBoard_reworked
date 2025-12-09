@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.UserService.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.UserService.Infrastructure.ComponentRegistrar", "Src\UserService\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj", "{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.UserService.Generators", "Src\UserService\BulletinBoard.UserService.Generators\BulletinBoard.UserService.Generators.csproj", "{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +104,7 @@ Global
 		{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE} = {72F06A39-E691-4DFD-B91E-FB08FB39CF00}
 		{692C2F81-EE2F-4C69-9982-7FF6922C0899} = {72F06A39-E691-4DFD-B91E-FB08FB39CF00}
 		{086393AE-BE46-4FD7-86E9-2C190CC4BF2A} = {72F06A39-E691-4DFD-B91E-FB08FB39CF00}
+		{F4432B7E-5FF3-4DE4-903C-BED0187A9F42} = {99DBA7A7-E56E-4EA1-B24A-0840DD3A9E80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ABFF8C7-E2D4-4B0F-83D0-E85264E097F2}

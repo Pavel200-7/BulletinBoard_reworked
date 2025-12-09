@@ -1,5 +1,4 @@
 ﻿using BulletinBoard.UserService.Hosts.Controllers.ExampleController.Requests;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BulletinBoard.UserService.Hosts.Controllers.ExampleController;

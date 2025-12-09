@@ -5,20 +5,23 @@ using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using ESourcerGenerator.Attributes;
 
 
 namespace BulletinBoard.UserService.AppServices.Auth.Command.AddUserCommand;
 
-public class AddUserCommandHandler : IRequestHandler<AddUserCommand, AddUserResponse>
+public partial class AddUserCommandHandler : IRequestHandler<AddUserCommand, AddUserResponse>
 {
     private ILogger<AddUserCommandHandler> _logger;
     private IMapper _mapper;
     private IValidator<AddUserCommand> _validator;
     private IAuthServiceAdapter _authServiceAdapter;
 
+    
     public AddUserCommandHandler(
-        ILogger<AddUserCommandHandler> logger, 
-        IMapper mapper, IValidator<AddUserCommand> validator, 
+        ILogger<AddUserCommandHandler> logger,
+        IMapper mapper, 
+        IValidator<AddUserCommand> validator, 
         IAuthServiceAdapter authServiceAdapter)
     {
         _logger = logger;
@@ -27,6 +30,7 @@ public class AddUserCommandHandler : IRequestHandler<AddUserCommand, AddUserResp
         _authServiceAdapter = authServiceAdapter;
     }
 
+    //[LogCall(LoggerType = typeof(ILogger<AddUserCommandHandler>), LogMessage ="Не накал... Папич")]
     public async Task<AddUserResponse> Handle(AddUserCommand request, CancellationToken cancellationToken)
     {
         var result = await _validator.ValidateAsync(request, cancellationToken);
@@ -36,6 +40,9 @@ public class AddUserCommandHandler : IRequestHandler<AddUserCommand, AddUserResp
             throw new BusinessRuleException(nameof(request.UserName), "Данное имя пользователя уже занято");
         if (await IsEmailAvailable(request.Email, cancellationToken) == false)
             throw new BusinessRuleException(nameof(request.Email), "Данная почта уже занята");
+
+        //LogMessage("sf");
+        //var codeGenObj = new HelloSayen(_logger.);
 
         UserCreateDto userDto = _mapper.Map<UserCreateDto>(request);
         bool succed = await _authServiceAdapter.RegisterAsync(userDto, cancellationToken);
