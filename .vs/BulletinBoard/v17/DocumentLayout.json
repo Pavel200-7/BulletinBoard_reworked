@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\study\\studyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\study\\studyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\study\\istudyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\study\\istudyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\bulletinboard.userservice.generators.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\bulletinboard.userservice.generators.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratordecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratordecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\methodsourcedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\methodsourcedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\parameterinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\parameterinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\classinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\classinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\methodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\sourseinfo\\methodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,40 +59,12 @@
       "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\study\\studyserviceloggingdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\study\\studyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\study\\studyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\study\\istudyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\study\\istudyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\parameterinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\parameterinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\methodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\methodinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\classinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\classinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\methodcallloggingdecorator\\loggingdecoratorgeneratorattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\studyinggeneraporofpartitionextentionmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\studyinggeneraporofpartitionextentionmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\loggingmethodgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\sourcegenerators\\logging\\loggingmethodgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\study\\helpers\\isomehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{17ECC351-D2D2-4884-87CC-08F3AA551E1F}|Src\\UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.domain\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17ECC351-D2D2-4884-87CC-08F3AA551E1F}|Src\\UserService\\BulletinBoard.UserService.Domain\\BulletinBoard.UserService.Domain.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.domain\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\controllers\\studycontroller\\studycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\auth\\command\\addusercommand\\adduserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\auth\\command\\addusercommand\\adduserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.generators\\bulletinboard.userservice.generators.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F4432B7E-5FF3-4DE4-903C-BED0187A9F42}|Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.generators\\bulletinboard.userservice.generators.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\authtests\\commandtests\\addusercommandtests\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -168,7 +172,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -188,334 +192,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "LoggingDecoratorGeneratorPipeline.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorPipeline.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorPipeline.cs",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorPipeline.cs",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorPipeline.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwA4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwIIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T11:52:34.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MethodInfo.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\MethodInfo.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\MethodInfo.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\MethodInfo.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\MethodInfo.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T11:47:45.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ParameterInfo.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ParameterInfo.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ParameterInfo.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ParameterInfo.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ParameterInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T11:58:31.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IStudyService.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:40:12.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudyService.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:40:39.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudyServiceLoggingDecorator.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T17:18:04.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoggingDecoratorGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T11:22:58.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "LoggingDecoratorGeneratorDecorator.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorDecorator.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorDecorator.cs",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorDecorator.cs",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorDecorator.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAwwGsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T12:18:24.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClassInfo.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ClassInfo.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ClassInfo.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ClassInfo.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\ClassInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T17:32:04.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoggingDecoratorGeneratorAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T11:26:28.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudyingGeneraporOfPartitionExtentionMethod.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAwwEwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T08:59:58.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoggingMethodGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwB0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T08:47:14.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAlwDwAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T14:14:13.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ISomeHelper.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "LoggingDecoratorGeneratorAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGeneratorAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:43:14.494Z",
+              "WhenOpened": "2025-12-06T11:26:28.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AddUserCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T14:13:16.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:33:54.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StudyController.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:55:55.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ExampleController.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:56:00.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-09T17:06:09.02Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BulletinBoard.UserService.Hosts.csproj",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-05T12:41:44.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SomeHelper.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T16:43:26.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-09T13:33:36.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BulletinBoard.UserService.AppServices.csproj",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-05T12:29:52.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:33:52.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Chernovic.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T12:55:02.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 3,
               "Title": "BulletinBoard.UserService.Generators.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\BulletinBoard.UserService.Generators.csproj",
@@ -528,7 +270,267 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudyService.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:40:39.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IStudyService.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\IStudyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:40:12.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MethodSourceData.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodSourceData.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodSourceData.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodSourceData.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodSourceData.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T20:43:11.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ParameterInfo.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ParameterInfo.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ParameterInfo.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ParameterInfo.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ParameterInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:58:31.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClassInfo.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ClassInfo.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ClassInfo.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ClassInfo.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\ClassInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:32:04.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MethodInfo.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodInfo.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodInfo.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodInfo.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\SourseInfo\\MethodInfo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvygAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:47:45.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoggingDecoratorGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\MethodCallLoggingDecorator\\LoggingDecoratorGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:22:58.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudyServiceLoggingDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\StudyServiceLoggingDecorator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:18:04.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudyingGeneraporOfPartitionExtentionMethod.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\StudyingGeneraporOfPartitionExtentionMethod.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwEwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T08:59:58.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoggingMethodGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\SourceGenerators\\Logging\\LoggingMethodGenerator.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwB0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T08:47:14.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ISomeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\ISomeHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:43:14.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommandHandler.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T14:13:16.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Domain\\Base\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T12:33:54.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StudyController.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\StudyController\\StudyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:55:55.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ExampleController.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\ExampleController\\ExampleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:56:00.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BulletinBoard.UserService.Hosts.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-05T12:41:44.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SomeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Study\\Helpers\\SomeHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:43:26.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-09T13:33:36.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BulletinBoard.UserService.AppServices.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-05T12:29:52.155Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T12:33:52.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Chernovic.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Generators\\Chernovic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T12:55:02.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "AddUserResponse.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserResponse.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserResponse.cs",
@@ -540,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "AddUserCommandHandlerTests.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\AuthTests\\CommandTests\\AddUserCommandTests\\AddUserCommandHandlerTests.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\AuthTests\\CommandTests\\AddUserCommandTests\\AddUserCommandHandlerTests.cs",
@@ -552,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "AddUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommand.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\AddUserCommand.cs",
@@ -564,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "BulletinBoard.UserService.Generators.GlobalUsings.g.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Generators\\obj\\Debug\\netstandard2.0\\BulletinBoard.UserService.Generators.GlobalUsings.g.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Generators\\obj\\Debug\\netstandard2.0\\BulletinBoard.UserService.Generators.GlobalUsings.g.cs",
@@ -576,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -588,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -600,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "LogEvents.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Logging\\LogEvents.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Logging\\LogEvents.cs",
@@ -612,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\appsettings.json",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\appsettings.json",
@@ -624,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "AuthServiceAdapter.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Identity\\AuthServiceAdapter.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Identity\\AuthServiceAdapter.cs",
@@ -636,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -648,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\AuthController\\AuthController.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\AuthController\\AuthController.cs",
@@ -660,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "ComponentRegistgar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistgar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistgar.cs",
@@ -672,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "InitializersRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
@@ -684,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "AddUserCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\Helpers\\AddUserCommandValidator.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Auth\\Command\\AddUserCommand\\Helpers\\AddUserCommandValidator.cs",
@@ -693,6 +695,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T14:09:18.129Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }

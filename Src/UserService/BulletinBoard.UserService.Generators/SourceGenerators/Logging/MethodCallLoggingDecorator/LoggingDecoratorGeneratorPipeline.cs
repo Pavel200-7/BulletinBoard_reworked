@@ -1,6 +1,8 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using BulletinBoard.UserService.Generators.SourceGenerators.Logging.MethodCallLoggingDecorator.SourseInfo;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 
 namespace BulletinBoard.UserService.Generators.SourceGenerators.Logging.MethodCallLoggingDecorator
@@ -49,6 +51,7 @@ namespace BulletinBoard.UserService.Generators.SourceGenerators.Logging.MethodCa
                         return null;
 
                     var methodsInfo = new List<MethodInfo>();
+                    string loggerType = "Microsoft.Extensions.Logging.ILogger";
 
                     // Теперь classSymbol - INamedTypeSymbol и имеет GetMembers()
                     foreach (var member in classSymbol.GetMembers().OfType<IMethodSymbol>())
@@ -68,7 +71,6 @@ namespace BulletinBoard.UserService.Generators.SourceGenerators.Logging.MethodCa
                                     a.AttributeClass, logCallAttributeType));
 
                         bool needToBeDecorated = logCallAttribute != null;
-                        string loggerType = "Microsoft.Extensions.Logging.ILogger";
                         string logMessage = "";
 
                         if (logCallAttribute != null)
@@ -99,12 +101,10 @@ namespace BulletinBoard.UserService.Generators.SourceGenerators.Logging.MethodCa
                         var methodInfo = new MethodInfo(
                             methodName: member.Name,
                             returnType: member.ReturnType.ToDisplayString(),
-                            containingType: member.ContainingType.ToDisplayString(),
                             isAsync: member.IsAsync,
                             isVirtual: member.IsVirtual || member.IsOverride,
                             isOverride: member.IsOverride,
                             parameters: parameters,
-                            loggerType: loggerType,
                             logMessage: logMessage,
                             needToBeDecorated: needToBeDecorated
                         );
@@ -116,9 +116,20 @@ namespace BulletinBoard.UserService.Generators.SourceGenerators.Logging.MethodCa
                     if (!methodsInfo.Any(m => m.NeedToBeDecorated))
                         return null;
 
+                    // Получаем все интерфейсы класса
+                    var interfaces = classSymbol.AllInterfaces
+                        .Select(i => i.ToDisplayString())
+                        .ToList();
+
+                    // Находим "основной" интерфейс (с методами, которые нужно декорировать)
+                    string mainInterface = interfaces.FirstOrDefault() ??
+                                          classSymbol.ToDisplayString();
+
                     return new ClassInfo(
                         className: classSymbol.Name,
                         typeNamespace: classSymbol.ContainingNamespace?.ToDisplayString() ?? "Global",
+                        interfaceName: mainInterface,
+                        loggerType: loggerType,
                         methodsInfo: methodsInfo
                     );
                 })

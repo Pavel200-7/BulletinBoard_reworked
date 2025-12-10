@@ -1,10 +1,6 @@
 ﻿using BulletinBoard.UserService.AppServices.Study.Helpers;
-using ESourcerGenerator.Attributes;
 using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ESourcerGenerator.Attributes;
 
 namespace BulletinBoard.UserService.AppServices.Study;
 
@@ -17,7 +13,7 @@ public class StudyService : IStudyService
         _someHelper = someHelper;
     }
 
-    //[LogCall(LoggerType=typeof(ILogger<StudyService>), LogMessage ="Операция началась.")]
+    [LogCall(LoggerType = typeof(ILogger<StudyService>), LogMessage ="Операция началась.")]
     public void DoSomeThing(string someArgument)
     {
         var someConculation = _someHelper.SomeHelp(someArgument);
