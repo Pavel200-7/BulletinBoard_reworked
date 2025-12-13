@@ -9,3 +9,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.G
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\bin\Debug\netstandard2.0\BulletinBoard.UserService.Generators.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\netstandard2.0\BulletinBoard.UserService.Generators.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\netstandard2.0\BulletinBoard.UserService.Generators.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\netstandard2.0\BulletinBoard.UserService.Generators.Properties.Resources.resources
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Generators\obj\Debug\netstandard2.0\BulletinBoard.UserService.Generators.csproj.GenerateResource.cache

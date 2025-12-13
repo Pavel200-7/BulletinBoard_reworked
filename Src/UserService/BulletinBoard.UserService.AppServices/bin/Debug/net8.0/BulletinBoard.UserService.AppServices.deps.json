@@ -10,7 +10,8 @@
         "dependencies": {
           "AutoMapper": "14.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
-          "MediatR": "13.1.0"
+          "MediatR": "13.1.0",
+          "BulletinBoard.UserService.Generators": "1.0.0.0"
         },
         "runtime": {
           "BulletinBoard.UserService.AppServices.dll": {}
@@ -135,6 +136,14 @@
             "fileVersion": "8.14.0.60815"
           }
         }
+      },
+      "BulletinBoard.UserService.Generators/1.0.0.0": {
+        "runtime": {
+          "BulletinBoard.UserService.Generators.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -241,6 +250,11 @@
       "sha512": "sha512-lKIZiBiGd36k02TCdMHp1KlNWisyIvQxcYJvIkz7P4gSQ9zi8dgh6S5Grj8NNG7HWYIPfQymGyoZ6JB5d1Lo1g==",
       "path": "microsoft.identitymodel.tokens/8.14.0",
       "hashPath": "microsoft.identitymodel.tokens.8.14.0.nupkg.sha512"
+    },
+    "BulletinBoard.UserService.Generators/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

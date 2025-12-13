@@ -131,7 +131,6 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.H
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\Bulletin.5E17F728.Up2Date
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\BulletinBoard.UserService.Hosts.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\refint\BulletinBoard.UserService.Hosts.dll
@@ -143,3 +142,6 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.H
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\BulletinBoard.UserService.Generators.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\BulletinBoard.UserService.Generators.pdb

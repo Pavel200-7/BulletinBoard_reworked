@@ -2,16 +2,17 @@ using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.Infrastructure.DataAccess.Mapper;
 using BulletinBoard.Infrastructure.DataAccess.User.WriteContext;
-using BulletinBoard.UserService.AppServices.Auth.Command.AddUserCommand;
+//using BulletinBoard.UserService.AppServices.Auth.Command.AddUserCommand;
 using BulletinBoard.UserService.AppServices.Common.AssembliesNovigation;
 using BulletinBoard.UserService.AppServices.Mapper;
-using BulletinBoard.UserService.AppServices.Study;
-using BulletinBoard.UserService.AppServices.Study.Helpers;
+//using BulletinBoard.UserService.AppServices.Study;
+//using BulletinBoard.UserService.AppServices.Auth.Command.AddUserCommand.Decorators;
+//using BulletinBoard.UserService.AppServices.Study.Helpers;
 using BulletinBoard.UserService.Hosts.Mapper;
 using BulletinBoard.UserService.Infrastructure.Identity.Entities;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using BulletinBoard.UserService.AppServices.Study.Decorators;
+using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -55,16 +56,9 @@ builder.Services
         typeof(AuthMappingProfile),
         typeof(InfrastructureMappingProfile))
     .RegistrarComponents()
+    .RegistrarMethodLogDecorators()
     .RegistrarInfrastructureComponents()
     .RegistrarInitializers();
-
-builder.Services.AddScoped<ISomeHelper, SomeHelper>();
-builder.Services.AddScoped<IStudyService, StudyService>();
-builder.Services.Decorate<IStudyService, StudyServiceLoggingDecorator>();
-//builder.Services.Decorate<IStudyService, StudyServiceLoggingDecorator>();
-
-
-
 
 builder.Services.AddControllers();
 

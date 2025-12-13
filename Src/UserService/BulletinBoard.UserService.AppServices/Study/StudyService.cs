@@ -1,6 +1,7 @@
 ﻿using BulletinBoard.UserService.AppServices.Study.Helpers;
-using Microsoft.Extensions.Logging;
-using ESourcerGenerator.Attributes;
+using BulletinBoard.UserService.Generators.SourceGenerators.Decorators.Logging.MethodLogDecorator;
+//using BulletinBoard.UserService.Generators.SourceGenerators.Decorators.Logging.MethodLogDecorator.DecoratorAttribute;
+
 
 namespace BulletinBoard.UserService.AppServices.Study;
 
@@ -13,7 +14,7 @@ public class StudyService : IStudyService
         _someHelper = someHelper;
     }
 
-    [LogCall(LoggerType = typeof(ILogger<StudyService>), LogMessage ="Операция началась.")]
+    [MethodLog("ЛогиЛоги")]
     public void DoSomeThing(string someArgument)
     {
         var someConculation = _someHelper.SomeHelp(someArgument);
@@ -26,5 +27,9 @@ public class StudyService : IStudyService
         someConculation = _someHelper.SomeHelp(someConculation);
 
         Console.WriteLine("Я полезный, верьте мне. Смотри чо могу. Хопа: {0}", someConculation);
+
+        
     }
 }
+
+
