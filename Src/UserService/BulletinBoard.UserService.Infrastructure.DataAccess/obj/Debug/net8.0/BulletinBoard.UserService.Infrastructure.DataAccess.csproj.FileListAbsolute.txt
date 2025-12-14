@@ -18,5 +18,3 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.I
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.DataAccess\obj\Debug\net8.0\refint\BulletinBoard.UserService.Infrastructure.DataAccess.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.DataAccess\obj\Debug\net8.0\BulletinBoard.UserService.Infrastructure.DataAccess.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.DataAccess\obj\Debug\net8.0\ref\BulletinBoard.UserService.Infrastructure.DataAccess.dll
-C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.DataAccess\bin\Debug\net8.0\BulletinBoard.UserService.Generators.dll
-C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.DataAccess\bin\Debug\net8.0\BulletinBoard.UserService.Generators.pdb

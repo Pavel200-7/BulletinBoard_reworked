@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 
 namespace BulletinBoard.Infrastructure.DataAccess.Common.Repositories;
@@ -14,6 +13,7 @@ public class Repository<TEntity, TContext> : IRepository<TEntity, TContext> wher
     public Repository(TContext dbContext)
     {
         DbContext = dbContext;
+
         DbSet = DbContext.Set<TEntity>();
     }
     public IQueryable<TEntity> GetAll()
