@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BulletinBoard.UserService.Infrastructure.DataAccess\BulletinBoard.UserService.Infrastructure.DataAccess.csproj" />
+    <ProjectReference Include="..\BulletinBoard.UserService.Infrastructure\BulletinBoard.UserService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

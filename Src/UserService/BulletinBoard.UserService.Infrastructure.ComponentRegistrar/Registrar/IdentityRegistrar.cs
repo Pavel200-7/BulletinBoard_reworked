@@ -1,12 +1,7 @@
-﻿using BulletinBoard.Infrastructure.DataAccess.User.WriteContext;
-using BulletinBoard.UserService.Infrastructure.Identity.Entities;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Security.Claims;
+
 
 namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 
@@ -14,22 +9,27 @@ public static class IdentityRegistrar
 {
     public static IServiceCollection RegistrarIdentity(this IServiceCollection services)
     {
-         services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-         {
-             // Настройки пароля полностью пустые.
-             options.Password.RequiredLength = 1;
-             options.Password.RequiredUniqueChars = 0;
-             options.Password.RequireNonAlphanumeric = false;
-             options.Password.RequireDigit = false;
-             options.Password.RequireLowercase = false;
-             options.Password.RequireUppercase = false;
+        services.AddIdentityCore<IdentityUser>(options =>
+        {
+            options.Password.RequiredLength = 10;
+            options.Password.RequiredUniqueChars = 3;
+            options.Password.RequireNonAlphanumeric = true;
+            options.Password.RequireDigit = true;
+            options.Password.RequireLowercase = true;
+            options.Password.RequireUppercase = true;
 
-             // Настройки блокировки.
-             options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-             options.Lockout.MaxFailedAccessAttempts = 5;
-             options.Lockout.AllowedForNewUsers = true;
-         })
-        .AddEntityFrameworkStores<UserContext>()
+            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+            options.Lockout.MaxFailedAccessAttempts = 5;
+            options.Lockout.AllowedForNewUsers = true;
+
+            // Важно для JWT
+            options.ClaimsIdentity.UserIdClaimType = ClaimTypes.NameIdentifier;
+            options.ClaimsIdentity.EmailClaimType = ClaimTypes.Email;
+            options.ClaimsIdentity.RoleClaimType = ClaimTypes.Role;
+
+        })
+        .AddEntityFrameworkStores<UserDbContext>()
+        .AddApiEndpoints() 
         .AddDefaultTokenProviders();
 
         return services;

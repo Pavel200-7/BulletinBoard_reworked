@@ -1,4 +1,4 @@
-﻿using BulletinBoard.Infrastructure.DataAccess.User.WriteContext;
+﻿using BulletinBoard.UserService.Infrastructure;
 using Extensions.Hosting.AsyncInitialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -12,11 +12,11 @@ namespace BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 /// </summary>
 public class DbInitializer : IAsyncInitializer
 {
-    private readonly UserContext _userContext;
+    private readonly UserDbContext _userContext;
     private readonly ILogger<DbInitializer> _logger;
 
     public DbInitializer(
-        UserContext userContext,
+        UserDbContext userContext,
         ILogger<DbInitializer> logger
         )
     {

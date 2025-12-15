@@ -14,5 +14,3 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.I
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\obj\Debug\net8.0\refint\BulletinBoard.UserService.Infrastructure.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\obj\Debug\net8.0\BulletinBoard.UserService.Infrastructure.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\obj\Debug\net8.0\ref\BulletinBoard.UserService.Infrastructure.dll
-C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\bin\Debug\net8.0\BulletinBoard.UserService.Domain.dll
-C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\bin\Debug\net8.0\BulletinBoard.UserService.Domain.pdb

@@ -13,6 +13,9 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
+      - JWT__Issuer=http://localhost:8085
+      - JWT__Audience=http://localhost:8085
+      - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
 
   postgre_user_db:
     image: postgres:17

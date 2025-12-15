@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "BulletinBoard.UserService.Infrastructure.ComponentRegistrar/1.0.0": {
         "dependencies": {
-          "BulletinBoard.UserService.Infrastructure.DataAccess": "1.0.0",
+          "BulletinBoard.UserService.Infrastructure": "1.0.0",
           "Extensions.Hosting.AsyncInitialization": "3.0.1",
           "Scrutor": "7.0.0"
         },
@@ -563,35 +563,15 @@
           }
         }
       },
-      "BulletinBoard.UserService.Domain/1.0.0": {
-        "runtime": {
-          "BulletinBoard.UserService.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "BulletinBoard.UserService.Infrastructure/1.0.0": {
         "dependencies": {
           "BulletinBoard.UserService.AppServices": "1.0.0",
-          "BulletinBoard.UserService.Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity": "2.3.1"
-        },
-        "runtime": {
-          "BulletinBoard.UserService.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "BulletinBoard.UserService.Infrastructure.DataAccess/1.0.0": {
-        "dependencies": {
-          "BulletinBoard.UserService.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Identity": "2.3.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },
         "runtime": {
-          "BulletinBoard.UserService.Infrastructure.DataAccess.dll": {
+          "BulletinBoard.UserService.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1051,17 +1031,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BulletinBoard.UserService.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "BulletinBoard.UserService.Infrastructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BulletinBoard.UserService.Infrastructure.DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
