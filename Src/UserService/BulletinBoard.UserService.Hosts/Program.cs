@@ -1,7 +1,9 @@
 using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
+using BulletinBoard.UserService.AppServices.Common;
 using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 using Microsoft.AspNetCore.Identity;
+using System.Reflection;
 
 
 namespace BulletinBoard.UserService.Hosts;
@@ -18,8 +20,9 @@ public partial class Program
 
         builder.Services
             .RegistrarDbContext(configuration)
-
             .AddAuthentication(configuration)
+            .RegistrarComponents()
+            .AddAutoMapper(Assembly.GetExecutingAssembly()) 
             .RegistrarIdentity()
             .RegistrarInitializers();
 

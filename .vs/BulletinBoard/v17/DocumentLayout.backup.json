@@ -3,12 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\repositiry\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\repositiry\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\businessruleexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\businessruleexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\domainintegrityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\domainintegrityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\fieldfailurestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\fieldfailurestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\assembliesnavigationappservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\assembliesnavigationappservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\mapper\\appservicemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\mapper\\appservicemappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\repository\\irepository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\repository\\irepository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\bulletinboard.userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\bulletinboard.userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\loggingbehavior\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\loggingbehavior\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\transactionbehavior\\transactionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\transactionbehavior\\transactionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\transactionbehavior\\transactionbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\transactionbehavior\\transactionbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\registrar\\identityregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +111,32 @@
       "RelativeMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\registrar\\dbcontextregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\swaggerconfigurator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\swaggerconfigurator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\registrar\\componentregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\registrar\\componentregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\authenticationadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\authenticationadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\validatingbehavior\\validatingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\validatingbehavior\\validatingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|Compose{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|Compose{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\swaggerconfigurator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\swaggerconfigurator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\dbinitializer\\dbinitializer .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,28 +155,8 @@
       "RelativeMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\bulletinboard.userservice.infrastructure.componentregistrar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|Compose{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|Compose{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\exceptionstests\\validationexeptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\exceptionstests\\validationexeptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\infrastructuretests\\identitytests\\authserviceadaptertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\infrastructuretests\\identitytests\\authserviceadaptertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\authtests\\commandtests\\addusercommandtests\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\authtests\\commandtests\\addusercommandtests\\addusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\bulletinboard.userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\bulletinboard.userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\bulletinboard.userservice.appservices.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -100,19 +184,6 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs*",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T15:56:20.16Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -130,216 +201,241 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:00:38.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthenticationAdder.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs*",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T14:07:22.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T11:52:26.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IdentityRegistrar.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs*",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:43:57.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SwaggerConfigurator.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:44:34.409Z",
+              "WhenOpened": "2025-12-17T14:39:00.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DbContextRegistrar.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RegisterCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwCcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:19:17.425Z",
+              "WhenOpened": "2025-12-17T11:19:43.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "BulletinBoard.UserService.Hosts.http",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-12-15T14:08:46.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DbInitializer .cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "BusinessRuleException.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T11:48:33.706Z",
+              "WhenOpened": "2025-12-17T11:47:19.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABDAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "BusinessRuleExceptionTests.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T14:37:43.407Z",
+              "WhenOpened": "2025-12-17T11:50:30.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BulletinBoard.UserService.Hosts",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-15T12:03:49.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BulletinBoard.UserService.Infrastructure.ComponentRegistrar",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-15T11:50:41.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-12-15T12:35:48.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-15T12:26:01.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ValidationExeptionTests.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\ExceptionsTests\\ValidationExeptionTests.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\ExceptionsTests\\ValidationExeptionTests.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\ExceptionsTests\\ValidationExeptionTests.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\ExceptionsTests\\ValidationExeptionTests.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:03:28.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuthServiceAdapterTests.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\InfrastructureTests\\IdentityTests\\AuthServiceAdapterTests.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\InfrastructureTests\\IdentityTests\\AuthServiceAdapterTests.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\InfrastructureTests\\IdentityTests\\AuthServiceAdapterTests.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\InfrastructureTests\\IdentityTests\\AuthServiceAdapterTests.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAQwNMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T12:03:21.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 1,
               "Title": "AddUserCommandHandlerTests.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\AuthTests\\CommandTests\\AddUserCommandTests\\AddUserCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\AuthTests\\CommandTests\\AddUserCommandTests\\AddUserCommandHandlerTests.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\AuthTests\\CommandTests\\AddUserCommandTests\\AddUserCommandHandlerTests.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\AuthTests\\CommandTests\\AddUserCommandTests\\AddUserCommandHandlerTests.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAgwO0AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\AddUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\AddUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\AddUserCommandHandlerTests.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\AddUserCommandHandlerTests.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAApwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T12:03:13.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwBgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:00:38.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Repositiry\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Repositiry\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Repositiry\\IUserRepository.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Repositiry\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:53:30.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DomainIntegrityException.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:48:22.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FieldFailures.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:48:36.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommand.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommand.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:16:23.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterResponse.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterResponse.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterResponse.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterResponse.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:18:06.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FieldFailuresTests.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T14:23:49.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BulletinBoard.UserService.Hosts",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-17T14:33:32.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AssembliesNavigationAppServices.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\AssembliesNavigationAppServices.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\AssembliesNavigationAppServices.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\AssembliesNavigationAppServices.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\AssembliesNavigationAppServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:12:21.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppServiceMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Mapper\\AppServiceMappingProfile.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Mapper\\AppServiceMappingProfile.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Mapper\\AppServiceMappingProfile.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Mapper\\AppServiceMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T13:14:50.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:57:42.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\Repository.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\Repository.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\Repository.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T13:00:02.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "BulletinBoard.UserService.Infrastructure",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:58:57.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BulletinBoard.UserService.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj",
@@ -351,7 +447,260 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UnitOfWork.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:55:00.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoggingBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\LoggingBehavior\\LoggingBehavior.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\LoggingBehavior\\LoggingBehavior.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\LoggingBehavior\\LoggingBehavior.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\LoggingBehavior\\LoggingBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:03:33.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TransactionAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionAttribute.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionAttribute.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionAttribute.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:05:17.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TransactionBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionBehavior.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionBehavior.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionBehavior.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionBehavior.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:06:02.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:06:49.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:52:26.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IdentityRegistrar.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T16:43:57.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DbContextRegistrar.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T16:19:17.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ComponentRegistrar.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistrar.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistrar.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistrar.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistrar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:08:14.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T15:56:20.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ValidatingBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:07:38.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AuthenticationAdder.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T14:07:22.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SwaggerConfigurator.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:44:34.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-15T12:35:48.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BulletinBoard.UserService.Hosts.http",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-15T14:08:46.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DbInitializer .cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:48:33.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T14:37:43.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BulletinBoard.UserService.Hosts.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-15T12:03:49.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-15T11:50:41.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-15T12:26:01.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "InitializersRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
@@ -359,12 +708,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:27:53.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:27:53.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 39,
               "Title": "BulletinBoard.UserService.AppServices.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
@@ -372,12 +720,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-13T09:11:26.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:11:26.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 41,
               "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
@@ -385,20 +732,18 @@
               "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
               "ViewState": "AgIAACUAAAAAAAAAAAAmwDUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-12-13T08:59:48.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T08:59:48.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 42,
               "Title": "BulletinBoard.UserService.AppServices",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-13T10:04:01.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T10:04:01.052Z"
             }
           ]
         }
