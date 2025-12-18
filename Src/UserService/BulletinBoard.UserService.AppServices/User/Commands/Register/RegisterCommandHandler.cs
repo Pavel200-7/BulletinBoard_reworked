@@ -38,7 +38,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterR
             throw new BusinessRuleException(FieldFailures.FromIdentityErrors(result.Errors));
         }
         await _userManager.AddToRoleAsync(user, Roles.User);
-        return new RegisterResponse();
+        return new RegisterResponse() { IsSucceed = result.Succeeded};
     }
 
     private async Task ValidateUserUniquenessAsync(RegisterCommand request, CancellationToken cancellationToken)
@@ -47,13 +47,13 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterR
         {
             ChechUniqueAsync(() => _userManager.FindByNameAsync(request.UserName),
                 nameof(request.UserName),
-                "User name must be unique."),
+                "Данное имя пользователя уже занято."),
             ChechUniqueAsync(() => _userManager.FindByEmailAsync(request.Email),
                 nameof(request.Email),
-                "Email must be unique."),
+                "Данный Email уже занят."),
             ChechUniqueAsync(() => _repository.FindByPhoneAsync(request.PhoneNumber, cancellationToken),
                 nameof(request.PhoneNumber),
-                "Phone number must be unique."),
+                "Данный телефон уже занят."),
         };
 
         await Task.WhenAll(tasks);

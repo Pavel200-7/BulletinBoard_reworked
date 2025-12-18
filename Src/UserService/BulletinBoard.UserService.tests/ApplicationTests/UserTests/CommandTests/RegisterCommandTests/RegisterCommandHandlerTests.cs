@@ -8,10 +8,9 @@ using Microsoft.Extensions.Options;
 using Moq;
 using BulletinBoard.UserService.AppServices.User.Enum;
 
-
 namespace BulletinBoard.UserService.tests.ApplicationTests.AuthTests.CommandTests.AddUserCommandTests;
 
-public class RegisterCommandTests
+public class RegisterCommandHandlerTests
 {
     private Mock<ILogger<RegisterCommandHandler>> MockLogger;
     private Mock<IMapper> MockMapper;
@@ -20,7 +19,7 @@ public class RegisterCommandTests
     private RegisterCommandHandler handler;
     private CancellationToken cancellationToken;
 
-    public RegisterCommandTests()
+    public RegisterCommandHandlerTests()
     {
         MockLogger = new Mock<ILogger<RegisterCommandHandler>>();
         MockMapper = new Mock<IMapper>();
@@ -126,13 +125,26 @@ public class RegisterCommandTests
         MockUserManager.Verify(um => um.AddToRoleAsync(It.IsAny<IdentityUser>(), Roles.User), Times.Once);
     }
 
+    [Fact]
+    public async Task ResurnSuccessResponce()
+    {
+        // Arrange
+        var command = CreateCommand();
+        var expected = CreateResponce(true);
+
+        // Act
+        var result = await handler.Handle(command, cancellationToken);
+
+        // Assert
+        Assert.Equal(expected.IsSucceed, result.IsSucceed);
+    }
+
     private void SetupMock()
     {
         MockUserManager
         .Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
         .ReturnsAsync(IdentityResult.Success);
 
-        // Настраиваем проверки уникальности (чтобы они прошли)
         MockUserManager
             .Setup(r => r.FindByNameAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
@@ -141,47 +153,27 @@ public class RegisterCommandTests
             .Setup(r => r.FindByEmailAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
 
-        // Repository для телефона
         MockUserRepository
             .Setup(r => r.FindByPhoneAsync(It.IsAny<string>(), It.IsAny<CancellationToken>()))
             .ReturnsAsync((IdentityUser)null!);
 
         MockMapper.Setup(m => m.Map<IdentityUser>(It.IsAny<RegisterCommand>()))
             .Returns(CreateUser());
-        
-
     }
 
     private void SetUpUserManager()
     {
         var store = new Mock<IUserStore<IdentityUser>>();
-
-        // Mock IOptions<IdentityOptions>
         var options = new Mock<IOptions<IdentityOptions>>();
         options.Setup(o => o.Value).Returns(new IdentityOptions());
-
-        // Mock IPasswordHasher<IdentityUser>
         var passwordHasher = new Mock<IPasswordHasher<IdentityUser>>();
-
-        // Mock IEnumerable<IUserValidator<IdentityUser>>
         var userValidators = new List<IUserValidator<IdentityUser>>();
-
-        // Mock IEnumerable<IPasswordValidator<IdentityUser>>
         var passwordValidators = new List<IPasswordValidator<IdentityUser>>();
-
-        // Mock ILookupNormalizer
         var normalizer = new Mock<ILookupNormalizer>();
-
-        // Mock IdentityErrorDescriber
         var errors = new Mock<IdentityErrorDescriber>();
-
-        // Mock IServiceProvider
         var services = new Mock<IServiceProvider>();
-
-        // Mock ILogger<UserManager<IdentityUser>>
         var userManagerLogger = new Mock<ILogger<UserManager<IdentityUser>>>();
 
-        // Create the UserManager mock with all required dependencies
         MockUserManager = new Mock<UserManager<IdentityUser>>(
             store.Object,
             options.Object,
@@ -214,5 +206,10 @@ public class RegisterCommandTests
             Email = "email@email.com",
             PhoneNumber = "+7 (978) 123-45-67",
         };
+    }
+
+    private RegisterResponse CreateResponce(bool IsSucceed)
+    {
+        return new RegisterResponse() { IsSucceed = IsSucceed };
     }
 }

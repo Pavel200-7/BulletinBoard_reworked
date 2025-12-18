@@ -11,6 +11,9 @@ public static class IdentityRegistrar
     {
         services.AddIdentityCore<IdentityUser>(options =>
         {
+            options.Lockout.MaxFailedAccessAttempts = 5;
+            options.Lockout.AllowedForNewUsers = true;
+
             options.Password.RequiredLength = 10;
             options.Password.RequiredUniqueChars = 3;
             options.Password.RequireNonAlphanumeric = true;
@@ -18,15 +21,10 @@ public static class IdentityRegistrar
             options.Password.RequireLowercase = true;
             options.Password.RequireUppercase = true;
 
-            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-            options.Lockout.MaxFailedAccessAttempts = 5;
-            options.Lockout.AllowedForNewUsers = true;
-
             // Важно для JWT
             options.ClaimsIdentity.UserIdClaimType = ClaimTypes.NameIdentifier;
             options.ClaimsIdentity.EmailClaimType = ClaimTypes.Email;
             options.ClaimsIdentity.RoleClaimType = ClaimTypes.Role;
-
         })
         .AddEntityFrameworkStores<UserDbContext>()
         .AddApiEndpoints() 
