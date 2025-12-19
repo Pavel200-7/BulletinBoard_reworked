@@ -1,4 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

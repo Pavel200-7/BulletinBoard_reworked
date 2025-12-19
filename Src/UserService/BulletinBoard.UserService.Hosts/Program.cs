@@ -19,6 +19,7 @@ public partial class Program
         builder.Logging.AddConsole();
 
         builder.Services
+            .RegistrarConfigurations(configuration)
             .RegistrarDbContext(configuration)
             .AddAuthentication(configuration)
             .RegistrarComponents()

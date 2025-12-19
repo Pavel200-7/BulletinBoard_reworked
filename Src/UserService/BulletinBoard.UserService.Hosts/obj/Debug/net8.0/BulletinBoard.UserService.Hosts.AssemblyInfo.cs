@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.UserService.Hosts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d9ee07c36fd0e321f44708ed64ffe2e86bd6dc1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a11e6ed498d15dddccc7534d1b415d5d5149f1ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.UserService.Hosts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.UserService.Hosts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

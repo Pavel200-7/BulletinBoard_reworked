@@ -3,7 +3,11 @@ using BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
 using BulletinBoard.UserService.AppServices.Common.UnitOfWork;
+using BulletinBoard.UserService.AppServices.User.Queries.LogIn.Helpers.JWTGenerator;
+using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.Infrastructure.DataAccess.Common.UnitOfWork;
+using BulletinBoard.UserService.Infrastructure.Repository;
+using BulletinBoard.UserService.Infrastructure.Repository.IRepository;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,10 +23,26 @@ public static class ComponentRegistrar
         services.AddValidatorsFromAssembly(typeof(AssembliesNavigationAppServices).Assembly);
         services.AddAutoMapper(typeof(AssembliesNavigationAppServices).Assembly);
 
-        // Все остальные зависимости
-        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.RegistrarBLLComponents();
+        services.RegistrarDALComponents();
 
         services.RegistrarBehaviors();
+        return services;
+    }
+
+    private static IServiceCollection RegistrarBLLComponents(this IServiceCollection services)
+    {
+        services.AddScoped<IJWTGenerator, JWTGenerator>();
+
+        return services;
+    }
+
+    private static IServiceCollection RegistrarDALComponents(this IServiceCollection services)
+    {
+        services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IUserRepository, UserRepository>();
+
         return services;
     }
 

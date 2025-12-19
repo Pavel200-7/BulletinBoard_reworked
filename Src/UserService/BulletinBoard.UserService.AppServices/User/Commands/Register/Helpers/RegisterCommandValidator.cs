@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
+namespace BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;
 
 public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
 {

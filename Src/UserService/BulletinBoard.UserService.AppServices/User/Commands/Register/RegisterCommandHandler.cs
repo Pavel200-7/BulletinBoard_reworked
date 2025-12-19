@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
 using BulletinBoard.UserService.AppServices.User.Enum;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
 
+[Transaction]
 public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterResponse>
 {
     private ILogger<RegisterCommandHandler> _logger;

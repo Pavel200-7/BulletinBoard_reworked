@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Moq;
-using BulletinBoard.UserService.AppServices.User.Enum;
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.AuthTests.CommandTests.AddUserCommandTests;
 
@@ -23,8 +23,11 @@ public class RegisterCommandHandlerTests
     {
         MockLogger = new Mock<ILogger<RegisterCommandHandler>>();
         MockMapper = new Mock<IMapper>();
-        SetUpUserManager();
         MockUserRepository = new Mock<IUserRepository>();
+
+        var userManagerInitializer = new IdentityMockInitializer();
+        MockUserManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
+
         handler = new RegisterCommandHandler(MockLogger.Object, MockMapper.Object, MockUserManager!.Object, MockUserRepository.Object);
 
         cancellationToken = CancellationToken.None;
@@ -159,32 +162,6 @@ public class RegisterCommandHandlerTests
 
         MockMapper.Setup(m => m.Map<IdentityUser>(It.IsAny<RegisterCommand>()))
             .Returns(CreateUser());
-    }
-
-    private void SetUpUserManager()
-    {
-        var store = new Mock<IUserStore<IdentityUser>>();
-        var options = new Mock<IOptions<IdentityOptions>>();
-        options.Setup(o => o.Value).Returns(new IdentityOptions());
-        var passwordHasher = new Mock<IPasswordHasher<IdentityUser>>();
-        var userValidators = new List<IUserValidator<IdentityUser>>();
-        var passwordValidators = new List<IPasswordValidator<IdentityUser>>();
-        var normalizer = new Mock<ILookupNormalizer>();
-        var errors = new Mock<IdentityErrorDescriber>();
-        var services = new Mock<IServiceProvider>();
-        var userManagerLogger = new Mock<ILogger<UserManager<IdentityUser>>>();
-
-        MockUserManager = new Mock<UserManager<IdentityUser>>(
-            store.Object,
-            options.Object,
-            passwordHasher.Object,
-            userValidators,
-            passwordValidators,
-            normalizer.Object,
-            errors.Object,
-            services.Object,
-            userManagerLogger.Object
-        );
     }
 
     private RegisterCommand CreateCommand()
