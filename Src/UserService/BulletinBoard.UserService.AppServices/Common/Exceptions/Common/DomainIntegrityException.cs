@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
@@ -10,9 +10,9 @@ namespace BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
 public abstract class DomainIntegrityException : Exception
 {
     public new string Message { get; set; }
-    public List<FieldFailures> FieldsFailures { get; set; }
+    public List<FieldFailure> FieldsFailures { get; set; }
 
-    public DomainIntegrityException(List<FieldFailures> fieldsFailures, string message)
+    public DomainIntegrityException(List<FieldFailure> fieldsFailures, string message)
     {
         FieldsFailures = fieldsFailures;
         Message = message;

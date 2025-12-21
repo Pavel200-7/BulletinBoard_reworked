@@ -1,6 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.Infrastructure.Middleware.Response;
-using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Text.Encodings.Web;
@@ -60,7 +59,7 @@ namespace BulletinBoard.UserService.Infrastructure.Middleware
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = StatusCodes.Status404NotFound;
 
-            var response = new ErrorResponse
+            var response = new ErrorResponse()
             {
                 StatusCode = context.Response.StatusCode,
                 Message = exception.Message,
@@ -75,16 +74,11 @@ namespace BulletinBoard.UserService.Infrastructure.Middleware
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = StatusCodes.Status400BadRequest;
 
-            // Создаем структурированный ответ вместо передачи JSON строки
-            var response = new
+            var response = new FieldsErrorResponse
             {
                 StatusCode = StatusCodes.Status400BadRequest,
                 Message = exception.Message,
-                FieldFailures = exception.FieldsFailures.Select(f => new
-                {
-                    Field = f.FieldName,
-                    Errors = f.Failures
-                }),
+                FieldFailures = exception.FieldsFailures,
                 TraceId = context.TraceIdentifier
             };
 
@@ -96,19 +90,11 @@ namespace BulletinBoard.UserService.Infrastructure.Middleware
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = StatusCodes.Status400BadRequest;
 
-            var errors = exception.Errors
-                .GroupBy(e => e.PropertyName)
-                .Select(g => new
-                {
-                    Field = g.Key,
-                    Errors = g.Select(e => e.ErrorMessage).ToList()
-                });
-
-            var response = new
+            var response = new FieldsErrorResponse
             {
                 StatusCode = StatusCodes.Status400BadRequest,
-                Message = "Ошибка валидации",
-                FieldFailures = errors,
+                Message = exception.Message,
+                FieldFailures = exception.FieldsFailures,
                 TraceId = context.TraceIdentifier
             };
 
@@ -120,7 +106,7 @@ namespace BulletinBoard.UserService.Infrastructure.Middleware
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
 
-            var response = new
+            var response = new ErrorResponse()
             {
                 StatusCode = StatusCodes.Status500InternalServerError,
                 Message = "Что-то пошло не так. Попробуйте позже.",

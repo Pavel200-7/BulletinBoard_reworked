@@ -70,7 +70,7 @@ public class LogInQueryHandlerTests
         // Arrange
         var query = CreateQuery();
         MockSignInManager.Setup(sim => sim.PasswordSignInAsync(
-            It.IsAny<string>(),
+            It.IsAny<IdentityUser>(),
             It.IsAny<string>(),
             It.IsAny<bool>(),
             It.IsAny<bool>()
@@ -83,7 +83,7 @@ public class LogInQueryHandlerTests
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
         MockSignInManager.Verify(sim => sim.PasswordSignInAsync(
-            It.IsAny<string>(),
+            It.IsAny<IdentityUser>(),
             It.IsAny<string>(),
             It.IsAny<bool>(),
             It.IsAny<bool>()
@@ -149,7 +149,7 @@ public class LogInQueryHandlerTests
             .ReturnsAsync(user);
 
         MockSignInManager.Setup(sim => sim.PasswordSignInAsync(
-            It.IsAny<string>(),
+            It.IsAny<IdentityUser>(),
             It.IsAny<string>(),
             It.IsAny<bool>(),
             It.IsAny<bool>()

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using MediatR;
@@ -37,7 +37,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterC
         var result = await _userManager.CreateAsync(user, request.Password);
         if (!result.Succeeded)
         {
-            throw new BusinessRuleException(FieldFailures.FromIdentityErrors(result.Errors));
+            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
         }
         await _userManager.AddToRoleAsync(user, Roles.User);
         return new RegisterCResponse() { IsSucceed = result.Succeeded};

@@ -1,5 +1,8 @@
 ﻿using FluentValidation;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using MediatR;
+using ValidationException = BulletinBoard.UserService.AppServices.Common.Exceptions.ValidationException;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
 namespace BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
@@ -24,7 +27,7 @@ public class ValidatingBehavior<TRequest, TResponse>
             var failures = validationResults.SelectMany(e => e.Errors).Where(f => f != null).ToList();
             if (failures.Count != 0)
             {
-                throw new ValidationException(failures);
+                throw new ValidationException(FieldFailuresConverter.FromValidationErrors(failures));
             }
         }
 

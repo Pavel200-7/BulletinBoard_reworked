@@ -3,12 +3,79 @@
   "WorkspaceRootPath": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\baseerrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\baseerrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\fieldserrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\fieldserrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures\\fieldfailure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures\\fieldfailure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\validatingbehavior\\validatingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\validatingbehavior\\validatingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures\\fieldfailuresconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures\\fieldfailuresconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\fieldfailuresconvertertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\fieldfailuresconvertertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\businessruleexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\businessruleexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\registercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\registercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\domainintegrityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\domainintegrityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\queriestests\\loginquerytests\\loginqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\queriestests\\loginquerytests\\loginqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\queries\\login\\loginqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\queries\\login\\loginqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\commands\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\accessdeniedexeption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\accessdeniedexeption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\queries\\login\\loginquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,30 +88,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\registercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\registercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF8339B5-32DE-4257-A2F0-97A6CA3A4EBE}|Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.infrastructure\\middleware\\response\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\fieldfailures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\domainintegrityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\common\\domainintegrityexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{086393AE-BE46-4FD7-86E9-2C190CC4BF2A}|Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.infrastructure.componentregistrar\\dbinitializer\\initializersregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,10 +158,6 @@
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\controllers\\auth\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\queriestests\\loginquerytests\\loginqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\queriestests\\loginquerytests\\loginqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\queriestests\\loginquerytests\\jwtgeneratortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\queriestests\\loginquerytests\\jwtgeneratortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -179,14 +218,6 @@
       "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\commandtests\\registercommandtests\\registercommandvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\accessdeniedexeption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\exceptions\\accessdeniedexeption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\helpers\\identitymockinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\usertests\\helpers\\identitymockinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -205,14 +236,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\user\\repositiry\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\user\\repositiry\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\fieldfailurestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\fieldfailurestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\businessruleexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{192EE0D7-C3C5-4198-8604-6E0B9A05660B}|Src\\UserService\\BulletinBoard.UserService.tests\\BulletinBoard.UserService.tests.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.tests\\applicationtests\\commontests\\businessruleexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -251,10 +274,6 @@
       "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\validatingbehavior\\validatingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.appservices\\common\\behaviors\\validatingbehavior\\validatingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\bulletinboard.userservice.hosts.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
@@ -265,9 +284,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5EEEA1FD-DFA0-4161-96EA-33D6EE8A1F79}|Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj|solutionrelative:src\\userservice\\bulletinboard.userservice.hosts\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F400D5-03E7-4F88-88B1-A947BC1E3EF9}|Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj|c:\\users\\pavli\\desktop\\bulletinboard\\src\\userservice\\bulletinboard.userservice.appservices\\bulletinboard.userservice.appservices.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -281,7 +297,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -302,19 +318,136 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "FieldFailuresConverter.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailuresConverter.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailuresConverter.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailuresConverter.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailuresConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T14:01:31.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FieldsErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\FieldsErrorResponse.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\FieldsErrorResponse.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\FieldsErrorResponse.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\FieldsErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:53:27.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FieldFailure.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailure.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailure.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailure.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures\\FieldFailure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:48:36.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ValidatingBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:07:38.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwHYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-21T09:02:26.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T09:04:12.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseErrorResponse.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\BaseErrorResponse.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\BaseErrorResponse.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\BaseErrorResponse.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\BaseErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:53:51.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:57:40.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FieldFailuresConverterTests.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresConverterTests.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresConverterTests.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresConverterTests.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresConverterTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA2wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T14:23:49.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BusinessRuleExceptionTests.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:50:30.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "RegisterCommandHandlerTests.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\RegisterCommandHandlerTests.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\RegisterCommandHandlerTests.cs",
@@ -327,59 +460,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "DomainIntegrityException.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:00:38.898Z",
+              "WhenOpened": "2025-12-17T11:48:22.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogInQuery.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "LogInQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAApwFUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T16:48:39.696Z",
+              "WhenOpened": "2025-12-18T17:07:56.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "LogInQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQueryHandler.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQueryHandler.cs",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQueryHandler.cs",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQueryHandler.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAApwCwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T17:04:11.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
+              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwDUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-13T08:59:48.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "RegisterCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
               "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommandHandler.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T11:19:43.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
+              "Title": "BusinessRuleException.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T11:47:19.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:29:10.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccessDeniedExeption.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T17:56:11.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -387,64 +572,35 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-12-15T12:35:48.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T12:35:48.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ErrorResponse.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Middleware\\Response\\ErrorResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "LogInQuery.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T09:04:12.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T16:48:39.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FieldFailures.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\FieldFailures.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBgAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:48:36.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T09:00:38.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DomainIntegrityException.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\Common\\DomainIntegrityException.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:48:22.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BusinessRuleException.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\BusinessRuleException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:47:19.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "InitializersRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
@@ -452,12 +608,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\InitializersRegistrar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:27:53.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:27:53.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "RolesInitializer.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\RolesInitializer.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\RolesInitializer.cs",
@@ -465,12 +620,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\RolesInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T08:55:10.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T08:55:10.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj",
@@ -483,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
@@ -491,12 +645,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Enum\\Roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T14:39:00.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T14:39:00.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "IdentityRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
@@ -504,12 +657,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\IdentityRegistrar.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:43:57.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:43:57.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "DbInitializer .cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
@@ -517,12 +669,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\DbInitializer\\DbInitializer .cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwBcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T11:48:33.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T11:48:33.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
@@ -530,12 +681,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T15:56:20.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T15:56:20.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "RegisterResponse.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Response\\RegisterResponse.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Response\\RegisterResponse.cs",
@@ -543,12 +693,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Response\\RegisterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T08:21:26.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T08:21:26.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "HostsMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Common\\Mapper\\HostsMappingProfile.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Common\\Mapper\\HostsMappingProfile.cs",
@@ -556,12 +705,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Common\\Mapper\\HostsMappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T08:33:08.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T08:33:08.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "LogInResponse.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Response\\LogInResponse.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Response\\LogInResponse.cs",
@@ -569,12 +717,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Response\\LogInResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T08:18:19.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T08:18:19.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "RegisterCommand.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommand.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterCommand.cs",
@@ -586,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "RegisterResponse.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterResponse.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\RegisterResponse.cs",
@@ -598,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 35,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\RegisterRequest.cs",
@@ -610,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 34,
               "Title": "AppServiceMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Mapper\\AppServiceMappingProfile.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Mapper\\AppServiceMappingProfile.cs",
@@ -622,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 36,
               "Title": "LogInQResponse.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQResponse.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQResponse.cs",
@@ -630,12 +777,11 @@
               "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\LogInQResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T16:49:39.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T16:49:39.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 37,
               "Title": "RegisterCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\Helpers\\RegisterCommandValidator.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Commands\\Register\\Helpers\\RegisterCommandValidator.cs",
@@ -647,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 38,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Controllers\\Auth\\Request\\LoginRequest.cs",
@@ -659,19 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LogInQueryHandlerTests.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\LogInQueryHandlerTests.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAQwLMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T17:07:56.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
               "Title": "ConfigurationsRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ConfigurationsRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ConfigurationsRegistrar.cs",
@@ -683,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "ClaimsData.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\ClaimsData.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\ClaimsData.cs",
@@ -695,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
               "Title": "JWTGeneratorTests.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\JWTGeneratorTests.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\QueriesTests\\LogInQueryTests\\JWTGeneratorTests.cs",
@@ -707,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "RefreshTokenProvider.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\RefreshTokenProvider\\RefreshTokenProvider.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\RefreshTokenProvider\\RefreshTokenProvider.cs",
@@ -719,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 43,
               "Title": "RefreshTokenOptions.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Configurations\\RefreshTokenOptions.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Configurations\\RefreshTokenOptions.cs",
@@ -731,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 45,
               "Title": "DbContextRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\DbContextRegistrar.cs",
@@ -743,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 44,
               "Title": "IJWTGenerator.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\IJWTGenerator.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\IJWTGenerator.cs",
@@ -755,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 46,
               "Title": "ComponentRegistrar.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistrar.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\\Registrar\\ComponentRegistrar.cs",
@@ -767,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 47,
               "Title": "AuthenticationAdder.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\AuthenticationAdder.cs",
@@ -779,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 48,
               "Title": "SwaggerConfigurator.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\SwaggerConfigurator.cs",
@@ -791,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 49,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Configurations\\JwtSettings.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Configurations\\JwtSettings.cs",
@@ -803,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 50,
               "Title": "JWTGenerator.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\JWTGenerator.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\JWTGenerator.cs",
@@ -815,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 51,
               "Title": "BulletinBoard.UserService.AppServices.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
@@ -828,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 52,
               "Title": "TokenData.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\TokenData.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Queries\\LogIn\\Helpers\\JWTGenerator\\TokenData.cs",
@@ -840,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 53,
               "Title": "RegisterCommandValidatorTests.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\RegisterCommandValidatorTests.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\CommandTests\\RegisterCommandTests\\RegisterCommandValidatorTests.cs",
@@ -852,31 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\NotFoundException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T17:29:10.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "AccessDeniedExeption.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Exceptions\\AccessDeniedExeption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T17:56:11.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 54,
               "Title": "IdentityMockInitializer.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\Helpers\\IdentityMockInitializer.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\UserTests\\Helpers\\IdentityMockInitializer.cs",
@@ -888,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 55,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\UserRepository.cs",
@@ -900,7 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 56,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\Repository.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\Repository.cs",
@@ -912,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 57,
               "Title": "UserDbContext.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UserDbContext.cs",
@@ -924,7 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 58,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Repositiry\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\User\\Repositiry\\IUserRepository.cs",
@@ -936,31 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "BusinessRuleExceptionTests.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\BusinessRuleExceptionTests.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:50:30.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "FieldFailuresTests.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.tests\\ApplicationTests\\CommonTests\\FieldFailuresTests.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T14:23:49.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "BulletinBoard.UserService.Hosts",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
@@ -972,7 +1058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "AssembliesNavigationAppServices.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\AssembliesNavigationAppServices.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\AssembliesNavigationAppServices.cs",
@@ -984,7 +1070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 61,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\IRepository.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\Repository\\IRepository\\IRepository.cs",
@@ -996,7 +1082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 63,
               "Title": "BulletinBoard.UserService.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\BulletinBoard.UserService.Infrastructure.csproj",
@@ -1009,7 +1095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 62,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Infrastructure\\UnitOfWork.cs",
@@ -1021,7 +1107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 64,
               "Title": "LoggingBehavior.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\LoggingBehavior\\LoggingBehavior.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\LoggingBehavior\\LoggingBehavior.cs",
@@ -1033,7 +1119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 65,
               "Title": "TransactionAttribute.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionAttribute.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionAttribute.cs",
@@ -1045,7 +1131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 66,
               "Title": "TransactionBehavior.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionBehavior.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\TransactionBehavior\\TransactionBehavior.cs",
@@ -1057,7 +1143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 67,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\UnitOfWork\\IUnitOfWork.cs",
@@ -1069,19 +1155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "ValidatingBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
-              "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
-              "ToolTip": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
-              "RelativeToolTip": "Src\\UserService\\BulletinBoard.UserService.AppServices\\Common\\Behaviors\\ValidatingBehavior\\ValidatingBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T11:07:38.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 68,
               "Title": "BulletinBoard.UserService.Hosts.http",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.http",
@@ -1093,7 +1167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 69,
               "Title": "BulletinBoard.UserService.Hosts.csproj",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\BulletinBoard.UserService.Hosts.csproj",
@@ -1106,7 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 70,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.Hosts\\Dockerfile",
@@ -1118,19 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk.Razor\\targets\\Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets",
-              "ViewState": "AgIAACUAAAAAAAAAAAAmwDUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-12-13T08:59:48.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 71,
               "Title": "BulletinBoard.UserService.AppServices",
               "DocumentMoniker": "C:\\Users\\pavli\\Desktop\\BulletinBoard\\Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",
               "RelativeDocumentMoniker": "Src\\UserService\\BulletinBoard.UserService.AppServices\\BulletinBoard.UserService.AppServices.csproj",

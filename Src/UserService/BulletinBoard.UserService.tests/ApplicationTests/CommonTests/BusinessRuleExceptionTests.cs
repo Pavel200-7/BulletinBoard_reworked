@@ -1,5 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.CommonTests;
@@ -12,9 +12,9 @@ public class BusinessRuleExceptionTests
         // Arrange
         string fildName = "UserName";
         List<string> failures = new List<string>() { "Неправильный формат", "Неверные символы", "Еще какая-нибудь ошибка" };
-        var fieldFailures = new FieldFailures(fildName, failures);
+        var fieldFailures = new FieldFailure(fildName, failures);
 
-        var fieldFailuresList = new List<FieldFailures>() { fieldFailures };
+        var fieldFailuresList = new List<FieldFailure>() { fieldFailures };
         string message = "Ошибка";
 
         var exeption = new BusinessRuleException(fieldFailuresList, message);
