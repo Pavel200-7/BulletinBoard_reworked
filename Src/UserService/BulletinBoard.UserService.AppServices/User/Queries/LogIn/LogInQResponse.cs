@@ -1,6 +1,6 @@
 ﻿namespace BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 
-public class LogInResponse 
+public class LogInQResponse 
 {
     public string TokenType { get; init; }
     public string AccessToken { get; init; }

@@ -185,8 +185,8 @@ public class RegisterCommandHandlerTests
         };
     }
 
-    private RegisterResponse CreateResponce(bool IsSucceed)
+    private RegisterCResponse CreateResponce(bool IsSucceed)
     {
-        return new RegisterResponse() { IsSucceed = IsSucceed };
+        return new RegisterCResponse() { IsSucceed = IsSucceed };
     }
 }

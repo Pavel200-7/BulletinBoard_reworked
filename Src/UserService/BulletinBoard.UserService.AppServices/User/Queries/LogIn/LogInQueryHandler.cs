@@ -8,13 +8,13 @@ using Microsoft.Extensions.Logging;
 
 namespace BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 
-public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInResponse>
+public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInQResponse>
 {
-    private ILogger<LogInQueryHandler> _logger;
-    private IMapper _mapper;
-    private UserManager<IdentityUser> _userManager;
-    private SignInManager<IdentityUser> _signInManager;
-    private IJWTGenerator _jWTGenerator;
+    private readonly ILogger<LogInQueryHandler> _logger;
+    private readonly IMapper _mapper;
+    private readonly UserManager<IdentityUser> _userManager;
+    private readonly SignInManager<IdentityUser> _signInManager;
+    private readonly IJWTGenerator _jWTGenerator;
 
     public LogInQueryHandler(
         ILogger<LogInQueryHandler> logger, 
@@ -31,7 +31,7 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInResponse>
         _jWTGenerator = jWTGenerator;
     }
 
-    public async Task<LogInResponse> Handle(LogInQuery request, CancellationToken cancellationToken)
+    public async Task<LogInQResponse> Handle(LogInQuery request, CancellationToken cancellationToken)
     {
         var user = await _userManager.FindByEmailAsync(request.Email);
         if (user is null)
@@ -41,7 +41,7 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInResponse>
 
         bool isPersistent = false;
         bool lockoutOnFailure = false;
-        var result = await _signInManager.PasswordSignInAsync(request.Email, request.Password, isPersistent, lockoutOnFailure);
+        var result = await _signInManager.PasswordSignInAsync(user, request.Password, isPersistent, lockoutOnFailure);
         if (!result.Succeeded) 
         {
             throw new BusinessRuleException("Password", "Неверный пароль.");
@@ -61,7 +61,7 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInResponse>
            "RefreshTokenProvider", 
            "Refresh");             
 
-        return new LogInResponse()
+        return new LogInQResponse()
         {
             TokenType = tokenData.TokenType,    
             AccessToken = tokenData.AccessToken,

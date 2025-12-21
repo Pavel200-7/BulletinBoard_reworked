@@ -3,7 +3,7 @@
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
 
-public class RegisterCommand : IRequest<RegisterResponse>
+public class RegisterCommand : IRequest<RegisterCResponse>
 {
     public string UserName { get; init; }
     public string Email { get; init; }

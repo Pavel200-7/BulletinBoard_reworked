@@ -11,12 +11,12 @@ using Microsoft.Extensions.Logging;
 namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
 
 [Transaction]
-public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterResponse>
+public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterCResponse>
 {
-    private ILogger<RegisterCommandHandler> _logger;
-    private IMapper _mapper;
-    private UserManager<IdentityUser> _userManager;
-    private IUserRepository _repository;
+    private readonly ILogger<RegisterCommandHandler> _logger;
+    private readonly IMapper _mapper;
+    private readonly UserManager<IdentityUser> _userManager;
+    private readonly IUserRepository _repository;
 
     public RegisterCommandHandler(
         ILogger<RegisterCommandHandler> logger, 
@@ -30,7 +30,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterR
         _repository = repository;
     }
 
-    public async Task<RegisterResponse> Handle(RegisterCommand request, CancellationToken cancellationToken)
+    public async Task<RegisterCResponse> Handle(RegisterCommand request, CancellationToken cancellationToken)
     {
         await ValidateUserUniquenessAsync(request, cancellationToken);
         var user = _mapper.Map<IdentityUser>(request);
@@ -40,7 +40,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterR
             throw new BusinessRuleException(FieldFailures.FromIdentityErrors(result.Errors));
         }
         await _userManager.AddToRoleAsync(user, Roles.User);
-        return new RegisterResponse() { IsSucceed = result.Succeeded};
+        return new RegisterCResponse() { IsSucceed = result.Succeeded};
     }
 
     private async Task ValidateUserUniquenessAsync(RegisterCommand request, CancellationToken cancellationToken)

@@ -2,6 +2,7 @@ using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.UserService.AppServices.Common;
 using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
+using BulletinBoard.UserService.Infrastructure.Middleware;
 using Microsoft.AspNetCore.Identity;
 using System.Reflection;
 
@@ -35,7 +36,9 @@ public partial class Program
 
         var app = builder.Build();
 
-        app.MapGroup("/auth").MapIdentityApi<IdentityUser>();
+        app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+        //app.MapGroup("/auth").MapIdentityApi<IdentityUser>();
 
         if (app.Environment.IsDevelopment())
         {

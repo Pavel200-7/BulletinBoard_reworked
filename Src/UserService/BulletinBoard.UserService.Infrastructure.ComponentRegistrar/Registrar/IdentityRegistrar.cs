@@ -10,7 +10,7 @@ public static class IdentityRegistrar
 {
     public static IServiceCollection RegistrarIdentity(this IServiceCollection services)
     {
-        services.AddIdentityCore<IdentityUser>(options =>
+        services.AddIdentity<IdentityUser, IdentityRole>(options =>
         {
             options.Lockout.MaxFailedAccessAttempts = 5;
             options.Lockout.AllowedForNewUsers = true;
