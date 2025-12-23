@@ -998,6 +998,7 @@
       "BulletinBoard.UserService.AppServices/1.0.0": {
         "dependencies": {
           "AutoMapper": "14.0.0",
+          "BulletinBoard.UserService.Domain": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "MediatR": "13.1.0",
           "System.IdentityModel.Tokens.Jwt": "8.5.0"
@@ -1009,10 +1010,20 @@
           }
         }
       },
+      "BulletinBoard.UserService.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.3.1"
+        },
+        "runtime": {
+          "BulletinBoard.UserService.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "BulletinBoard.UserService.Infrastructure/1.0.0": {
         "dependencies": {
           "BulletinBoard.UserService.AppServices": "1.0.0",
-          "Microsoft.AspNetCore.Identity": "2.3.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },
@@ -1710,6 +1721,11 @@
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
     "BulletinBoard.UserService.AppServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BulletinBoard.UserService.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

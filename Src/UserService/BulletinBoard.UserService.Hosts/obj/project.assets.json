@@ -1802,6 +1802,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AutoMapper": "14.0.0",
+          "BulletinBoard.UserService.Domain": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "MediatR": "13.1.0",
           "System.IdentityModel.Tokens.Jwt": "8.5.0"
@@ -1813,12 +1814,24 @@
           "bin/placeholder/BulletinBoard.UserService.AppServices.dll": {}
         }
       },
+      "BulletinBoard.UserService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.3.1"
+        },
+        "compile": {
+          "bin/placeholder/BulletinBoard.UserService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulletinBoard.UserService.Domain.dll": {}
+        }
+      },
       "BulletinBoard.UserService.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BulletinBoard.UserService.AppServices": "1.0.0",
-          "Microsoft.AspNetCore.Identity": "2.3.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },
@@ -4647,6 +4660,11 @@
       "type": "project",
       "path": "../BulletinBoard.UserService.AppServices/BulletinBoard.UserService.AppServices.csproj",
       "msbuildProject": "../BulletinBoard.UserService.AppServices/BulletinBoard.UserService.AppServices.csproj"
+    },
+    "BulletinBoard.UserService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BulletinBoard.UserService.Domain/BulletinBoard.UserService.Domain.csproj",
+      "msbuildProject": "../BulletinBoard.UserService.Domain/BulletinBoard.UserService.Domain.csproj"
     },
     "BulletinBoard.UserService.Infrastructure/1.0.0": {
       "type": "project",

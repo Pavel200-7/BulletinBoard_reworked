@@ -3,7 +3,8 @@ using BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
 using BulletinBoard.UserService.AppServices.Common.UnitOfWork;
-using BulletinBoard.UserService.AppServices.User.Queries.LogIn.Helpers.JWTGenerator;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshToken;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.Infrastructure.DataAccess.Common.UnitOfWork;
 using BulletinBoard.UserService.Infrastructure.Repository;
@@ -32,7 +33,9 @@ public static class ComponentRegistrar
 
     private static IServiceCollection RegistrarBLLComponents(this IServiceCollection services)
     {
-        services.AddScoped<IJWTGenerator, JWTGenerator>();
+        services.AddScoped<IJWTProvider, JWTProvider>();
+        services.AddScoped<IRefreshTokenProvider, RefreshTokenProvider>();
+
 
         return services;
     }

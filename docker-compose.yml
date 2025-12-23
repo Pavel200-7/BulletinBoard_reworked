@@ -16,6 +16,8 @@ services:
       - JWT__Issuer=http://localhost:8085
       - JWT__Audience=http://localhost:8085
       - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
+      - JWT__ExpiresIn=3600
+      - Refresh__ExpiresIn=669600 #6 мес€цев
 
   postgre_user_db:
     image: postgres:17

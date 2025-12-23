@@ -10,3 +10,4 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.D
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Domain\obj\Debug\net8.0\refint\BulletinBoard.UserService.Domain.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Domain\obj\Debug\net8.0\BulletinBoard.UserService.Domain.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Domain\obj\Debug\net8.0\ref\BulletinBoard.UserService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Domain\obj\Debug\net8.0\BulletinBoard.UserService.Domain.csproj.AssemblyReference.cache

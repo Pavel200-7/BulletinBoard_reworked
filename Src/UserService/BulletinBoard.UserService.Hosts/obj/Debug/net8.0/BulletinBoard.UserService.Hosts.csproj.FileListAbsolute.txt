@@ -143,3 +143,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.H
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\BulletinBoard.UserService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts\bin\Debug\net8.0\BulletinBoard.UserService.Domain.pdb

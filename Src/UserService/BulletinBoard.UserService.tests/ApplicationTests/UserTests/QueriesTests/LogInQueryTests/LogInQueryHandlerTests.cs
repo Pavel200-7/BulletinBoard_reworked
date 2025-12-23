@@ -1,18 +1,11 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
-using BulletinBoard.UserService.AppServices.User.Queries.LogIn.Helpers.JWTGenerator;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.QueriesTests.LogInQueryTests;
 
@@ -22,7 +15,7 @@ public class LogInQueryHandlerTests
     private Mock<IMapper> MockMapper;
     private Mock<UserManager<IdentityUser>> MockUserManager;
     private Mock<SignInManager<IdentityUser>> MockSignInManager;
-    private Mock<IJWTGenerator> MockJWTGenerator;
+    private Mock<IJWTProvider> MockJWTGenerator;
     private LogInQueryHandler handler;
     private CancellationToken cancellationToken;
 
@@ -30,7 +23,7 @@ public class LogInQueryHandlerTests
     {
         MockLogger = new Mock<ILogger<LogInQueryHandler>>();
         MockMapper = new Mock<IMapper>();
-        MockJWTGenerator = new Mock<IJWTGenerator>();
+        MockJWTGenerator = new Mock<IJWTProvider>();
 
         var userManagerInitializer = new IdentityMockInitializer();
         MockUserManager = userManagerInitializer.GetMockUserManager<IdentityUser>();

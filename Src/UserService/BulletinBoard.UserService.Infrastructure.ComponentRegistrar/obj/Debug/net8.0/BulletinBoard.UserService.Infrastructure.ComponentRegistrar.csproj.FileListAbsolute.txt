@@ -16,3 +16,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.I
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\obj\Debug\net8.0\refint\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\obj\Debug\net8.0\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\obj\Debug\net8.0\ref\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\bin\Debug\net8.0\BulletinBoard.UserService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\bin\Debug\net8.0\BulletinBoard.UserService.Domain.pdb

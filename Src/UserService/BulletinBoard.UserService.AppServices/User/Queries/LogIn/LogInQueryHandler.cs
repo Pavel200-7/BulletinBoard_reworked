@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Queries.LogIn.Helpers.JWTGenerator;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -14,14 +14,14 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInQResponse>
     private readonly IMapper _mapper;
     private readonly UserManager<IdentityUser> _userManager;
     private readonly SignInManager<IdentityUser> _signInManager;
-    private readonly IJWTGenerator _jWTGenerator;
+    private readonly IJWTProvider _jWTGenerator;
 
     public LogInQueryHandler(
         ILogger<LogInQueryHandler> logger, 
         IMapper mapper, 
         UserManager<IdentityUser> userManager,
         SignInManager<IdentityUser> signInManager,
-        IJWTGenerator jWTGenerator
+        IJWTProvider jWTGenerator
         )
     {
         _logger = logger;

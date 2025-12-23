@@ -9,7 +9,7 @@ public class RefreshTokenProvider<TUser> : IUserTwoFactorTokenProvider<TUser>
 {
     private readonly TimeSpan _tokenLifespan;
 
-    public RefreshTokenProvider(IOptions<RefreshTokenOptions> options)
+    public RefreshTokenProvider(IOptions<RefreshTokenSettings> options)
     {
         _tokenLifespan = options.Value.TokenLifespan;
     }
@@ -19,17 +19,15 @@ public class RefreshTokenProvider<TUser> : IUserTwoFactorTokenProvider<TUser>
         UserManager<TUser> manager,
         TUser user)
     {
-        // Генерация токена
         var token = Convert.ToBase64String(Guid.NewGuid().ToByteArray())
             .Replace("/", "")
             .Replace("+", "")
             .Replace("=", "");
 
-        // Сохраняем токен в хранилище пользователя
         await manager.SetAuthenticationTokenAsync(
             user,
-            "RefreshTokenProvider", // имя провайдера
-            purpose + user.Id,      // ключ (например: "Refresh_a1b2c3")
+            "RefreshTokenProvider", 
+            purpose + user.Id,      
             token);
 
         return token;
@@ -41,7 +39,6 @@ public class RefreshTokenProvider<TUser> : IUserTwoFactorTokenProvider<TUser>
         UserManager<TUser> manager,
         TUser user)
     {
-        // Получаем сохраненный токен
         var storedToken = await manager.GetAuthenticationTokenAsync(
             user,
             "RefreshTokenProvider",
@@ -50,7 +47,6 @@ public class RefreshTokenProvider<TUser> : IUserTwoFactorTokenProvider<TUser>
         if (string.IsNullOrEmpty(storedToken))
             return false;
 
-        // Сравниваем токены
         return storedToken == token;
     }
 
@@ -58,7 +54,6 @@ public class RefreshTokenProvider<TUser> : IUserTwoFactorTokenProvider<TUser>
         UserManager<TUser> manager,
         TUser user)
     {
-        // Всегда разрешаем генерацию
         return Task.FromResult(true);
     }
 }

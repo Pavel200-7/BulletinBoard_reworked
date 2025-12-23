@@ -10,10 +10,7 @@ public static class ConfigurationsRegistrar
     public static IServiceCollection RegistrarConfigurations(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<JwtSettings>(configuration.GetSection("JWT"));
-        services.Configure<RefreshTokenOptions>(options =>
-        {
-            options.TokenLifespan = TimeSpan.FromDays(7);
-        });
+        services.Configure<RefreshTokenSettings>(configuration.GetSection("Refresh"));
 
         return services;
     }
