@@ -53,8 +53,8 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInQResponse>
             throw new BusinessRuleException("Password", "Неверный пароль.");
         }
 
-        var tokenData = await _jWTProvider.GenerateToken(user.Id, cancellationToken);
-        var refreshToken = await _refreshTProvider.GenerateRefreshTokenAsync(user.Id, cancellationToken);           
+        var tokenData = await _jWTProvider.GenerateTokenAsync(user.Id, cancellationToken);
+        var refreshToken = await _refreshTProvider.GenerateTokenAsync(user.Id, cancellationToken);           
 
         return new LogInQResponse()
         {

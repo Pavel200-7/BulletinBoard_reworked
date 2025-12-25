@@ -41,7 +41,7 @@ public class RefreshTokenProviderTests
         string userId = CreateId();
 
         // Act
-        var result = await _provider.GenerateRefreshTokenAsync(userId, _cancellationToken);
+        var result = await _provider.GenerateTokenAsync(userId, _cancellationToken);
 
         // Assert
         _tokenRepository.Verify(tr => tr.GetRefreshTokensByUserIdAsync(userId, _cancellationToken));
@@ -55,13 +55,13 @@ public class RefreshTokenProviderTests
         string userId = CreateId();
 
         // Act
-        var result = await _provider.GenerateRefreshTokenAsync(userId, _cancellationToken);
+        var result = await _provider.GenerateTokenAsync(userId, _cancellationToken);
 
         // Assert
         _repository.Verify(r => r.AddAsync(It.IsAny<RefreshToken>(), _cancellationToken));
     }
 
-    public void SetupMock()
+    private void SetupMock()
     {
         var oldRefreshTokens = CreateRefreshtoken();
         _tokenRepository.Setup(t => t.GetRefreshTokensByUserIdAsync(It.IsAny<string>(), _cancellationToken))
@@ -85,6 +85,4 @@ public class RefreshTokenProviderTests
     {
         return "esduaavhsfbaSJsvflaLZBJD,fdgjhkDLBJcd345zkdj1dfajbuger43yi";
     }
-
-
 }

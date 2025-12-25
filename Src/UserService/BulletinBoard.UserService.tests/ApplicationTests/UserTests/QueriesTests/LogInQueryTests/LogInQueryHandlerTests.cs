@@ -100,7 +100,7 @@ public class LogInQueryHandlerTests
         var result = await handler.Handle(query, _cancellationToken);
 
         // Assert
-        _JWTProvider.Verify(g => g.GenerateToken(user.Id, _cancellationToken), Times.Once);
+        _JWTProvider.Verify(g => g.GenerateTokenAsync(user.Id, _cancellationToken), Times.Once);
 
         Assert.NotNull(result);
         Assert.Equal(expectedTokenData.TokenType, result.TokenType);
@@ -109,7 +109,7 @@ public class LogInQueryHandlerTests
     }
 
     [Fact]
-    public async Task MustRefreshToken()
+    public async Task MustMakeRefreshToken()
     {
         // Arrange
         var query = CreateQuery();
@@ -120,7 +120,7 @@ public class LogInQueryHandlerTests
         var result = await handler.Handle(query, _cancellationToken);
 
         // Assert
-        _refreshTProvider.Verify(rp => rp.GenerateRefreshTokenAsync(user.Id, _cancellationToken), Times.Once);
+        _refreshTProvider.Verify(rp => rp.GenerateTokenAsync(user.Id, _cancellationToken), Times.Once);
         Assert.NotNull(result);
         Assert.Equal(expectedRefreshToken, result.RefreshToken);
     }
@@ -144,10 +144,10 @@ public class LogInQueryHandlerTests
         _userManager.Setup(um => um.GetRolesAsync(It.IsAny<IdentityUser>()))
             .ReturnsAsync(userRoles);
 
-        _JWTProvider.Setup(g => g.GenerateToken(user.Id, _cancellationToken))
+        _JWTProvider.Setup(g => g.GenerateTokenAsync(user.Id, _cancellationToken))
             .ReturnsAsync(CreateAccessTokenData());
 
-        _refreshTProvider.Setup(rp => rp.GenerateRefreshTokenAsync(user.Id, _cancellationToken))
+        _refreshTProvider.Setup(rp => rp.GenerateTokenAsync(user.Id, _cancellationToken))
             .ReturnsAsync(CreateRefreshToken());
     }
 

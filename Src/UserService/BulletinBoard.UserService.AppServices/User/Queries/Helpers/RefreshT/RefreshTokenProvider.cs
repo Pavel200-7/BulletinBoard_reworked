@@ -22,7 +22,7 @@ public class RefreshTokenProvider : IRefreshTokenProvider
         _refreshSettings = refreshSettings.Value;
     }
 
-    public async Task<string> GenerateRefreshTokenAsync(string userId, CancellationToken cancellationToken)
+    public async Task<string> GenerateTokenAsync(string userId, CancellationToken cancellationToken)
     {
         var oldRefreshTokens = await _tokenRepository.GetRefreshTokensByUserIdAsync(userId, cancellationToken);
         foreach (var oldRefreshToken in oldRefreshTokens)

@@ -46,7 +46,7 @@ public class JWTProviderTests
         var id = CreateId();
 
         // Act
-        var result = _provider.GenerateToken(id, _cancellationToken);
+        var result = _provider.GenerateTokenAsync(id, _cancellationToken);
 
         // Assert
         _userManager.Verify(um => um.FindByIdAsync(id), Times.Once());
@@ -61,7 +61,7 @@ public class JWTProviderTests
         var expectedExpiresIn = _jwtSettings.ExpiresIn;
 
         // Act
-        var result = await _provider.GenerateToken(id, _cancellationToken);
+        var result = await _provider.GenerateTokenAsync(id, _cancellationToken);
 
         // Assert
         Assert.Equal("Bearer", result.TokenType);
@@ -80,7 +80,7 @@ public class JWTProviderTests
             .ReturnsAsync((IdentityUser)null!);
 
         // Act
-        var act = async() => await _provider.GenerateToken(id, _cancellationToken);
+        var act = async() => await _provider.GenerateTokenAsync(id, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<NotFoundException>(() => act.Invoke());

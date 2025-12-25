@@ -23,7 +23,7 @@ public class JWTProvider : IJWTProvider
         _jwtSettings = jwtSettings.Value;
     }
 
-    public async Task<TokenData> GenerateToken(string userId, CancellationToken cancellationToken)
+    public async Task<TokenData> GenerateTokenAsync(string userId, CancellationToken cancellationToken)
     {
         var claims = await GetClaims(userId, cancellationToken);
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));

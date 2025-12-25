@@ -14,10 +14,18 @@ public class RefreshTokenRepository : IRefreshTokenRepository
     {
         _repository = repository;
     }
+
     public async Task<List<RefreshToken>> GetRefreshTokensByUserIdAsync(string userId, CancellationToken cancellationToken)
     {
         return await _repository.GetAll()
             .Where(r => r.UserId == userId)
             .ToListAsync(cancellationToken);
+    }
+
+    public async Task<RefreshToken?> GetRefreshTokensByTokenStringAsync(string tokenString, CancellationToken cancellationToken)
+    {
+        return await _repository.GetAll()
+            .FirstOrDefaultAsync(rt => rt.Token == tokenString, cancellationToken);
+            
     }
 }

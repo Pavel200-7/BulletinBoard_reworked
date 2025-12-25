@@ -2,5 +2,5 @@
 
 public interface IRefreshTokenProvider
 {
-    public Task<string> GenerateRefreshTokenAsync(string userId, CancellationToken cancellationToken);
+    public Task<string> GenerateTokenAsync(string userId, CancellationToken cancellationToken);
 }
