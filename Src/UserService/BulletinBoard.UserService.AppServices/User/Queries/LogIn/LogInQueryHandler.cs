@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 
+[Transaction]
 public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInQResponse>
 {
     private readonly ILogger<LogInQueryHandler> _logger;

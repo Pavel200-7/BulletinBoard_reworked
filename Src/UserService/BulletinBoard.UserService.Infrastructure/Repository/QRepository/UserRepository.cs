@@ -16,6 +16,7 @@ public class UserRepository : IUserRepository
 
     public async Task<IdentityUser?> FindByPhoneAsync(string phoneNumber, CancellationToken cancellationToken)
     {
-        return await _repository.GetAll().FirstOrDefaultAsync(u => u.PhoneNumber == phoneNumber);
+        return await _repository.GetAll()
+            .FirstOrDefaultAsync(u => u.PhoneNumber == phoneNumber, cancellationToken);
     }
 }
