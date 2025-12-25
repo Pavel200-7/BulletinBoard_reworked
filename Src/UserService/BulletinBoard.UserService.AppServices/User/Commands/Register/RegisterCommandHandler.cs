@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
+
 namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
 
 [Transaction]

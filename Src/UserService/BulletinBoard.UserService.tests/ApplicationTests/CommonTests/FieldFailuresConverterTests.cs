@@ -2,6 +2,7 @@
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace BulletinBoard.UserService.tests.ApplicationTests.CommonTests;
 
 public class FieldFailuresConverterTests

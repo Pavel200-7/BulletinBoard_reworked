@@ -1,5 +1,6 @@
 ﻿using BulletinBoard.UserService.Domain.Entityes.Base;
 
+
 namespace BulletinBoard.UserService.Domain.Entityes;
 
 public class RefreshToken : BaseEntity

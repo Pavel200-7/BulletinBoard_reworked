@@ -2,6 +2,7 @@
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
+
 namespace BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
 
 /// <summary>

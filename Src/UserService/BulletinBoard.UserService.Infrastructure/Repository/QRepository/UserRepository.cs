@@ -3,6 +3,7 @@ using BulletinBoard.UserService.AppServices.User.Repositiry;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository;
 
 public class UserRepository : IUserRepository

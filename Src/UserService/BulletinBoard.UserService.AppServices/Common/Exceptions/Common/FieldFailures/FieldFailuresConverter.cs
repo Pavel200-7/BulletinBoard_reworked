@@ -1,6 +1,7 @@
 ﻿using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 public static class FieldFailuresConverter

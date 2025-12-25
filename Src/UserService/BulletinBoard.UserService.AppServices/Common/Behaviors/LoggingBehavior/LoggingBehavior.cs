@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
 
+
 namespace BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
 
 public class LoggingBehavior<TRequest, TResponse>

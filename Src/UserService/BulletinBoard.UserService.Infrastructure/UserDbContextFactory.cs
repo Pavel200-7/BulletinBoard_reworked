@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
+
 namespace BulletinBoard.UserService.Infrastructure;
 
 public class UserDbContextFactory : IDesignTimeDbContextFactory<UserDbContext>

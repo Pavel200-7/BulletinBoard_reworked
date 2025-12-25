@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Extensions.Hosting.AsyncInitialization;
 using BulletinBoard.UserService.AppServices.User.Enum;
 
+
 namespace BulletinBoard.UserService.Infrastructure.Initializers;
 
 /// <summary>

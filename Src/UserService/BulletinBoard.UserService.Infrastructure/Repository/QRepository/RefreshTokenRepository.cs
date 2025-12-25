@@ -1,13 +1,8 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.Domain.Entityes;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository;
 

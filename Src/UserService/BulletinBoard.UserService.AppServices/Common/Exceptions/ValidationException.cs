@@ -1,6 +1,7 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
+
 namespace BulletinBoard.UserService.AppServices.Common.Exceptions;
 
 public class ValidationException : DomainIntegrityException

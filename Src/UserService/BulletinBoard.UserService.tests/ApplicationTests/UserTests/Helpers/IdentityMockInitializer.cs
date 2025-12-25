@@ -15,10 +15,10 @@ public class IdentityMockInitializer
         return CreateMockUserManager<TUser>();
     }
 
-    public Mock<SignInManager<TUser>> GetMockSignInManager<TUser>(Mock<UserManager<TUser>> userManagerMock = null)
+    public Mock<SignInManager<TUser>> GetMockSignInManager<TUser>(Mock<UserManager<TUser>> userManager = null)
         where TUser : IdentityUser
     {
-        userManagerMock ??= GetMockUserManager<TUser>();
+        userManager ??= GetMockUserManager<TUser>();
 
         var contextAccessor = new Mock<IHttpContextAccessor>();
         var claimsFactory = new Mock<IUserClaimsPrincipalFactory<TUser>>();
@@ -27,7 +27,7 @@ public class IdentityMockInitializer
         var schemes = new Mock<IAuthenticationSchemeProvider>();
 
         return new Mock<SignInManager<TUser>>(
-            userManagerMock.Object,
+            userManager.Object,
             contextAccessor.Object,
             claimsFactory.Object,
             options.Object,

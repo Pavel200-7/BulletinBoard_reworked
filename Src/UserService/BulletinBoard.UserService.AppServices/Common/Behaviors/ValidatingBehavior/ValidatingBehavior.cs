@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using MediatR;
 using ValidationException = BulletinBoard.UserService.AppServices.Common.Exceptions.ValidationException;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;

@@ -1,6 +1,7 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRepository;
 
 public class QueryRepository<TEntity> : IQueryRepository<TEntity> where TEntity : class

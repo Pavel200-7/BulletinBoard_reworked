@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using System.Text.RegularExpressions;
 
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;

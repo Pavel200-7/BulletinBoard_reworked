@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 
-
 namespace BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 
 /// <summary>

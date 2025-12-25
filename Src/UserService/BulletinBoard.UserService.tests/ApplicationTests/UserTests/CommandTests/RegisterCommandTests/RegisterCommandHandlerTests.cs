@@ -12,25 +12,25 @@ namespace BulletinBoard.UserService.tests.ApplicationTests.AuthTests.CommandTest
 
 public class RegisterCommandHandlerTests
 {
-    private Mock<ILogger<RegisterCommandHandler>> MockLogger;
-    private Mock<IMapper> MockMapper;
-    private Mock<UserManager<IdentityUser>> MockUserManager;
-    private Mock<IUserRepository> MockUserRepository;
-    private RegisterCommandHandler handler;
-    private CancellationToken cancellationToken;
+    private Mock<ILogger<RegisterCommandHandler>> _logger;
+    private Mock<IMapper> _mapper;
+    private Mock<UserManager<IdentityUser>> _userManager;
+    private Mock<IUserRepository> _userRepository;
+    private RegisterCommandHandler _handler;
+    private CancellationToken _cancellationToken;
 
     public RegisterCommandHandlerTests()
     {
-        MockLogger = new Mock<ILogger<RegisterCommandHandler>>();
-        MockMapper = new Mock<IMapper>();
-        MockUserRepository = new Mock<IUserRepository>();
+        _logger = new Mock<ILogger<RegisterCommandHandler>>();
+        _mapper = new Mock<IMapper>();
+        _userRepository = new Mock<IUserRepository>();
 
         var userManagerInitializer = new IdentityMockInitializer();
-        MockUserManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
+        _userManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
 
-        handler = new RegisterCommandHandler(MockLogger.Object, MockMapper.Object, MockUserManager!.Object, MockUserRepository.Object);
+        _handler = new RegisterCommandHandler(_logger.Object, _mapper.Object, _userManager!.Object, _userRepository.Object);
 
-        cancellationToken = CancellationToken.None;
+        _cancellationToken = CancellationToken.None;
 
         SetupMock();
     }
@@ -41,11 +41,11 @@ public class RegisterCommandHandlerTests
         // Arrange
         var command = CreateCommand();
         var user = CreateUser();
-        MockUserManager.Setup(um => um.FindByNameAsync(command.UserName))
+        _userManager.Setup(um => um.FindByNameAsync(command.UserName))
             .ReturnsAsync(user);
 
         // Act
-        var act = async() => await handler.Handle(command, cancellationToken);
+        var act = async() => await _handler.Handle(command, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
@@ -57,11 +57,11 @@ public class RegisterCommandHandlerTests
         // Arrange
         var command = CreateCommand();
         var user = CreateUser();
-        MockUserManager.Setup(um => um.FindByEmailAsync(command.Email))
+        _userManager.Setup(um => um.FindByEmailAsync(command.Email))
             .ReturnsAsync(user);
 
         // Act
-        var act = async () => await handler.Handle(command, cancellationToken);
+        var act = async () => await _handler.Handle(command, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
@@ -74,11 +74,11 @@ public class RegisterCommandHandlerTests
         var command = CreateCommand();
         var user = CreateUser();
 
-        MockUserRepository.Setup(r => r.FindByPhoneAsync(command.PhoneNumber, cancellationToken)) 
+        _userRepository.Setup(r => r.FindByPhoneAsync(command.PhoneNumber, _cancellationToken)) 
             .ReturnsAsync(user);
 
         // Act
-        var act = async () => await handler.Handle(command, cancellationToken);
+        var act = async () => await _handler.Handle(command, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
@@ -91,10 +91,10 @@ public class RegisterCommandHandlerTests
         var command = CreateCommand();
 
         // Act
-        var result = await handler.Handle(command, cancellationToken);
+        var result = await _handler.Handle(command, _cancellationToken);
 
         // Assert
-        MockUserManager.Verify(u => u.CreateAsync(It.IsAny<IdentityUser>(), command.Password), Times.Once);
+        _userManager.Verify(u => u.CreateAsync(It.IsAny<IdentityUser>(), command.Password), Times.Once);
     }
 
     [Fact]
@@ -103,16 +103,16 @@ public class RegisterCommandHandlerTests
         // Arrange
         var command = CreateCommand();
 
-        MockUserManager
+        _userManager
         .Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
             .ReturnsAsync(IdentityResult.Failed(new IdentityError() { Code = "Name", Description = "Something invalid" }));
 
         // Act
-        var act = async () => await handler.Handle(command, cancellationToken);
+        var act = async () => await _handler.Handle(command, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
-        MockUserManager.Verify(u => u.CreateAsync(It.IsAny<IdentityUser>(), command.Password), Times.Once);
+        _userManager.Verify(u => u.CreateAsync(It.IsAny<IdentityUser>(), command.Password), Times.Once);
     }
 
     [Fact]
@@ -122,10 +122,10 @@ public class RegisterCommandHandlerTests
         var command = CreateCommand();
 
         // Act
-        var result =  await handler.Handle(command, cancellationToken);
+        var result =  await _handler.Handle(command, _cancellationToken);
 
         // Assert
-        MockUserManager.Verify(um => um.AddToRoleAsync(It.IsAny<IdentityUser>(), Roles.User), Times.Once);
+        _userManager.Verify(um => um.AddToRoleAsync(It.IsAny<IdentityUser>(), Roles.User), Times.Once);
     }
 
     [Fact]
@@ -136,7 +136,7 @@ public class RegisterCommandHandlerTests
         var expected = CreateResponce(true);
 
         // Act
-        var result = await handler.Handle(command, cancellationToken);
+        var result = await _handler.Handle(command, _cancellationToken);
 
         // Assert
         Assert.Equal(expected.IsSucceed, result.IsSucceed);
@@ -144,23 +144,23 @@ public class RegisterCommandHandlerTests
 
     private void SetupMock()
     {
-        MockUserManager
+        _userManager
         .Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
         .ReturnsAsync(IdentityResult.Success);
 
-        MockUserManager
+        _userManager
             .Setup(r => r.FindByNameAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
 
-        MockUserManager
+        _userManager
             .Setup(r => r.FindByEmailAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
 
-        MockUserRepository
+        _userRepository
             .Setup(r => r.FindByPhoneAsync(It.IsAny<string>(), It.IsAny<CancellationToken>()))
             .ReturnsAsync((IdentityUser)null!);
 
-        MockMapper.Setup(m => m.Map<IdentityUser>(It.IsAny<RegisterCommand>()))
+        _mapper.Setup(m => m.Map<IdentityUser>(It.IsAny<RegisterCommand>()))
             .Returns(CreateUser());
     }
 

@@ -1,5 +1,6 @@
 ﻿using BulletinBoard.UserService.Domain.Entityes;
 
+
 namespace BulletinBoard.UserService.AppServices.User.Repositiry;
 
 public interface IRefreshTokenRepository

@@ -1,19 +1,16 @@
 ﻿using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.RegisterCommandTests;
 
 public class RegisterCommandValidatorTests
 {
-    private RegisterCommandValidator validator;
+    private RegisterCommandValidator _validator;
+
     public RegisterCommandValidatorTests()
     {
-        validator = new RegisterCommandValidator();
+        _validator = new RegisterCommandValidator();
     }
 
     [Fact]
@@ -23,7 +20,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand();
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.True(result.IsValid);
@@ -36,7 +33,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(name: "");
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -51,7 +48,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(name: name);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -72,7 +69,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(name: name);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -88,7 +85,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(name: name);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -103,7 +100,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(name: name);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -118,7 +115,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(name: name);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.True(result.IsValid);
@@ -133,7 +130,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(email: email);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -150,7 +147,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(phone: phone);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
@@ -167,7 +164,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(phone: phone);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.True(result.IsValid);
@@ -182,7 +179,7 @@ public class RegisterCommandValidatorTests
         var command = CreateCommand(password: password, confirmPassword: confirm);
 
         // Act
-        var result = validator.Validate(command);
+        var result = _validator.Validate(command);
 
         // Assert
         Assert.False(result.IsValid);
