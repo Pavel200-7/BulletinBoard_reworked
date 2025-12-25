@@ -17,4 +17,8 @@
     <ProjectReference Include="..\BulletinBoard.UserService.Domain\BulletinBoard.UserService.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="User\Queries\LogIn\Helpers\" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,4 @@
-﻿using BulletinBoard.UserService.Infrastructure.TokenProviders;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System.Security.Claims;
 
@@ -28,9 +27,8 @@ public static class IdentityRegistrar
             options.ClaimsIdentity.RoleClaimType = ClaimTypes.Role;
         })
         .AddEntityFrameworkStores<UserDbContext>()
-        .AddApiEndpoints() 
-        .AddDefaultTokenProviders()
-        .AddTokenProvider<RefreshTokenProvider<IdentityUser>>("RefreshTokenProvider"); 
+        .AddApiEndpoints()
+        .AddDefaultTokenProviders();
 
         return services;
     }

@@ -3,7 +3,6 @@ using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.UserService.AppServices.Common;
 using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.UserService.Infrastructure.Middleware;
-using Microsoft.AspNetCore.Identity;
 using System.Reflection;
 
 

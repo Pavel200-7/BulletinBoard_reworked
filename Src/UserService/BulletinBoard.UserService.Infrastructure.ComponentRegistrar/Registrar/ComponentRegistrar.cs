@@ -2,13 +2,15 @@
 using BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
+using BulletinBoard.UserService.AppServices.Common.IRepository;
 using BulletinBoard.UserService.AppServices.Common.UnitOfWork;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshToken;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.Infrastructure.DataAccess.Common.UnitOfWork;
-using BulletinBoard.UserService.Infrastructure.Repository;
-using BulletinBoard.UserService.Infrastructure.Repository.IRepository;
+using BulletinBoard.UserService.Infrastructure.Repository.CRepository;
+using BulletinBoard.UserService.Infrastructure.Repository.QRepository;
+using BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRepository;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,13 +38,14 @@ public static class ComponentRegistrar
         services.AddScoped<IJWTProvider, JWTProvider>();
         services.AddScoped<IRefreshTokenProvider, RefreshTokenProvider>();
 
-
         return services;
     }
 
     private static IServiceCollection RegistrarDALComponents(this IServiceCollection services)
     {
-        services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
+        services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
+        services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
+
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IUserRepository, UserRepository>();
 

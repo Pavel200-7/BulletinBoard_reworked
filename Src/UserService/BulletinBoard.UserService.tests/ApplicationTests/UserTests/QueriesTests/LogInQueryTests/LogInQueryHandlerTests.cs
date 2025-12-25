@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 using Microsoft.AspNetCore.Identity;
@@ -11,32 +12,36 @@ namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.QueriesTest
 
 public class LogInQueryHandlerTests
 {
-    private Mock<ILogger<LogInQueryHandler>> MockLogger;
-    private Mock<IMapper> MockMapper;
-    private Mock<UserManager<IdentityUser>> MockUserManager;
-    private Mock<SignInManager<IdentityUser>> MockSignInManager;
-    private Mock<IJWTProvider> MockJWTGenerator;
+    private Mock<ILogger<LogInQueryHandler>> _logger;
+    private Mock<IMapper> _mapper;
+    private Mock<UserManager<IdentityUser>> _userManager;
+    private Mock<SignInManager<IdentityUser>> _signInManager;
+    private Mock<IJWTProvider> _JWTProvider;
+    private Mock<IRefreshTokenProvider> _refreshTProvider;
+
     private LogInQueryHandler handler;
-    private CancellationToken cancellationToken;
+    private CancellationToken _cancellationToken;
 
     public LogInQueryHandlerTests()
     {
-        MockLogger = new Mock<ILogger<LogInQueryHandler>>();
-        MockMapper = new Mock<IMapper>();
-        MockJWTGenerator = new Mock<IJWTProvider>();
+        _logger = new Mock<ILogger<LogInQueryHandler>>();
+        _mapper = new Mock<IMapper>();
+        _JWTProvider = new Mock<IJWTProvider>();
+        _refreshTProvider = new Mock<IRefreshTokenProvider>();   
 
         var userManagerInitializer = new IdentityMockInitializer();
-        MockUserManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
-        MockSignInManager = userManagerInitializer.GetMockSignInManager(MockUserManager);
+        _userManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
+        _signInManager = userManagerInitializer.GetMockSignInManager(_userManager);
 
         handler = new LogInQueryHandler(
-            MockLogger.Object, 
-            MockMapper.Object, 
-            MockUserManager!.Object, 
-            MockSignInManager!.Object, 
-            MockJWTGenerator!.Object);
+            _logger.Object, 
+            _mapper.Object, 
+            _userManager!.Object, 
+            _signInManager!.Object, 
+            _JWTProvider!.Object,
+            _refreshTProvider!.Object);
 
-        cancellationToken = CancellationToken.None;
+        _cancellationToken = CancellationToken.None;
 
         SetupMock();
     }
@@ -46,15 +51,15 @@ public class LogInQueryHandlerTests
     {
         // Arrange
         var query = CreateQuery();
-        MockUserManager.Setup(um => um.FindByEmailAsync(It.IsAny<string>()))
+        _userManager.Setup(um => um.FindByEmailAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
 
         // Act
-        var act = async() => await handler.Handle(query, cancellationToken);
+        var act = async() => await handler.Handle(query, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<NotFoundException>(() => act.Invoke());
-        MockUserManager.Verify(um => um.FindByEmailAsync(It.IsAny<string>()), Times.Once);
+        _userManager.Verify(um => um.FindByEmailAsync(It.IsAny<string>()), Times.Once);
     }
 
     [Fact]
@@ -62,7 +67,7 @@ public class LogInQueryHandlerTests
     {
         // Arrange
         var query = CreateQuery();
-        MockSignInManager.Setup(sim => sim.PasswordSignInAsync(
+        _signInManager.Setup(sim => sim.PasswordSignInAsync(
             It.IsAny<IdentityUser>(),
             It.IsAny<string>(),
             It.IsAny<bool>(),
@@ -71,11 +76,11 @@ public class LogInQueryHandlerTests
             .ReturnsAsync(SignInResult.Failed);
 
         // Act
-        var act = async () => await handler.Handle(query, cancellationToken);
+        var act = async () => await handler.Handle(query, _cancellationToken);
 
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
-        MockSignInManager.Verify(sim => sim.PasswordSignInAsync(
+        _signInManager.Verify(sim => sim.PasswordSignInAsync(
             It.IsAny<IdentityUser>(),
             It.IsAny<string>(),
             It.IsAny<bool>(),
@@ -84,70 +89,66 @@ public class LogInQueryHandlerTests
     }
 
     [Fact]
-    public async Task MustMakeToken()
+    public async Task MustMakeJWTToken()
     {
         // Arrange
         var query = CreateQuery();
         var user = CreateUser();
-        var userRoles = new List<string> { "User", "Admin" };
-
-        MockUserManager.Setup(um => um.GetRolesAsync(It.IsAny<IdentityUser>()))
-            .ReturnsAsync(userRoles);
-
-        MockUserManager.Setup(um => um.GenerateUserTokenAsync(
-                It.IsAny<IdentityUser>(),
-                It.IsAny<string>(),
-                It.IsAny<string>()))
-            .ReturnsAsync("mocked-refresh-token-12345");
-
-        var expectedTokenData = new TokenData
-        {
-            TokenType = "Bearer",
-            AccessToken = "mocked-access-token-jwt-string",
-            ExpiresIn = 3600
-        };
-
-        MockJWTGenerator.Setup(g => g.GenerateToken(It.IsAny<ClaimsData>()))
-            .Returns(expectedTokenData);
+        var expectedTokenData = CreateAccessTokenData();
 
         // Act
-        var result = await handler.Handle(query, cancellationToken);
+        var result = await handler.Handle(query, _cancellationToken);
 
         // Assert
-        MockJWTGenerator.Verify(
-            g => g.GenerateToken(It.Is<ClaimsData>(cd =>
-                cd.UserId == user.Id &&
-                cd.Email == user.Email)),
-            Times.Once);
-
-        MockUserManager.Verify(
-            um => um.GenerateUserTokenAsync(
-                It.Is<IdentityUser>(u => u.Id == user.Id),
-                "RefreshTokenProvider",
-                "Refresh"),
-            Times.Once);
+        _JWTProvider.Verify(g => g.GenerateToken(user.Id, _cancellationToken), Times.Once);
 
         Assert.NotNull(result);
         Assert.Equal(expectedTokenData.TokenType, result.TokenType);
         Assert.Equal(expectedTokenData.AccessToken, result.AccessToken);
         Assert.Equal(expectedTokenData.ExpiresIn, result.ExpiresIn);
-        Assert.Equal("mocked-refresh-token-12345", result.RefreshToken);
+    }
+
+    [Fact]
+    public async Task MustRefreshToken()
+    {
+        // Arrange
+        var query = CreateQuery();
+        var user = CreateUser();
+        var expectedRefreshToken = CreateRefreshToken();
+
+        // Act
+        var result = await handler.Handle(query, _cancellationToken);
+
+        // Assert
+        _refreshTProvider.Verify(rp => rp.GenerateRefreshTokenAsync(user.Id, _cancellationToken), Times.Once);
+        Assert.NotNull(result);
+        Assert.Equal(expectedRefreshToken, result.RefreshToken);
     }
 
 
     private void SetupMock()
     {
         var user = CreateUser();
-        MockUserManager.Setup(um => um.FindByEmailAsync(It.IsAny<string>()))
+        _userManager.Setup(um => um.FindByEmailAsync(It.IsAny<string>()))
             .ReturnsAsync(user);
 
-        MockSignInManager.Setup(sim => sim.PasswordSignInAsync(
+        _signInManager.Setup(sim => sim.PasswordSignInAsync(
             It.IsAny<IdentityUser>(),
             It.IsAny<string>(),
             It.IsAny<bool>(),
             It.IsAny<bool>()
             ))
             .ReturnsAsync(SignInResult.Success);
+
+        var userRoles = new List<string> { "User", "Admin" };
+        _userManager.Setup(um => um.GetRolesAsync(It.IsAny<IdentityUser>()))
+            .ReturnsAsync(userRoles);
+
+        _JWTProvider.Setup(g => g.GenerateToken(user.Id, _cancellationToken))
+            .ReturnsAsync(CreateAccessTokenData());
+
+        _refreshTProvider.Setup(rp => rp.GenerateRefreshTokenAsync(user.Id, _cancellationToken))
+            .ReturnsAsync(CreateRefreshToken());
     }
 
     private LogInQuery CreateQuery()
@@ -168,5 +169,20 @@ public class LogInQueryHandlerTests
             Email = "email@email.com",
             PhoneNumber = "+7 (978) 123-45-67",
         };
+    }
+
+    private TokenData CreateAccessTokenData()
+    {
+        return new TokenData()
+        {
+            TokenType = "Bearer",
+            AccessToken = "mocked-access-token-jwt-string",
+            ExpiresIn = 3600
+        };
+    }
+
+    private string CreateRefreshToken()
+    {
+        return "mocked-refresh-token-12345";
     }
 }

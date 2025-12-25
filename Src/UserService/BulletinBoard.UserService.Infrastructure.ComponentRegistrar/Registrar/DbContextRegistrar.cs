@@ -16,7 +16,8 @@ public static class DbContextRegistrar
         services.AddDbContext<UserDbContext>(options =>
         {
             options.UseNpgsql(
-                configuration.GetConnectionString("DefaultConnection"),
+                //configuration.GetConnectionString("DefaultConnection"),
+                "Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password",
                 b => b.MigrationsAssembly("BulletinBoard.UserService.Infrastructure")
             )
             .EnableSensitiveDataLogging() 

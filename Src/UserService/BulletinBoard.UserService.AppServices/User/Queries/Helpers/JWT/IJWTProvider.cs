@@ -2,5 +2,5 @@
 
 public interface IJWTProvider
 {
-    public TokenData GenerateToken(ClaimsData claimsData);
+    public Task<TokenData> GenerateToken(string userId, CancellationToken cancellationToken);
 }
