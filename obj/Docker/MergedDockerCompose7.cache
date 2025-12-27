@@ -1,0 +1,296 @@
+name: dockercompose11839620844509240691
+services:
+  bulletinboard.notificationservice.hosts:
+    build:
+      context: C:\Users\pavli\Desktop\BulletinBoard
+      dockerfile: Src/NotificationService/BulletinBoard.NotificationService.Hosts/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: BulletinBoard.NotificationService.Hosts
+      target: base
+    depends_on:
+      postgre_notification_db:
+        condition: service_started
+        required: true
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=postgre_notification_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      JWT__Audience: BulletinBoard
+      JWT__ExpiresIn: "3600"
+      JWT__Issuer: BulletinBoard
+      JWT__Key: ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+    image: bulletinboardnotificationservicehosts:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/BulletinBoard.NotificationService.Hosts.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      app_net: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8091"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\Microsoft\UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Hosts
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\Desktop\BulletinBoard
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  bulletinboard.userservice.hosts:
+    build:
+      context: C:\Users\pavli\Desktop\BulletinBoard
+      dockerfile: Src/UserService/BulletinBoard.UserService.Hosts/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: BulletinBoard.UserService.Hosts
+      target: base
+    depends_on:
+      postgre_user_db:
+        condition: service_started
+        required: true
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      JWT__Audience: BulletinBoard
+      JWT__ExpiresIn: "3600"
+      JWT__Issuer: BulletinBoard
+      JWT__Key: ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+      Refresh__ExpiresIn: "669600"
+    image: bulletinboarduserservicehosts:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/BulletinBoard.UserService.Hosts.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      app_net: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8090"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\Microsoft\UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Hosts
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\Desktop\BulletinBoard
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  pgadmin:
+    depends_on:
+      postgre_notification_db:
+        condition: service_started
+        required: true
+      postgre_user_db:
+        condition: service_started
+        required: true
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    image: dpage/pgadmin4:latest
+    networks:
+      app_net: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "5050"
+        protocol: tcp
+  postgre_notification_db:
+    environment:
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: bulletinboard
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: dbuser
+    image: postgres:17
+    networks:
+      app_net: null
+    volumes:
+      - type: volume
+        source: notification_db
+        target: /var/lib/postgresql/data
+        volume: {}
+  postgre_user_db:
+    environment:
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_DB: bulletinboard
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: dbuser
+    image: postgres:17
+    networks:
+      app_net: null
+    volumes:
+      - type: volume
+        source: user_db
+        target: /var/lib/postgresql/data
+        volume: {}
+networks:
+  app_net:
+    name: dockercompose11839620844509240691_app_net
+    ipam:
+      driver: default
+volumes:
+  notification_db:
+    name: dockercompose11839620844509240691_notification_db
+  user_db:
+    name: dockercompose11839620844509240691_user_db

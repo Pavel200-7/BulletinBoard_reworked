@@ -1,42 +1,42 @@
 services:
-  user_service:
+  bulletinboard.userservice.hosts:
+    image: ${DOCKER_REGISTRY-}bulletinboarduserservicehosts
     build:
       context: .
       dockerfile: Src/UserService/BulletinBoard.UserService.Hosts/Dockerfile
-    networks:
-      app_net:
-        ipv4_address: 192.168.0.3
     ports:
      - "8090:8080"
-    depends_on:
-     - postgre_user_db
+    networks:
+      app_net:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
       - ConnectionStrings__DefaultConnection=Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
       - JWT__Issuer=BulletinBoard
       - JWT__Audience=BulletinBoard
       - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
       - JWT__ExpiresIn=3600
       - Refresh__ExpiresIn=669600
-      
-  notification_service:
+    depends_on:
+     - postgre_user_db
+
+  bulletinboard.notificationservice.hosts:
+    image: ${DOCKER_REGISTRY-}bulletinboardnotificationservicehosts
     build:
       context: .
       dockerfile: Src/NotificationService/BulletinBoard.NotificationService.Hosts/Dockerfile
-    networks:
-      app_net:
-        ipv4_address: 192.168.0.4
     ports:
      - "8091:8080"
-    depends_on:
-     - postgre_notification_db
+    networks:
+      app_net:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
       - ConnectionStrings__DefaultConnection=Host=postgre_notification_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
       - JWT__Issuer=BulletinBoard
       - JWT__Audience=BulletinBoard
       - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
       - JWT__ExpiresIn=3600
+    depends_on:
+     - postgre_notification_db
 
   postgre_user_db:
     image: postgres:17
@@ -49,7 +49,6 @@ services:
       PGDATA: /var/lib/postgresql/data
     networks:
       app_net: 
-        ipv4_address: 192.168.0.5
   
   postgre_notification_db:
     image: postgres:17
@@ -62,8 +61,7 @@ services:
       PGDATA: /var/lib/postgresql/data
     networks:
       app_net: 
-        ipv4_address: 192.168.0.6
-
+  
   pgadmin:
     image: dpage/pgadmin4:latest
     ports:
@@ -73,17 +71,15 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=admin
     networks:
       app_net:
-        ipv4_address: 192.168.0.7
     depends_on:
       - postgre_user_db
-     
+      - postgre_notification_db
+
 networks:
   app_net:
     ipam:
       driver: default
-      config:
-        - subnet: 192.168.0.0/24
-          gateway: 192.168.0.1
+      
 
 volumes:
   user_db:

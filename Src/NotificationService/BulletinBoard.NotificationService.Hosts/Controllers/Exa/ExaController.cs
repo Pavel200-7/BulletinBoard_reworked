@@ -27,7 +27,7 @@ public class ExaController : ControllerBase
     [Authorize]
     public IActionResult GetMyId()
     {
-        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        var userId = User.FindFirst(ClaimTypes.Sid)?.Value;
         var email = User.FindFirst(ClaimTypes.Email)?.Value;
         var role = User.FindFirst(ClaimTypes.Role)?.Value;
 

@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "bulletinboard.notificationservice.hosts": "StartDebugging",
+        "bulletinboard.userservice.hosts": "StartDebugging"
+      },
+      "dockerComposeOptions": {
+        "CommandLineArgs": [
+          "--remove-orphans"
+        ]
+      }
+    }
+  }
+}

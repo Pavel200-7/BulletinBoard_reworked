@@ -3,16 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", "{7AF6542B-3A97-4270-B5A3-9DEF20B70053}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compose", "Compose", "{6E0DCA8C-54AF-4A18-A54B-164542DAA71B}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{854EE8FC-8790-4C0E-A425-18EC6B43CC86}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{BD7B3273-DCDC-4901-ACE4-BBB2C079FFFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{77A77456-0FC2-4566-BAF3-FDF1A32FFA4B}"
 EndProject
@@ -66,6 +57,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar", "Src\NotificationService\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.csproj", "{D8801D5F-B38D-487A-AE82-5C9369EE92A7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.NotificationService.tests", "Src\NotificationService\BulletinBoard.NotificationService.tests\BulletinBoard.NotificationService.tests.csproj", "{EE37C080-DE46-4063-8389-7A450C3E7128}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,12 +114,15 @@ Global
 		{EE37C080-DE46-4063-8389-7A450C3E7128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE37C080-DE46-4063-8389-7A450C3E7128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE37C080-DE46-4063-8389-7A450C3E7128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7AF6542B-3A97-4270-B5A3-9DEF20B70053} = {6E0DCA8C-54AF-4A18-A54B-164542DAA71B}
 		{77A77456-0FC2-4566-BAF3-FDF1A32FFA4B} = {854EE8FC-8790-4C0E-A425-18EC6B43CC86}
 		{99DBA7A7-E56E-4EA1-B24A-0840DD3A9E80} = {77A77456-0FC2-4566-BAF3-FDF1A32FFA4B}
 		{181934C5-5E7C-4ED7-91B7-294BE5CFE107} = {77A77456-0FC2-4566-BAF3-FDF1A32FFA4B}
