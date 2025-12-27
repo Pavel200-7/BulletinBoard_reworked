@@ -1,11 +1,7 @@
-﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using BulletinBoard.UserService.AppServices.User.Enum;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.Infrastructure.Repository.QRepository;
-using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+using BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -13,24 +9,16 @@ using Moq;
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.AddRoleCommandTests;
 
-public class AddRoleCommandTests
+public class AddRoleCommandHandlerTests : BaseRoleCommandTests
 {
     private Mock<ILogger<AddRoleCommandHandler>> _logger;
-    private Mock<UserManager<IdentityUser>> _userManager;
     private AddRoleCommandHandler _handler;
-    private CancellationToken _cancellationToken;
 
-    public AddRoleCommandTests()
+    public AddRoleCommandHandlerTests()
+        : base()
     {
         _logger = new Mock<ILogger<AddRoleCommandHandler>>();
-
-        var userManagerInitializer = new IdentityMockInitializer();
-        _userManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
-
         _handler = new AddRoleCommandHandler(_logger.Object, _userManager!.Object);
-
-        _cancellationToken = CancellationToken.None;
-
         SetupMock();
     }
 
@@ -108,15 +96,6 @@ public class AddRoleCommandTests
         {
             UserId = "userId",
             Role = role
-        };
-    }
-    private IdentityUser CreateUser()
-    {
-        return new IdentityUser()
-        {
-            UserName = "User12432",
-            Email = "email@email.com",
-            PhoneNumber = "+7 (978) 123-45-67",
         };
     }
 }

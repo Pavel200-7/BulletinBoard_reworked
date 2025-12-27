@@ -3,5 +3,4 @@
 public class AddRoleCResponse
 {
     public bool IsSucceed { get; init; }
-
 }
