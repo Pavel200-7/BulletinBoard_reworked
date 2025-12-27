@@ -301,10 +301,6 @@
             "Extensions.Hosting.AsyncInitialization": {
               "target": "Package",
               "version": "[3.0.1, )"
-            },
-            "Scrutor": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [

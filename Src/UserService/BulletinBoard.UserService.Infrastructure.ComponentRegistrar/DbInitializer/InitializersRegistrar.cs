@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.Infrastructure.Initializers;
+﻿using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;
 using Microsoft.Extensions.DependencyInjection;
 
 

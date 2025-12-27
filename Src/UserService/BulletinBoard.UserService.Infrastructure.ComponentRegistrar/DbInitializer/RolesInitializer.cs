@@ -4,7 +4,7 @@ using Extensions.Hosting.AsyncInitialization;
 using BulletinBoard.UserService.AppServices.User.Enum;
 
 
-namespace BulletinBoard.UserService.Infrastructure.Initializers;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;
 
 /// <summary>
 /// Инициализатор ролей в системе

@@ -1,0 +1,6 @@
+@BulletinBoard.NotificationService.Hosts_HostAddress = http://localhost:5138
+
+GET {{BulletinBoard.NotificationService.Hosts_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

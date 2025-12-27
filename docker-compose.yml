@@ -13,11 +13,30 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
-      - JWT__Issuer=http://localhost:8085
-      - JWT__Audience=http://localhost:8085
+      - JWT__Issuer=BulletinBoard
+      - JWT__Audience=BulletinBoard
       - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
       - JWT__ExpiresIn=3600
-      - Refresh__ExpiresIn=669600 
+      - Refresh__ExpiresIn=669600
+      
+  notification_service:
+    build:
+      context: .
+      dockerfile: Src/NotificationService/BulletinBoard.NotificationService.Hosts/Dockerfile
+    networks:
+      app_net:
+        ipv4_address: 192.168.0.4
+    ports:
+     - "8091:8080"
+    depends_on:
+     - postgre_notification_db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgre_notification_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
+      - JWT__Issuer=BulletinBoard
+      - JWT__Audience=BulletinBoard
+      - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
+      - JWT__ExpiresIn=3600
 
   postgre_user_db:
     image: postgres:17
@@ -28,11 +47,22 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: bulletinboard
       PGDATA: /var/lib/postgresql/data
-    ports:
-      - "5432:5432"
     networks:
       app_net: 
-        ipv4_address: 192.168.0.4
+        ipv4_address: 192.168.0.5
+  
+  postgre_notification_db:
+    image: postgres:17
+    volumes:
+      - notification_db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: bulletinboard
+      PGDATA: /var/lib/postgresql/data
+    networks:
+      app_net: 
+        ipv4_address: 192.168.0.6
 
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -43,7 +73,7 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=admin
     networks:
       app_net:
-        ipv4_address: 192.168.0.5
+        ipv4_address: 192.168.0.7
     depends_on:
       - postgre_user_db
      
@@ -56,4 +86,5 @@ networks:
           gateway: 192.168.0.1
 
 volumes:
-  user_db:     
+  user_db:
+  notification_db:

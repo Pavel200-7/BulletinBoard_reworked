@@ -1,0 +1,12 @@
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\bin\Debug\net8.0\BulletinBoard.NotificationService.Domain.deps.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\bin\Debug\net8.0\BulletinBoard.NotificationService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\bin\Debug\net8.0\BulletinBoard.NotificationService.Domain.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.AssemblyInfo.cs
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.sourcelink.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\refint\BulletinBoard.NotificationService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\BulletinBoard.NotificationService.Domain.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Domain\obj\Debug\net8.0\ref\BulletinBoard.NotificationService.Domain.dll

@@ -11,6 +11,6 @@ public static class Roles
     {
         var roleType = typeof(Roles);
         var fields = roleType.GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy);
-        return fields.Any(f => f.IsLiteral && !f.IsInitOnly && f.GetRawConstantValue().ToString() == role);
+        return fields.Any(f => f.IsLiteral && !f.IsInitOnly && f.GetRawConstantValue()!.ToString() == role);
     }
 }

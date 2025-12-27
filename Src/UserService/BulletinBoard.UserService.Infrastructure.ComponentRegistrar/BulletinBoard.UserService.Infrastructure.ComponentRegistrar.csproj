@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="Extensions.Hosting.AsyncInitialization" Version="3.0.1" />
-    <PackageReference Include="Scrutor" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>

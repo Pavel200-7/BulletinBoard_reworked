@@ -1,0 +1,16 @@
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\bin\Debug\net8.0\BulletinBoard.NotificationService.AppServices.deps.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\bin\Debug\net8.0\BulletinBoard.NotificationService.AppServices.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\bin\Debug\net8.0\BulletinBoard.NotificationService.AppServices.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\bin\Debug\net8.0\BulletinBoard.NotificationService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\bin\Debug\net8.0\BulletinBoard.NotificationService.Domain.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.csproj.AssemblyReference.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.AssemblyInfo.cs
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.sourcelink.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\Bulletin.1F34D720.Up2Date
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\refint\BulletinBoard.NotificationService.AppServices.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\BulletinBoard.NotificationService.AppServices.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.AppServices\obj\Debug\net8.0\ref\BulletinBoard.NotificationService.AppServices.dll

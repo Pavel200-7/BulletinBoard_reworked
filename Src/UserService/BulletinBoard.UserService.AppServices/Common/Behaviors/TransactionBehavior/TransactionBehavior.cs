@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.Common.UnitOfWork;
+﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using MediatR;
 using System.Reflection;
 

@@ -1,8 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.Common.UnitOfWork;
+﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using Microsoft.EntityFrameworkCore.Storage;
 
 
-namespace BulletinBoard.UserService.Infrastructure.DataAccess.Common.UnitOfWork;
+namespace BulletinBoard.UserService.Infrastructure;
 
 public class UnitOfWork : IUnitOfWork
 {
