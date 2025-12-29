@@ -152,3 +152,12 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.t
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\BulletinBoard.UserService.Domain.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\BulletinBoard.UserService.Domain.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\MassTransit.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\MassTransit.Abstractions.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.tests\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb

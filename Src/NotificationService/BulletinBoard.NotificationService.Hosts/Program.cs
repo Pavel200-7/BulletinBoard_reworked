@@ -1,4 +1,5 @@
 using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
+using BulletinBoard.NotificationService.Hosts.Registrar;
 using BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.NotificationService.Infrastructure.Middleware;
 using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
@@ -23,6 +24,7 @@ public partial class Program
             .AddAuthentication(configuration)
             .RegistrarComponents()
             .AddAutoMapper(Assembly.GetExecutingAssembly())
+            .AddMassTransit()
             .RegistrarInitializers();
 
         builder.Services.AddAuthorization();

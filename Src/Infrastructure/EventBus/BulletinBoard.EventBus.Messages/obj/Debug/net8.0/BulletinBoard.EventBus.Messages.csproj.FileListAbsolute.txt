@@ -1,0 +1,12 @@
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.deps.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.AssemblyInfoInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.AssemblyInfo.cs
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.csproj.CoreCompileInputs.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.sourcelink.json
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\refint\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb
+C:\Users\pavli\Desktop\BulletinBoard\Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\obj\Debug\net8.0\ref\BulletinBoard.EventBus.Messages.dll

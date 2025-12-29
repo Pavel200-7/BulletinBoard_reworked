@@ -14,3 +14,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.A
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.UserService.Domain.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.UserService.Domain.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\obj\Debug\net8.0\Bulletin.F93D17EB.Up2Date
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.AppServices\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb

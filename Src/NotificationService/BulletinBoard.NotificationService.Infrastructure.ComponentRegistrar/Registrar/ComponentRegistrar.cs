@@ -1,10 +1,17 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common;
-using Microsoft.Extensions.DependencyInjection;
-using FluentValidation;
-using MediatR;
+﻿using BulletinBoard.Infrastructure.DataAccess.Contexts.User.EmailSender;
+using BulletinBoard.NotificationService.AppServices.Common;
 using BulletinBoard.NotificationService.AppServices.Common.Behaviors.LoggingBehavior;
+using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+using BulletinBoard.NotificationService.AppServices.Notification.Mail;
+using BulletinBoard.NotificationService.Infrastructure.Repository;
+using BulletinBoard.NotificationService.Infrastructure.Repository.CRepository;
+using BulletinBoard.NotificationService.Infrastructure.Repository.QRepository.BaseRepository;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
+using FluentValidation;
+using MassTransit;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
 
 
@@ -17,9 +24,10 @@ public static class ComponentRegistrar
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AssembliesNavigationAppServices).Assembly));
         services.AddValidatorsFromAssembly(typeof(AssembliesNavigationAppServices).Assembly);
         services.AddAutoMapper(typeof(AssembliesNavigationAppServices).Assembly);
+        
 
         services.RegistrarBLLComponents();
-        services.RegistrarDALComponents();
+        services.RegistrarInfComponents();
 
         services.RegistrarBehaviors();
         return services;
@@ -32,8 +40,13 @@ public static class ComponentRegistrar
         return services;
     }
 
-    private static IServiceCollection RegistrarDALComponents(this IServiceCollection services)
+    private static IServiceCollection RegistrarInfComponents(this IServiceCollection services)
     {
+        services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
+        services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+        services.AddScoped<IEmailSender, YandexSmtpEmailSender>();
 
         return services;
     }

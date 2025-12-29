@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BulletinBoard.NotificationService.AppServices.Notification.Mail;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -15,12 +16,14 @@ public class ExaController : ControllerBase
     private readonly ILogger<ExaController> _logger;
     private readonly IMapper _mapper;
     private readonly IMediator _mediator;
+    private readonly IEmailSender _sender;
 
-    public ExaController(ILogger<ExaController> logger, IMapper mapper, IMediator mediator)
+    public ExaController(ILogger<ExaController> logger, IMapper mapper, IMediator mediator, IEmailSender sender)
     {
         _logger = logger;
         _mapper = mapper;
         _mediator = mediator;
+        _sender = sender;
     }
 
     [HttpGet("/my-id")]
@@ -43,4 +46,15 @@ public class ExaController : ControllerBase
     {
         return Ok("Вы авторизованы");
     }
+
+    [HttpGet("/send_test")]
+    public async Task<IActionResult>SendTest(CancellationToken cancellationToken)
+    {
+        await _sender.SendEmailAsync(
+            "pavel.yakovlev.elb@gmail.com", 
+            "Тестовая отправка рассылки.", 
+            "Радуйся, я из будущего - у тебя все сработало, надеюсь с первого раза.");
+        return Ok("Я типо что-тосделал, но если нужна инфа о результатах - смотри логи. :)");
+    }
+
 }

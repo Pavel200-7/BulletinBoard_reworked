@@ -18,6 +18,7 @@ services:
       - Refresh__ExpiresIn=669600
     depends_on:
      - postgre_user_db
+     - rabbitmq
 
   bulletinboard.notificationservice.hosts:
     image: ${DOCKER_REGISTRY-}bulletinboardnotificationservicehosts
@@ -35,8 +36,15 @@ services:
       - JWT__Audience=BulletinBoard
       - JWT__Key=ultwreqqwddewQWDFAERHRTSDZFXCVBCKJSZFZra_string_guid_key87tg287hd8731g87qfwaua7q834wegfyloakwbpgfioewe
       - JWT__ExpiresIn=3600
+      - EmailSettings__SmtpServer=smtp.yandex.ru
+      - EmailSettings__Port=587
+      - EmailSettings__Username=Pavel200-7@yandex.ru
+      - EmailSettings__Password=prvepeophfnvnjlm
+      - EmailSettings__FromName=BulletinBoard
+      - ApiGatewayPath=localhost:8090
     depends_on:
      - postgre_notification_db
+     - rabbitmq
 
   postgre_user_db:
     image: postgres:17
@@ -75,6 +83,24 @@ services:
       - postgre_user_db
       - postgre_notification_db
 
+  rabbitmq:
+    image: rabbitmq:3.10.7-management
+    volumes:
+      - rabbitmq:/var/lib/rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    hostname: rabbitmq
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=rmuser
+      - RABBITMQ_DEFAULT_PASS=rmpassword
+      - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit disk_free_limit 2147483648
+    networks:
+      app_net:
+    
+ 
+
 networks:
   app_net:
     ipam:
@@ -84,3 +110,4 @@ networks:
 volumes:
   user_db:
   notification_db:
+  rabbitmq:  

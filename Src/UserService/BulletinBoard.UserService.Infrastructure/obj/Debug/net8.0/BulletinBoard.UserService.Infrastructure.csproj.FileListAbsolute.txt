@@ -18,3 +18,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.I
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\bin\Debug\net8.0\BulletinBoard.UserService.Domain.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\bin\Debug\net8.0\BulletinBoard.UserService.Infrastructure.runtimeconfig.json
 C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\obj\Debug\net8.0\BulletinBoard.UserService.Infrastructure.genruntimeconfig.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\UserService\BulletinBoard.UserService.Infrastructure\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb

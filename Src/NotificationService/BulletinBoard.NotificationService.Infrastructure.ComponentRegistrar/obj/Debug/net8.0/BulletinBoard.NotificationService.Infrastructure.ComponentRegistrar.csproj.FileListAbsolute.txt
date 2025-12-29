@@ -18,3 +18,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.Notif
 C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar\obj\Debug\net8.0\refint\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar\obj\Debug\net8.0\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.pdb
 C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar\obj\Debug\net8.0\ref\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb

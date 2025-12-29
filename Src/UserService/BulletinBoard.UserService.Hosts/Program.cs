@@ -1,7 +1,9 @@
 using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
+using BulletinBoard.UserService.Hosts.Registrar;
 using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.UserService.Infrastructure.Middleware;
+using MassTransit.MultiBus;
 using System.Reflection;
 
 
@@ -22,8 +24,9 @@ public partial class Program
             .RegistrarDbContext(configuration)
             .AddAuthentication(configuration)
             .RegistrarComponents()
-            .AddAutoMapper(Assembly.GetExecutingAssembly()) 
+            .AddAutoMapper(Assembly.GetExecutingAssembly())
             .RegistrarIdentity()
+            .AddMassTransit()
             .RegistrarInitializers();
 
         builder.Services.AddAuthorization();

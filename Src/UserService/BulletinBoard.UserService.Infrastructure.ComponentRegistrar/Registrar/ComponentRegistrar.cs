@@ -6,10 +6,13 @@ using BulletinBoard.UserService.AppServices.Common.IRepository;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.Infrastructure.Repository;
 using BulletinBoard.UserService.Infrastructure.Repository.CRepository;
 using BulletinBoard.UserService.Infrastructure.Repository.QRepository;
 using BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRepository;
 using FluentValidation;
+using MassTransit;
+using MassTransit.MultiBus;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -25,7 +28,7 @@ public static class ComponentRegistrar
         services.AddAutoMapper(typeof(AssembliesNavigationAppServices).Assembly);
 
         services.RegistrarBLLComponents();
-        services.RegistrarDALComponents();
+        services.RegistrarInfComponents();
 
         services.RegistrarBehaviors();
         return services;
@@ -39,15 +42,14 @@ public static class ComponentRegistrar
         return services;
     }
 
-    private static IServiceCollection RegistrarDALComponents(this IServiceCollection services)
+    private static IServiceCollection RegistrarInfComponents(this IServiceCollection services)
     {
         services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
         services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
-
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
-
 
         return services;
     }

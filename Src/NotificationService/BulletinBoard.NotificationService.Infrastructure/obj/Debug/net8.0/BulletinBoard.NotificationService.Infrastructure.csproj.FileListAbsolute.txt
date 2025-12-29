@@ -18,3 +18,5 @@ C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.Notif
 C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure\obj\Debug\net8.0\ref\BulletinBoard.NotificationService.Infrastructure.dll
 C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure\bin\Debug\net8.0\BulletinBoard.NotificationService.Infrastructure.runtimeconfig.json
 C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure\obj\Debug\net8.0\BulletinBoard.NotificationService.Infrastructure.genruntimeconfig.cache
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.dll
+C:\Users\pavli\Desktop\BulletinBoard\Src\NotificationService\BulletinBoard.NotificationService.Infrastructure\bin\Debug\net8.0\BulletinBoard.EventBus.Messages.pdb

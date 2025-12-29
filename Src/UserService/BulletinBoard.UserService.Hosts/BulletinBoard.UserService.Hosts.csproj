@@ -20,6 +20,11 @@
     <ProjectReference Include="..\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Exa\Request\" />
+    <Folder Include="Controllers\Exa\Response\" />
+  </ItemGroup>
+
 
 
 </Project>

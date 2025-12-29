@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using BulletinBoard.NotificationService.Infrastructure.Common.Configurations;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 
@@ -8,6 +9,8 @@ public static class ConfigurationsRegistrar
 {
     public static IServiceCollection RegistrarConfigurations(this IServiceCollection services, IConfiguration configuration)
     {
+        services.Configure<EmailSettings>(options => configuration.GetSection("EmailSettings").Bind(options));
+
         return services;
     }
 }
