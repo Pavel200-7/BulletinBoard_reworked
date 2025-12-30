@@ -21,7 +21,7 @@ public class QueryRepository<TEntity> : IQueryRepository<TEntity> where TEntity 
         return DbSet;
     }
 
-    public async Task<TEntity?> GetByIdAsync(Guid id)
+    public async Task<TEntity?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         return await DbSet.FindAsync(id);
     }

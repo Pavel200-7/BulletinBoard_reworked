@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
 using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 using BulletinBoard.UserService.AppServices.User.Queries.Refresh;
 using BulletinBoard.UserService.Hosts.Controllers.Auth.Request;
 using BulletinBoard.UserService.Hosts.Controllers.Auth.Response;
+using BulletinBoard.UserService.Hosts.Controllers.Helpers;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -61,6 +63,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("/refresh")]
+    [Authorize]
     public async Task<IActionResult> Refresh(RefreshRequest request, CancellationToken cancellationToken)
     {
         RefreshQuery query = _mapper.Map<RefreshQuery>(request);
@@ -78,10 +81,14 @@ public class AuthController : ControllerBase
         return Ok(response);
     }
 
-    [HttpGet("/check_authorize")]
+    [HttpGet("/send_confirmation_mail")]
     [Authorize]
-    public IActionResult CheckAuthorize()
+    public async Task<IActionResult> ConfirmEmail(CancellationToken cancellationToken)
     {
-        return Ok("Вы авторизованы");
+        string userId = User.GetId().ToString();
+        SendConfirmationMailCommand command = new SendConfirmationMailCommand() { Id = userId };
+        SendConfirmationMailCResponse cResponse = await _mediator.Send(command, cancellationToken);
+        SendConfirmationMailResponse response = _mapper.Map<SendConfirmationMailResponse>(cResponse);
+        return Ok(response);
     }
 }

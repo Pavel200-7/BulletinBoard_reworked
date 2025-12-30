@@ -1,6 +1,7 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Commands.DeleteRole;
+﻿using BulletinBoard.UserService.AppServices.User.Commands.Helpers.BaseResponse;
 
-public class DeleteRoleCResponse
-{
-    public bool IsSucceed { get; init; }
+namespace BulletinBoard.UserService.AppServices.User.Commands.DeleteRole;
+
+public class DeleteRoleCResponse : BaseCommandResponse
+{ 
 }

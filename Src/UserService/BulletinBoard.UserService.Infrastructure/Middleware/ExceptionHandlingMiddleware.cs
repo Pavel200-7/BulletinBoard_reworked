@@ -48,6 +48,11 @@ public class ExceptionHandlingMiddleware
             _logger.LogError(e, e.Message);
             await HandleValidationExceptionAsync(context, e);
         }
+        catch (AccessDeniedExeption e)
+        {
+            _logger.LogError(e, e.Message);
+            await HandleAccessDeniedExeptionAsync(context, e);
+        }
         catch (Exception e)
         {
             _logger.LogError(e, e.Message);
@@ -96,6 +101,21 @@ public class ExceptionHandlingMiddleware
             StatusCode = StatusCodes.Status400BadRequest,
             Message = exception.Message,
             FieldFailures = exception.FieldsFailures,
+            TraceId = context.TraceIdentifier
+        };
+
+        await context.Response.WriteAsync(JsonSerializer.Serialize(response, _jsonOptions));
+    }
+
+    private async Task HandleAccessDeniedExeptionAsync(HttpContext context, AccessDeniedExeption exception)
+    {
+        context.Response.ContentType = "application/json";
+        context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+
+        var response = new ErrorResponse
+        {
+            StatusCode = StatusCodes.Status401Unauthorized,
+            Message = exception.Message,
             TraceId = context.TraceIdentifier
         };
 

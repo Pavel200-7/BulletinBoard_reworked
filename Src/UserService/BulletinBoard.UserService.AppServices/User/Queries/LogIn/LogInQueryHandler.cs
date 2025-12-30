@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
+using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using MediatR;
@@ -54,7 +55,8 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInQResponse>
         }
 
         var tokenData = await _jWTProvider.GenerateTokenAsync(user.Id, cancellationToken);
-        var refreshToken = await _refreshTProvider.GenerateTokenAsync(user.Id, cancellationToken);           
+        var refreshToken = await _refreshTProvider.GenerateTokenAsync(user.Id, cancellationToken);
+        _logger.LogInformation("Пользователь с id {0} вошел в систему.", user.Id);
 
         return new LogInQResponse()
         {

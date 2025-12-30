@@ -41,7 +41,8 @@ services:
       - EmailSettings__Username=Pavel200-7@yandex.ru
       - EmailSettings__Password=prvepeophfnvnjlm
       - EmailSettings__FromName=BulletinBoard
-      - ApiGatewayPath=localhost:8090
+      - ApiGateway__Path=http://localhost:8090
+      - ApiGateway__ConfirmMailPath=confirm_email
     depends_on:
      - postgre_notification_db
      - rabbitmq

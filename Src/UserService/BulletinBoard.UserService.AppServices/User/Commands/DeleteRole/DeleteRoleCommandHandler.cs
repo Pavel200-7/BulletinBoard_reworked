@@ -25,7 +25,8 @@ public class DeleteRoleCommandHandler : BaseRoleCommandHandler,
         {
             throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
         }
+        _logger.LogInformation("Роль {0} убрана у пользователя с  id {1}.", request.Role, request.UserId);
 
-        return new DeleteRoleCResponse() { IsSucceed = result.Succeeded };
+        return new DeleteRoleCResponse();
     }
 }

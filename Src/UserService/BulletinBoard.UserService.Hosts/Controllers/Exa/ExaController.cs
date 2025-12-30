@@ -28,20 +28,7 @@ public class ExaController : ControllerBase
         _publishEndpoint = publishEndpoint;
     }
 
-    [HttpGet]
-    [Route("test_transit")]
-    public async Task<IActionResult> TestTransit()
-    {
-        await _publishEndpoint.Publish<UserAddedEvent>(new
-        {
-            Id = Guid.NewGuid().ToString(),
-            UserName = "MyName",
-            Email = "MyEmail@mail.ru",
-            PhoneNumber = "+797823453252"
-        });
-
-        return Ok("Я не упал, уже хорошо");
-    }
+    
 
 
 

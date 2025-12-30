@@ -38,29 +38,6 @@ public static class AuthenticationRegistrar
                 };
             });
 
-        //services.AddAuthentication(options =>
-        //{
-        //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        //})
-        //.AddBearerToken(IdentityConstants.BearerScheme, options =>
-        //{
-        //    options.BearerTokenExpiration = TimeSpan.FromSeconds(ExpiresIn);
-        //})
-        //.AddJwtBearer(options =>
-        //{
-        //    options.TokenValidationParameters = new TokenValidationParameters()
-        //    {
-        //        ValidateIssuer = true,
-        //        ValidateAudience = true,
-        //        ValidateLifetime = true,
-        //        ValidateIssuerSigningKey = true,
-        //        ValidIssuer = configuration["JWT:Issuer"],
-        //        ValidAudience = configuration["JWT:Audience"],
-        //        IssuerSigningKey = new SymmetricSecurityKey(key),
-        //    };
-        //});
-
         return services;
     }
 }

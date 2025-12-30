@@ -1,6 +1,6 @@
 ﻿namespace BulletinBoard.EventBus.Messages.Events.User;
 
-public interface UserAddedEvent
+public record UserAddedEvent
 {
     public string Id { get; set; }
     public string UserName { get; set; }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.NotificationService.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f2435a1dcebaf761427bc324e15df0412a02024")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efc094ee04ae5836d8f2bbb31c60819768d6f0cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.NotificationService.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.NotificationService.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

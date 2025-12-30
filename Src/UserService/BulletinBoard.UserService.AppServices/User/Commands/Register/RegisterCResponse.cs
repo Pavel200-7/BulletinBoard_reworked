@@ -1,6 +1,7 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
+﻿using BulletinBoard.UserService.AppServices.User.Commands.Helpers.BaseResponse;
 
-public class RegisterCResponse 
+namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
+
+public class RegisterCResponse : BaseCommandResponse
 {
-    public bool IsSucceed { get; init; }
 }

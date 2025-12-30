@@ -3,6 +3,8 @@ using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailur
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using System.Net;
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 
@@ -24,12 +26,14 @@ public class ConfirmEmailCommandHandler : IRequestHandler<ConfirmEmailCommand, C
         {
             throw new NotFoundException("Пользователь с таким id не существует");
         }
-
-        var result = await _userManager.ConfirmEmailAsync(user, request.Token);
+        var token = Base64UrlEncoder.Decode(request.Token);
+        var result = await _userManager.ConfirmEmailAsync(user, token);
         if (!result.Succeeded)
         {
             throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
         }
-        return new ConfirmEmailCResponse() { IsSucceed = result.Succeeded };
+        _logger.LogInformation("Пользователь с id {0} подтвердил почту.", user.Id);
+
+        return new ConfirmEmailCResponse();
     }
 }

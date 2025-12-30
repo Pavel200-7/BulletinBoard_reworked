@@ -33,7 +33,6 @@ public class JWTProviderTests
         _JwtSettingsOptions.Setup(x => x.Value).Returns(_jwtSettings);
 
         _provider = new JWTProvider(_userManager.Object, _JwtSettingsOptions.Object);
-
         _cancellationToken = CancellationToken.None;
 
         SetupMock();

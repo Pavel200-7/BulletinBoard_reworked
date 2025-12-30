@@ -4,7 +4,7 @@ using BulletinBoard.NotificationService.AppServices.Common.Behaviors.LoggingBeha
 using BulletinBoard.NotificationService.AppServices.Common.IRepository;
 using BulletinBoard.NotificationService.AppServices.Notification.Mail;
 using BulletinBoard.NotificationService.Infrastructure.Repository;
-using BulletinBoard.NotificationService.Infrastructure.Repository.CRepository;
+using BulletinBoard.NotificationService.Infrastructure.Repository.CRepository.BaseRepository;
 using BulletinBoard.NotificationService.Infrastructure.Repository.QRepository.BaseRepository;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;

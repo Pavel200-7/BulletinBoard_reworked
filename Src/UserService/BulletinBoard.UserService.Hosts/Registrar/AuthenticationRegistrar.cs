@@ -38,32 +38,6 @@ public static class AuthenticationRegistrar
                 };
             });
 
-
-        //var key = Encoding.UTF8.GetBytes(configuration["JWT:Key"]!);
-        //services.AddAuthentication(options =>
-        //{
-        //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        //})
-        //.AddBearerToken(IdentityConstants.BearerScheme, options =>
-        //{
-        //    int ExpiresIn = int.Parse(configuration["JWT:ExpiresIn"]!);
-        //    options.BearerTokenExpiration = TimeSpan.FromSeconds(ExpiresIn);
-        //})
-        //.AddJwtBearer(options =>
-        //{
-        //    options.TokenValidationParameters = new TokenValidationParameters()
-        //    {
-        //        ValidateIssuer = true,
-        //        ValidateAudience = true,
-        //        ValidateLifetime = true,
-        //        ValidateIssuerSigningKey = true,
-        //        ValidIssuer = configuration["JWT:Issuer"],
-        //        ValidAudience = configuration["JWT:Audience"],
-        //        IssuerSigningKey = new SymmetricSecurityKey(key),
-        //    };
-        //});
-
         return services;
     }
 }

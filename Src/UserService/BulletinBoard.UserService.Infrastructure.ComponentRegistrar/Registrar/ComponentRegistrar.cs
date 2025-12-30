@@ -1,13 +1,13 @@
 ﻿using BulletinBoard.UserService.AppServices.Common;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
+using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
 using BulletinBoard.UserService.AppServices.Common.IRepository;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.Infrastructure.Repository;
-using BulletinBoard.UserService.Infrastructure.Repository.CRepository;
+using BulletinBoard.UserService.Infrastructure.Repository.CRepository.BaseRepository;
 using BulletinBoard.UserService.Infrastructure.Repository.QRepository;
 using BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRepository;
 using FluentValidation;

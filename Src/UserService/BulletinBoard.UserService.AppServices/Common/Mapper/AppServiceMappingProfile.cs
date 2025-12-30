@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using Microsoft.AspNetCore.Identity;
 
@@ -10,5 +11,7 @@ public class AppServiceMappingProfile : Profile
     public AppServiceMappingProfile()
     {
         CreateMap<RegisterCommand, IdentityUser>();
+
+        CreateMap<IdentityUser, UserAddedEvent>();
     }
 }

@@ -1,6 +1,7 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+﻿using BulletinBoard.UserService.AppServices.User.Commands.Helpers.BaseResponse;
 
-public class AddRoleCResponse
+namespace BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+
+public class AddRoleCResponse : BaseCommandResponse
 {
-    public bool IsSucceed { get; init; }
 }

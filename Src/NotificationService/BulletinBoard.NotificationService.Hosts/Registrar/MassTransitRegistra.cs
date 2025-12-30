@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.Hosts.EventBusConsumer.Exa;
+﻿using BulletinBoard.NotificationService.Hosts.EventBusConsumer.User;
 using MassTransit;
 
 namespace BulletinBoard.NotificationService.Hosts.Registrar;
@@ -10,6 +10,8 @@ public static class MassTransitRegistra
         services.AddMassTransit(x =>
         {
             x.AddConsumer<UserAddedConsumer>();
+            x.AddConsumer<UserEmailConfirmationStartedEventConsumer>();
+
             x.UsingRabbitMq((context, cfg) =>
             {
                 cfg.Host("rabbitmq", "/", host =>

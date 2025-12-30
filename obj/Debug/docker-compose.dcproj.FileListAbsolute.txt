@@ -69,3 +69,5 @@ C:\Users\pavli\Desktop\BulletinBoard\bin\Debug\BulletinBoard.EventBus.Messages.d
 C:\Users\pavli\Desktop\BulletinBoard\bin\Debug\RabbitMQ.Client.dll
 C:\Users\pavli\Desktop\BulletinBoard\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\pavli\Desktop\BulletinBoard\bin\Debug\BulletinBoard.EventBus.Messages.pdb
+C:\Users\pavli\Desktop\BulletinBoard\bin\Debug\BulletinBoard.NotificationService.Domain.dll
+C:\Users\pavli\Desktop\BulletinBoard\bin\Debug\BulletinBoard.NotificationService.Domain.pdb

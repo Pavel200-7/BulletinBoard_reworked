@@ -3,5 +3,5 @@
 public interface IQueryRepository<TEntity> where TEntity : class
 {
     IQueryable<TEntity> GetAll();
-    Task<TEntity?> GetByIdAsync(Guid id);
+    Task<TEntity?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
 }

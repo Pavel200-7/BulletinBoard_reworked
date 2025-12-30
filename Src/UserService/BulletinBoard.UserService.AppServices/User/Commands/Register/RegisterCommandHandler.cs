@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
+using BulletinBoard.EventBus.Messages.Events.User;
+using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
+using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -18,17 +20,20 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterC
     private readonly IMapper _mapper;
     private readonly UserManager<IdentityUser> _userManager;
     private readonly IUserRepository _repository;
+    private readonly IPublishEndpoint _publishEndpoint;
 
     public RegisterCommandHandler(
         ILogger<RegisterCommandHandler> logger, 
         IMapper mapper, 
         UserManager<IdentityUser> userManager,
-        IUserRepository repository)
+        IUserRepository repository,
+        IPublishEndpoint publishEndpoint)
     {
         _logger = logger;
         _mapper = mapper;
         _userManager = userManager;
         _repository = repository;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task<RegisterCResponse> Handle(RegisterCommand request, CancellationToken cancellationToken)
@@ -40,34 +45,29 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterC
         {
             throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
         }
+        _logger.LogInformation("Пользователь с именем {0} зарегистрирован.", request.UserName);
         await _userManager.AddToRoleAsync(user, Roles.User);
-        return new RegisterCResponse() { IsSucceed = result.Succeeded};
+        _logger.LogInformation("Роль {0} добавлена пользователю с именем {1}.", Roles.User, request.UserName);
+
+        var userAddedEvent = _mapper.Map<UserAddedEvent>(user);
+        await _publishEndpoint.Publish(userAddedEvent, cancellationToken);
+
+        return new RegisterCResponse();
     }
 
     private async Task ValidateUserUniquenessAsync(RegisterCommand request, CancellationToken cancellationToken)
     {
-        var tasks = new[]
+        if (await _userManager.FindByNameAsync(request.UserName) is not null)
         {
-            ChechUniqueAsync(() => _userManager.FindByNameAsync(request.UserName),
-                nameof(request.UserName),
-                "Данное имя пользователя уже занято."),
-            ChechUniqueAsync(() => _userManager.FindByEmailAsync(request.Email),
-                nameof(request.Email),
-                "Данный Email уже занят."),
-            ChechUniqueAsync(() => _repository.FindByPhoneAsync(request.PhoneNumber, cancellationToken),
-                nameof(request.PhoneNumber),
-                "Данный телефон уже занят."),
-        };
-
-        await Task.WhenAll(tasks);
-    }
-
-    private async Task ChechUniqueAsync<T>(Func<Task<T>> findFunc, string fieldName, string errorMessage) where T : class?
-    {
-        var user = await findFunc();
-        if (user is not null)
+            throw new BusinessRuleException(nameof(request.UserName), "Данное имя пользователя уже занято.");
+        }
+        if (await _userManager.FindByEmailAsync(request.Email) is not null)
         {
-            throw new BusinessRuleException(fieldName, errorMessage);
+            throw new BusinessRuleException(nameof(request.Email), "Данный Email уже занят.");
+        }
+        if (await _repository.FindByPhoneAsync(request.PhoneNumber, cancellationToken) is not null)
+        {
+            throw new BusinessRuleException(nameof(request.PhoneNumber), "Данный телефон уже занят.");
         }
     }
 }

@@ -24,7 +24,8 @@ public class AddRoleCommandHandler : BaseRoleCommandHandler,
         {
             throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
         }
+        _logger.LogInformation("Роль {0} добавлена пользователю с  id {1}.", request.Role, request.UserId);
 
-        return new AddRoleCResponse() { IsSucceed = result.Succeeded };
+        return new AddRoleCResponse();
     }
 }

@@ -1,6 +1,7 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
+﻿using BulletinBoard.UserService.AppServices.User.Commands.Helpers.BaseResponse;
 
-public class ConfirmEmailCResponse
+namespace BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
+
+public class ConfirmEmailCResponse : BaseCommandResponse
 {
-    public bool IsSucceed { get; init; }
 }
