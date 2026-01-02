@@ -16,7 +16,8 @@ services:
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
       ASPNETCORE_URLS: http://+:8080
-      ApiGatewayPath: localhost:8090
+      ApiGateway__ConfirmMailPath: confirm_email
+      ApiGateway__Path: http://localhost:8090
       ConnectionStrings__DefaultConnection: Host=postgre_notification_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
       EmailSettings__FromName: BulletinBoard
       EmailSettings__Password: prvepeophfnvnjlm
@@ -182,8 +183,12 @@ services:
     hostname: rabbitmq
     image: rabbitmq:3.10.7-management
     networks:
-      default: null
+      app_net: null
     ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
       - mode: ingress
         target: 15672
         published: "15672"
@@ -199,8 +204,6 @@ networks:
     name: dockercompose11839620844509240691_app_net
     ipam:
       driver: default
-  default:
-    name: dockercompose11839620844509240691_default
 volumes:
   notification_db:
     name: dockercompose11839620844509240691_notification_db

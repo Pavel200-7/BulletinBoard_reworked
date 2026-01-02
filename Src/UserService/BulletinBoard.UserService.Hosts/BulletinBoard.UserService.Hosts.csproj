@@ -21,8 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Exa\Request\" />
-    <Folder Include="Controllers\Exa\Response\" />
+    <Folder Include="Controllers\OAuth\Request\" />
   </ItemGroup>
 
 

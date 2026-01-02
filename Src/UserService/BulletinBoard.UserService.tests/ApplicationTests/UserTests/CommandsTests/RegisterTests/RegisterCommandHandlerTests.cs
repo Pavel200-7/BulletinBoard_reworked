@@ -217,10 +217,10 @@ public class RegisterCommandHandlerTests
     {
         return new UserAddedEvent()
         {
-            Id = user.Id,
-            UserName = user.UserName,
-            Email = user.Email,
-            PhoneNumber = user.PhoneNumber,
+            Id = user.Id!,
+            UserName = user.UserName!,
+            Email = user.Email!,
+            PhoneNumber = user.PhoneNumber!,
         };
     }
 

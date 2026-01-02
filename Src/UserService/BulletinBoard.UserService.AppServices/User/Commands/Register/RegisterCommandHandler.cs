@@ -3,6 +3,7 @@ using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using MassTransit;
@@ -14,7 +15,8 @@ using Microsoft.Extensions.Logging;
 namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
 
 [Transaction]
-public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterCResponse>
+public class RegisterCommandHandler : BaseRegisterCommandHandler,
+    IRequestHandler<RegisterCommand, RegisterCResponse>
 {
     private readonly ILogger<RegisterCommandHandler> _logger;
     private readonly IMapper _mapper;
@@ -27,7 +29,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterC
         IMapper mapper, 
         UserManager<IdentityUser> userManager,
         IUserRepository repository,
-        IPublishEndpoint publishEndpoint)
+        IPublishEndpoint publishEndpoint) :base(logger, mapper, userManager, publishEndpoint)
     {
         _logger = logger;
         _mapper = mapper;
@@ -40,18 +42,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, RegisterC
     {
         await ValidateUserUniquenessAsync(request, cancellationToken);
         var user = _mapper.Map<IdentityUser>(request);
-        var result = await _userManager.CreateAsync(user, request.Password);
-        if (!result.Succeeded)
-        {
-            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
-        }
-        _logger.LogInformation("Пользователь с именем {0} зарегистрирован.", request.UserName);
-        await _userManager.AddToRoleAsync(user, Roles.User);
-        _logger.LogInformation("Роль {0} добавлена пользователю с именем {1}.", Roles.User, request.UserName);
-
-        var userAddedEvent = _mapper.Map<UserAddedEvent>(user);
-        await _publishEndpoint.Publish(userAddedEvent, cancellationToken);
-
+        await RegisterAsync(user, request.Password, cancellationToken);
         return new RegisterCResponse();
     }
 

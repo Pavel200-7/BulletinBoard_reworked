@@ -30,7 +30,8 @@ services:
       ASPNETCORE_HTTPS_PORTS: "8081"
       ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       ASPNETCORE_URLS: http://+:8080
-      ApiGatewayPath: localhost:8090
+      ApiGateway__ConfirmMailPath: confirm_email
+      ApiGateway__Path: http://localhost:8090
       ConnectionStrings__DefaultConnection: Host=postgre_notification_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
       DOTNET_USE_POLLING_FILE_WATCHER: "1"
       EmailSettings__FromName: BulletinBoard
@@ -304,8 +305,12 @@ services:
     hostname: rabbitmq
     image: rabbitmq:3.10.7-management
     networks:
-      default: null
+      app_net: null
     ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
       - mode: ingress
         target: 15672
         published: "15672"
@@ -321,8 +326,6 @@ networks:
     name: dockercompose11839620844509240691_app_net
     ipam:
       driver: default
-  default:
-    name: dockercompose11839620844509240691_default
 volumes:
   notification_db:
     name: dockercompose11839620844509240691_notification_db
