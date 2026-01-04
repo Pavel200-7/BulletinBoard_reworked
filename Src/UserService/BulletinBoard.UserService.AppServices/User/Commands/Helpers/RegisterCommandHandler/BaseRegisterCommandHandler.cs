@@ -10,13 +10,15 @@ using Microsoft.Extensions.Logging;
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
 
+/// <summary>
+/// Базовый обработчик регистрации.
+/// </summary>
 public class BaseRegisterCommandHandler
 {
     private readonly ILogger<BaseRegisterCommandHandler> _logger;
     private readonly IMapper _mapper;
     private readonly UserManager<IdentityUser> _userManager;
     private readonly IPublishEndpoint _publishEndpoint;
-
 
     public BaseRegisterCommandHandler(
         ILogger<BaseRegisterCommandHandler> logger,
@@ -29,6 +31,14 @@ public class BaseRegisterCommandHandler
         _userManager = userManager;
         _publishEndpoint = publishEndpoint;
     }
+
+    /// <summary>
+    /// Зарегистрировать пользователя.
+    /// </summary>
+    /// <param name="user">Пользователь</param>
+    /// <param name="password">Пароль</param>
+    /// <param name="cancellationToken">Токен отмены</param>
+    /// <exception cref="BusinessRuleException">Ошибка создания пользователя</exception>
     public async Task RegisterAsync(IdentityUser user, string password, CancellationToken cancellationToken)
     {
         var result = await _userManager.CreateAsync(user, password);

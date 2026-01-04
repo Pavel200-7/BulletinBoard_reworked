@@ -10,7 +10,6 @@ using BulletinBoard.UserService.Hosts.Controllers.Helpers;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 
 namespace BulletinBoard.UserService.Hosts.Controllers.Auth;
@@ -30,7 +29,7 @@ public class AuthController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpPost("/register")]
+    [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request, CancellationToken cancellationToken)
     {
         RegisterCommand command = _mapper.Map<RegisterCommand>(request);
@@ -39,7 +38,7 @@ public class AuthController : ControllerBase
         return Ok(response);
     }
 
-    [HttpPost("/login")]
+    [HttpPost("login")]
     public async Task<IActionResult> LogIn(LogInRequest request, CancellationToken cancellationToken)
     {
         LogInQuery command = _mapper.Map<LogInQuery>(request);
@@ -48,7 +47,7 @@ public class AuthController : ControllerBase
         return Ok(response);
     }
 
-    [HttpPost("/refresh")]
+    [HttpPost("refresh")]
     [Authorize]
     public async Task<IActionResult> Refresh(RefreshRequest request, CancellationToken cancellationToken)
     {
@@ -58,7 +57,7 @@ public class AuthController : ControllerBase
         return Ok(response);
     }
 
-    [HttpGet("/confirm_email/{userId}/{token}")]
+    [HttpGet("confirm_email/{userId}/{token}")]
     public async Task<IActionResult> ConfirmEmail([FromRoute] string userId, [FromRoute] string token, CancellationToken cancellationToken)
     {
         ConfirmEmailCommand command = new ConfirmEmailCommand(userId, token);
@@ -67,7 +66,7 @@ public class AuthController : ControllerBase
         return Ok(response);
     }
 
-    [HttpGet("/send_confirmation_mail")]
+    [HttpGet("send_confirmation_mail")]
     [Authorize]
     public async Task<IActionResult> ConfirmEmail(CancellationToken cancellationToken)
     {

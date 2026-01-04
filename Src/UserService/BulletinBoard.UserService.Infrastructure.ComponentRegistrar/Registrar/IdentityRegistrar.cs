@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System.Security.Claims;
 
@@ -21,7 +24,6 @@ public static class IdentityRegistrar
             options.Password.RequireLowercase = true;
             options.Password.RequireUppercase = true;
 
-            // Важно для JWT
             options.ClaimsIdentity.UserIdClaimType = ClaimTypes.NameIdentifier;
             options.ClaimsIdentity.EmailClaimType = ClaimTypes.Email;
             options.ClaimsIdentity.RoleClaimType = ClaimTypes.Role;
@@ -29,6 +31,30 @@ public static class IdentityRegistrar
         .AddEntityFrameworkStores<UserDbContext>()
         .AddApiEndpoints()
         .AddDefaultTokenProviders();
+
+        // Это чтобы выключить редиректы.
+        services.ConfigureApplicationCookie(options =>
+        {
+            options.LoginPath = null;
+            options.AccessDeniedPath = null;
+            options.LogoutPath = null;
+
+            options.Events = new CookieAuthenticationEvents
+            {
+                OnRedirectToLogin = context =>
+                {
+                    throw new UnauthorizedException("Ошибка авторизации.");
+                },
+                OnRedirectToAccessDenied = context =>
+                {
+                    throw new AccessDeniedExeption("Не достаточно прав.");
+                },
+                OnRedirectToLogout = context =>
+                {
+                    return Task.CompletedTask;
+                }
+            };
+        });
 
         return services;
     }

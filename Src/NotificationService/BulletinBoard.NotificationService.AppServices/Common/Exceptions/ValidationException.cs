@@ -4,6 +4,9 @@ using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.Fie
 
 namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions;
 
+/// <summary>
+/// Ошибка валидации.
+/// </summary>
 public class ValidationException : DomainIntegrityException
 {
     public ValidationException(List<FieldFailure> fieldsFailures, string message = nameof(ValidationException)) 

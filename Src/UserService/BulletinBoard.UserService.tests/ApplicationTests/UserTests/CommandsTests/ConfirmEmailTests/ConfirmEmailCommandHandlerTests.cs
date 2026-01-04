@@ -5,8 +5,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Moq;
-using Newtonsoft.Json.Linq;
-using System.Net;
 
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.ConfirmEmailCommandTests;
@@ -21,18 +19,16 @@ public class ConfirmEmailCommandHandlerTests
     public ConfirmEmailCommandHandlerTests()
     {
         _logger = new Mock<ILogger<ConfirmEmailCommandHandler>>();
-
         var userManagerInitializer = new IdentityMockInitializer();
         _userManager = userManagerInitializer.GetMockUserManager<IdentityUser>();
         _handler = new ConfirmEmailCommandHandler(_logger.Object, _userManager.Object);
-
         _cancellationToken = CancellationToken.None;
 
         SetupMock();
     }
 
     [Fact]
-    public async Task MustThrowWhenNotFound()
+    public async Task ThrowWhenNotFound()
     {
         //Arrange
         var command = CreateCommand();
@@ -48,7 +44,7 @@ public class ConfirmEmailCommandHandlerTests
     }
 
     [Fact]
-    public async Task MustConfirmEmailWhenFound()
+    public async Task ConfirmEmailWhenFound()
     {
         //Arrange
         var command = CreateCommand();
@@ -63,7 +59,7 @@ public class ConfirmEmailCommandHandlerTests
     }
 
     [Fact]
-    public async Task MustThrowWhenConfirmationFailed()
+    public async Task ThrowWhenConfirmationFailed()
     {
         // Arrange
         var command = CreateCommand();
@@ -95,7 +91,6 @@ public class ConfirmEmailCommandHandlerTests
         var base64EncodedToken = Base64UrlEncoder.Encode("SomeToken");
         return new ConfirmEmailCommand("SomeUserId", base64EncodedToken);
     }
-
 
     private IdentityUser CreateUser()
     {

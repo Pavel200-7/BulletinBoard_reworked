@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
+using System.Text.Json;
 
 
 namespace BulletinBoard.UserService.Hosts.Registrar;
@@ -36,7 +37,9 @@ public static class AuthenticationRegistrar
                     NameClaimType = ClaimTypes.NameIdentifier,
                     RoleClaimType = ClaimTypes.Role,
                 };
-            });
+        });
+
+
 
         return services;
     }

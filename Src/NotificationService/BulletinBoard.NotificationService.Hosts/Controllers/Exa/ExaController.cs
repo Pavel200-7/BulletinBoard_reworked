@@ -10,7 +10,7 @@ using System.Text.Json;
 namespace BulletinBoard.UserService.Hosts.Controllers.Auth;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/v1/[controller]")]
 public class ExaController : ControllerBase
 {
     private readonly ILogger<ExaController> _logger;
@@ -26,7 +26,7 @@ public class ExaController : ControllerBase
         _sender = sender;
     }
 
-    [HttpGet("/my-id")]
+    [HttpGet("my-id")]
     [Authorize]
     public IActionResult GetMyId()
     {
@@ -40,20 +40,20 @@ public class ExaController : ControllerBase
         return Ok(new { UserId = userId, Email = email, Role = role });
     }
 
-    [HttpGet("/check_authorize")]
+    [HttpGet("check_authorize")]
     [Authorize]
     public IActionResult CheckAuthorize()
     {
         return Ok("Вы авторизованы");
     }
 
-    [HttpGet("/send_test")]
+    [HttpGet("send_test")]
     public async Task<IActionResult>SendTest(CancellationToken cancellationToken)
     {
-        await _sender.SendEmailAsync(
-            "pavel.yakovlev.elb@gmail.com", 
-            "Тестовая отправка рассылки.", 
-            "Радуйся, я из будущего - у тебя все сработало, надеюсь с первого раза.");
+        //await _sender.SendEmailAsync(
+        //    "pavel.yakovlev.elb@gmail.com", 
+        //    "Тестовая отправка рассылки.", 
+        //    "Радуйся, я из будущего - у тебя все сработало, надеюсь с первого раза.");
         return Ok("Я типо что-тосделал, но если нужна инфа о результатах - смотри логи. :)");
     }
 

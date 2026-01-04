@@ -2,9 +2,10 @@
 using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
-using BulletinBoard.UserService.AppServices.User.Commands.Helpers.OAuth;
 using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
@@ -12,7 +13,7 @@ using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
- 
+
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
 
@@ -22,7 +23,7 @@ public class OAuthRegisterCommandHandler : BaseRegisterCommandHandler,
     private readonly ILogger<OAuthRegisterCommandHandler> _logger;
     private readonly IMapper _mapper;
     private readonly UserManager<IdentityUser> _userManager;
-    private readonly IOAuthService _authService;
+    private readonly IOAuthServiceFactory _oauthServiceFactory;
     private readonly IJWTProvider _jWTProvider;
     private readonly IRefreshTokenProvider _refreshTProvider;
     private readonly IPublishEndpoint _publishEndpoint;
@@ -31,7 +32,7 @@ public class OAuthRegisterCommandHandler : BaseRegisterCommandHandler,
         ILogger<OAuthRegisterCommandHandler> logger, 
         IMapper mapper,
         UserManager<IdentityUser> userManager,
-        IOAuthService authService,
+        IOAuthServiceFactory oauthServiceFactory,
         IJWTProvider jWTProvider,
         IRefreshTokenProvider refreshTokenProvider,
         IPublishEndpoint publishEndpoint) : base(logger, mapper, userManager, publishEndpoint)
@@ -39,7 +40,7 @@ public class OAuthRegisterCommandHandler : BaseRegisterCommandHandler,
         _logger = logger;
         _mapper = mapper;
         _userManager = userManager;
-        _authService = authService;
+        _oauthServiceFactory = oauthServiceFactory;
         _jWTProvider = jWTProvider;
         _refreshTProvider = refreshTokenProvider;
         _publishEndpoint = publishEndpoint;
@@ -47,7 +48,8 @@ public class OAuthRegisterCommandHandler : BaseRegisterCommandHandler,
 
     public async Task<OAuthRegisterCResponse> Handle(OAuthRegisterCommand request, CancellationToken cancellationToken)
     {
-        var userData = await _authService.GetRegistrationDataFromProviderAsync(request.Provider, request.Token, cancellationToken);
+        var oauthService = _oauthServiceFactory.CreateOAuthService(request.Provider);
+        var userData = await oauthService.GetRegistrationDataFromProviderAsync(request.Code, cancellationToken);
         
         IdentityUser? user = await _userManager.FindByEmailAsync(userData.Email);
         if (user is not null)
@@ -58,7 +60,7 @@ public class OAuthRegisterCommandHandler : BaseRegisterCommandHandler,
         var partialUser = new PartialUser(userData.Email);
         user = _mapper.Map<IdentityUser>(partialUser);
         await RegisterAsync(user, partialUser.Password, cancellationToken);
-
+        
         return await LoginAsync(user.Id, cancellationToken);
     }
 

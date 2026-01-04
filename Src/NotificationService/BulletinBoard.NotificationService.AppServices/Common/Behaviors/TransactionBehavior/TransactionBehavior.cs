@@ -5,6 +5,10 @@ using System.Reflection;
 
 namespace BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
 
+/// <summary>
+/// Промежуточный запускатор транзакции. 
+/// Накладывается аттрибутом TransactionAttribute.
+/// </summary>
 public class TransactionBehavior<TRequest, TResponse>
     : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {

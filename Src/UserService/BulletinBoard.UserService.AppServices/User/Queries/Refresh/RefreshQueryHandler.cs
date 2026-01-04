@@ -1,9 +1,7 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
-using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.Domain.Entityes;
 using MediatR;
 using Microsoft.Extensions.Logging;
 

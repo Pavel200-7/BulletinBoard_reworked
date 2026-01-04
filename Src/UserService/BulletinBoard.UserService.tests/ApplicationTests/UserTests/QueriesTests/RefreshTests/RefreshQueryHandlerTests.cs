@@ -98,7 +98,6 @@ public class RefreshQueryHandlerTests
 
         _refreshTProvider.Setup(rp => rp.GenerateTokenAsync(CreateUserId(), _cancellationToken))
             .ReturnsAsync(CreateRefreshToken());
-
     }
 
     public RefreshQuery CreateQuery()

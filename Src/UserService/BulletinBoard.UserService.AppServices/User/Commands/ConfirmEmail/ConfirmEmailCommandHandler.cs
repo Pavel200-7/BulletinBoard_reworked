@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using System.Net;
+
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 

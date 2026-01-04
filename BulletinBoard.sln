@@ -66,6 +66,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{A8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.EventBus.Messages", "Src\Infrastructure\EventBus\BulletinBoard.EventBus.Messages\BulletinBoard.EventBus.Messages.csproj", "{ED2B2A3F-433B-4EEE-8779-69806DDA84E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", "{9B7ACCB5-47B7-456E-B6D1-78D43C25FEBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulletinBoard.APIGateway", "Src\APIGateway\BulletinBoard.APIGateway\BulletinBoard.APIGateway.csproj", "{ABC898B8-3157-4125-ABB0-C67E25B21162}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +132,10 @@ Global
 		{ED2B2A3F-433B-4EEE-8779-69806DDA84E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED2B2A3F-433B-4EEE-8779-69806DDA84E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED2B2A3F-433B-4EEE-8779-69806DDA84E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC898B8-3157-4125-ABB0-C67E25B21162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC898B8-3157-4125-ABB0-C67E25B21162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC898B8-3157-4125-ABB0-C67E25B21162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC898B8-3157-4125-ABB0-C67E25B21162}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +168,8 @@ Global
 		{E0770F34-6062-4546-8B4C-40AF359B51D6} = {854EE8FC-8790-4C0E-A425-18EC6B43CC86}
 		{A861CEEA-A83D-4B0C-89A2-4D8CE79C08E1} = {E0770F34-6062-4546-8B4C-40AF359B51D6}
 		{ED2B2A3F-433B-4EEE-8779-69806DDA84E0} = {A861CEEA-A83D-4B0C-89A2-4D8CE79C08E1}
+		{9B7ACCB5-47B7-456E-B6D1-78D43C25FEBC} = {854EE8FC-8790-4C0E-A425-18EC6B43CC86}
+		{ABC898B8-3157-4125-ABB0-C67E25B21162} = {9B7ACCB5-47B7-456E-B6D1-78D43C25FEBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ABFF8C7-E2D4-4B0F-83D0-E85264E097F2}

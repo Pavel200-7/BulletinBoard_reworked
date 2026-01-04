@@ -7,6 +7,9 @@ using Microsoft.Extensions.Logging;
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.Helpers.RoleCommandHandler;
 
+/// <summary>
+/// Базовый обработчик изменения ролей.
+/// </summary>
 public abstract class BaseRoleCommandHandler
 {
     protected readonly ILogger<AddRoleCommandHandler> _logger;
@@ -18,6 +21,15 @@ public abstract class BaseRoleCommandHandler
         _userManager = userManager;
     }
 
+    /// <summary>
+    /// Валидатор команды изменения ролей.
+    /// </summary>
+    /// <param name="userId">Id пользователя</param>
+    /// <param name="role">Роль</param>
+    /// <param name="cancellationToken">токен отмены</param>
+    /// <returns>Пользователь</returns>
+    /// <exception cref="NotFoundException">Пользователь не найден</exception>
+    /// <exception cref="BusinessRuleException">Такой роли не существует</exception>
     public async Task<IdentityUser> ValidateCommandAndGetUser(string userId, string role, CancellationToken cancellationToken)
     {
         var user = await _userManager.FindByIdAsync(userId);

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.Hosts.Controllers.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +21,7 @@ public class TestingController : ControllerBase
         _mapper = mapper;
     }
 
-    [HttpGet("/my-id")]
+    [HttpGet("my-id")]
     [Authorize]
     public IActionResult GetMyId()
     {
@@ -34,10 +35,16 @@ public class TestingController : ControllerBase
         return Ok(new { UserId = userId, Email = email, Role = role });
     }
 
-    [HttpGet("/is_autorized")]
+    [HttpGet("is_authorized")]
     [Authorize]
-    public IActionResult IsAutorized()
+    public IActionResult IsAuthorized()
     {
         return Ok("Да авторизован ты, авторизован!");
+    }
+
+    [HttpGet("test")]
+    public IActionResult Test()
+    {
+        return Ok("Я живой.");
     }
 }

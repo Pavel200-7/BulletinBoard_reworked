@@ -4,6 +4,9 @@ using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailur
 
 namespace BulletinBoard.UserService.AppServices.Common.Exceptions;
 
+/// <summary>
+/// Ошибка бизнес логики.
+/// </summary>
 public class BusinessRuleException : DomainIntegrityException
 {
     public BusinessRuleException(List<FieldFailure> fieldsFailures, string message = nameof(BusinessRuleException))

@@ -6,6 +6,12 @@ using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.Fie
 
 namespace BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
 
+/// <summary>
+/// Промежуточный валидатор команд.
+/// Автоматически наложен на все обработчики команд и проверяет 
+/// команду с помощью валидаторов наследующихся от абстрактного 
+/// класса AbstractValidator<TКоманда>
+/// </summary>
 public class ValidatingBehavior<TRequest, TResponse>
          : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {

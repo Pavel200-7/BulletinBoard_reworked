@@ -34,11 +34,13 @@ public partial class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.SetSwaggerAuthSettings();
+        builder.Services.AddSession—ustom();
 
         var app = builder.Build();
 
-        app.UseMiddleware<ExceptionHandlingMiddleware>();
+        app.UseSession();
 
+        app.UseMiddleware<ExceptionHandlingMiddleware>();
 
         if (app.Environment.IsDevelopment())
         {

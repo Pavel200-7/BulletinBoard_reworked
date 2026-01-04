@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Moq;
 
+
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.DeleteRoleCommandTests;
 
 public class DeleteRoleCommandHandlerTests : BaseRoleCommandTests
@@ -22,7 +23,7 @@ public class DeleteRoleCommandHandlerTests : BaseRoleCommandTests
     }
 
     [Fact]
-    public async Task MustCheckIfUserExists()
+    public async Task CheckIfUserExists()
     {
         // Arrange 
         var command = CreateCommand();
@@ -39,7 +40,7 @@ public class DeleteRoleCommandHandlerTests : BaseRoleCommandTests
     }
 
     [Fact]
-    public async Task MustCheckRoleExists()
+    public async Task CheckIfRoleExists()
     {
         // Arrange 
         var command = CreateCommand("UnknownRole");
@@ -52,7 +53,7 @@ public class DeleteRoleCommandHandlerTests : BaseRoleCommandTests
     }
 
     [Fact]
-    public async Task MustDeleteRole()
+    public async Task DeleteRole()
     {
         // Arrange 
         var command = CreateCommand();
@@ -65,7 +66,7 @@ public class DeleteRoleCommandHandlerTests : BaseRoleCommandTests
     }
 
     [Fact]
-    public async Task MustThrow_WhenAddingFailed()
+    public async Task ThrowWhenAddingFailed()
     {
         // Arrange 
         var command = CreateCommand();

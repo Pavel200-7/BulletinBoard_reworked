@@ -1,65 +1,83 @@
-﻿//using AutoMapper;
-//using BulletinBoard.UserService.Hosts.Controllers.Auth;
-//using MediatR;
-//using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
+using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI;
+using BulletinBoard.UserService.Hosts.Controllers.Auth;
+using BulletinBoard.UserService.Hosts.Controllers.OAuth.Request;
+using BulletinBoard.UserService.Hosts.Controllers.OAuth.Response;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 
-//namespace BulletinBoard.UserService.Hosts.Controllers.OAuth;
+namespace BulletinBoard.UserService.Hosts.Controllers.OAuth;
 
-//[ApiController]
-//[Route("api/v1/[controller]")]
-//public class OAuthController : ControllerBase
-//{
-//    private readonly ILogger<AuthController> _logger;
-//    private readonly IConfiguration _config;
-//    private readonly IMapper _mapper;
-//    private readonly IMediator _mediator;
+[ApiController]
+[Route("api/v1/[controller]")]
+public class OAuthController : ControllerBase
+{
+    private readonly ILogger<AuthController> _logger;
+    private readonly IMapper _mapper;
+    private readonly IMediator _mediator;
 
-//    public OAuthController(
-//        ILogger<AuthController> logger, 
-//        IConfiguration config,
-//        IMapper mapper, 
-//        IMediator mediator)
-//    {
-//        _logger = logger;
-//        _config = config;
-//        _mapper = mapper;
-//        _mediator = mediator;
-//    }
+    public OAuthController(
+        ILogger<AuthController> logger,
+        IMapper mapper,
+        IMediator mediator)
+    {
+        _logger = logger;
+        _mapper = mapper;
+        _mediator = mediator;
+    }
 
-//    [HttpPost("/login/github")]
-//    public async Task<IActionResult> Login([FromQuery] string returnUrl = "/")
-//    {
-//        // 1. Генерируем state для защиты от CSRF
-//        var state = Guid.NewGuid().ToString("N");
+    [HttpGet("login/{provider}")]
+    public async Task<IActionResult> Login(
+        [FromRoute] string provider,
+        [FromQuery] string returnUrl = "/")
+    {
+        var state = Guid.NewGuid().ToString("N");
+        HttpContext.Session.SetString("oauth_state", state);
+        HttpContext.Session.SetString("return_url", returnUrl);
 
-//        // Сохраняем state в сессии (или в кеш/БД)
-//        HttpContext.Session.SetString("github_oauth_state", state);
-//        HttpContext.Session.SetString("github_return_url", returnUrl);
+        GetOAuthProviderURIQuery query = new GetOAuthProviderURIQuery(provider, state);
+        GetOAuthProviderURIQResponse qResponse = await _mediator.Send(query);
+        string authUrl = qResponse.ProviderURI;
+        return Redirect(authUrl);
+    }
 
-//        // 2. Берем настройки из конфигурации
-//        var clientId = _config["GitHub:ClientId"];
-//        var redirectUri = _config["GitHub:RedirectUri"];
+    [HttpGet("login_callback/{provider}")]
+    public async Task<IActionResult> LoginCallback(
+        [FromRoute] string provider,
+        [FromQuery] OAuthLogInCallbackRequest request)
+    {
+        if (!string.IsNullOrEmpty(request.Error))
+        {
+            _logger.LogWarning("Возникла ошибка при входе через провайдер OAuth. Ошибка: {0}, описание: {1}",
+                request.Error,
+                request.ErrorDescription);
+            throw new AccessDeniedExeption(request.Error);
+        }
 
-//        // 3. Формируем scope (права доступа)
-//        var scopes = new List<string>
-//        {
-//            "read:user",     // Чтение данных профиля
-//            "user:email"     // Доступ к email
-//        };
-//        var scope = string.Join(" ", scopes);
+        if (string.IsNullOrEmpty(request.Code))
+        {
+            throw new AccessDeniedExeption("Отсутствует код провайдера OAuth.");
+        }
 
-//        // 4. Собираем URL для редиректа на GitHub
-//        var githubAuthUrl = "https://github.com/login/oauth/authorize?" +
-//            $"client_id={Uri.EscapeDataString(clientId)}&" +
-//            $"redirect_uri={Uri.EscapeDataString(redirectUri)}&" +
-//            $"scope={Uri.EscapeDataString(scope)}&" +
-//            $"state={Uri.EscapeDataString(state)}&" +
-//            "allow_signup=false"; // Запрещаем регистрацию на GitHub через наше приложение
+        string? expectedState = HttpContext.Session.GetString("oauth_state");
+        if (expectedState is null)
+        {
+            throw new AccessDeniedExeption("Запрос авторизации устарел.");
+        }
 
-//        _logger.LogInformation("Redirecting to GitHub: {Url}", githubAuthUrl);
+        OAuthRegisterCommand command = new OAuthRegisterCommand()
+        {
+            Provider = provider,
+            Code = request.Code,
+            State = request.State,
+            ExpectedState = expectedState
+        };
 
-//        // 5. Перенаправляем пользователя на GitHub
-//        return Redirect(githubAuthUrl);
-//    }
-//}
+        OAuthRegisterCResponse cResponse = await _mediator.Send(command);
+        OAuthLogInCallbackResponse response = _mapper.Map<OAuthLogInCallbackResponse>(cResponse);
+        return Ok(response); 
+    }
+}

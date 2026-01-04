@@ -1,0 +1,78 @@
+{
+  "Routes": [
+    {
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "UpstreamPathTemplate": "/api/v1/auth/{everything}",
+      "DownstreamPathTemplate": "/api/v1/auth/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bulletinboard.userservice.hosts",
+          "Port": 8080
+        }
+      ],
+      "Key": "user_auth-service",
+      "Priority": 1
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "UpstreamPathTemplate": "/api/v1/oauth/{everything}",
+      "DownstreamPathTemplate": "/api/v1/oauth/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bulletinboard.userservice.hosts",
+          "Port": 8080
+        }
+      ],
+      "Key": "user_oauth-service",
+      "Priority": 2
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "UpstreamPathTemplate": "/api/v1/testing/{everything}",
+      "DownstreamPathTemplate": "/api/v1/testing/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bulletinboard.userservice.hosts",
+          "Port": 8080
+        }
+      ],
+      "Key": "user_testing-service",
+      "Priority": 3
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "UpstreamPathTemplate": "/api/v1/home/{everything}",
+      "DownstreamPathTemplate": "/api/v1/home/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bulletinboard.userservice.hosts",
+          "Port": 8080
+        }
+      ],
+      "Key": "user_home",
+      "Priority": 4
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "UpstreamPathTemplate": "/api/v1/exa/{everything}",
+      "DownstreamPathTemplate": "/api/v1/exa/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bulletinboard.notificationservice.hosts",
+          "Port": 8080
+        }
+      ],
+      "Key": "notification_exa-service",
+      "Priority": 5
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://bulletinboard.apigateway:8080",
+    "AllowAutoRedirect": false
+  }
+}

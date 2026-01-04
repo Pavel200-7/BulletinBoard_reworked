@@ -1,14 +1,16 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Commands.Helpers.OAuth;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.Infrastructure.Services.OAuth.Factories;
 using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
@@ -20,6 +22,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.OAuthRegisterTests;
 
 public class OAuthRegisterCommandHandlerTests
@@ -27,6 +30,7 @@ public class OAuthRegisterCommandHandlerTests
     private Mock<ILogger<OAuthRegisterCommandHandler>> _logger;
     private Mock<IMapper> _mapper;
     private Mock<UserManager<IdentityUser>> _userManager;
+    private Mock<IOAuthServiceFactory> _oauthServiceFactory;
     private Mock<IOAuthService> _oAuthService;
     private Mock<IJWTProvider> _JWTProvider;
     private Mock<IRefreshTokenProvider> _refreshTProvider;
@@ -41,6 +45,7 @@ public class OAuthRegisterCommandHandlerTests
 
         _logger = new Mock<ILogger<OAuthRegisterCommandHandler>>();
         _mapper = new Mock<IMapper>();
+        _oauthServiceFactory = new Mock<IOAuthServiceFactory>();
         _oAuthService = new Mock<IOAuthService>();
         _JWTProvider = new Mock<IJWTProvider>();
         _refreshTProvider = new Mock<IRefreshTokenProvider>();
@@ -49,7 +54,7 @@ public class OAuthRegisterCommandHandlerTests
             _logger.Object,
             _mapper.Object,
             _userManager!.Object,
-            _oAuthService.Object,
+            _oauthServiceFactory.Object,
             _JWTProvider.Object,
             _refreshTProvider.Object,
             _publishEndpoint.Object);
@@ -68,7 +73,7 @@ public class OAuthRegisterCommandHandlerTests
         var result = await _handler.Handle(command, _cancellationToken);
 
         // Assert
-        _oAuthService.Verify(oa => oa.GetRegistrationDataFromProviderAsync(command.Provider, command.Token, _cancellationToken));
+        _oAuthService.Verify(oa => oa.GetRegistrationDataFromProviderAsync(command.Code, _cancellationToken));
     }
 
     [Fact]
@@ -190,12 +195,13 @@ public class OAuthRegisterCommandHandlerTests
         Assert.Equal(expectedRefreshToken, result.RefreshToken);
     }
 
-
-
     private void SetupMock()
     {
+        _oauthServiceFactory.Setup(asf => asf.CreateOAuthService(It.IsAny<string>()))
+            .Returns(_oAuthService.Object);
+
         _oAuthService
-            .Setup(oa => oa.GetRegistrationDataFromProviderAsync(It.IsAny<string>(), It.IsAny<string>(), _cancellationToken))
+            .Setup(oa => oa.GetRegistrationDataFromProviderAsync(It.IsAny<string>(), _cancellationToken))
             .ReturnsAsync(CreateUserRegistrationData());
 
         var user = CreateUser();
@@ -220,9 +226,7 @@ public class OAuthRegisterCommandHandlerTests
             .Returns(user);
 
         _publishEndpoint.Setup(pe => pe.Publish<UserAddedEvent>(It.IsAny<Object>(), _cancellationToken))
-            .Returns(Task.CompletedTask);
-
-        
+            .Returns(Task.CompletedTask); 
     }
 
     private OAuthRegisterCommand CreateCommand()
@@ -230,7 +234,7 @@ public class OAuthRegisterCommandHandlerTests
         return new OAuthRegisterCommand()
         {
             Provider = "github",
-            Token = "SomeToken",
+            Code = "SomeToken",
             State = "SomeState",
             ExpectedState = "SomeState"
         };

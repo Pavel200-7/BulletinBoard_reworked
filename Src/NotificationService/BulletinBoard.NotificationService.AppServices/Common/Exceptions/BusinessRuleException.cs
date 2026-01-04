@@ -4,6 +4,9 @@ using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.Fie
 
 namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions;
 
+/// <summary>
+/// Ошибка бизнес логики.
+/// </summary>
 public class BusinessRuleException : DomainIntegrityException
 {
     public BusinessRuleException(List<FieldFailure> fieldsFailures, string message = nameof(BusinessRuleException))

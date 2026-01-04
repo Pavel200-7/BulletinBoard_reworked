@@ -1,4 +1,5 @@
-﻿using BulletinBoard.NotificationService.Hosts.Registrar;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.Hosts.Registrar;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -36,6 +37,19 @@ public static class AuthenticationRegistrar
                     NameClaimType = ClaimTypes.NameIdentifier,
                     RoleClaimType = ClaimTypes.Role,
                 };
+
+                options.Events = new JwtBearerEvents()
+                {
+                    OnChallenge = context =>
+                    {
+                        throw new UnauthorizedException("Ошибка авторизации.");
+                    },
+                    OnForbidden = context =>
+                    {
+                        throw new AccessDeniedExeption("Недостаточно прав.");
+                    },
+                };
+
             });
 
         return services;

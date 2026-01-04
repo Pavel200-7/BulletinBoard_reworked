@@ -1,7 +1,11 @@
 ﻿using MediatR;
 
+
 namespace BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 
+/// <summary>
+/// Подтвердить почту.
+/// </summary>
 public class ConfirmEmailCommand : IRequest<ConfirmEmailCResponse>
 {
     public string UserId { get; init; }

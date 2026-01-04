@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 
+
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 
 public class IdentityMockInitializer
@@ -33,19 +34,19 @@ public class IdentityMockInitializer
             options.Object,
             logger.Object,
             schemes.Object,
-            null  // Добавляем седьмой параметр - IUserConfirmation<TUser>
+            null 
         );
     }
 
     private Mock<UserManager<TUser>> CreateMockUserManager<TUser>()
         where TUser : IdentityUser
     {
-        var store = new Mock<IUserStore<TUser>>();  // Изменили тип
+        var store = new Mock<IUserStore<TUser>>();  
         var options = new Mock<IOptions<IdentityOptions>>();
         options.Setup(o => o.Value).Returns(new IdentityOptions());
-        var passwordHasher = new Mock<IPasswordHasher<TUser>>();  // Изменили тип
-        var userValidators = new List<IUserValidator<TUser>>();  // Изменили тип
-        var passwordValidators = new List<IPasswordValidator<TUser>>();  // Изменили тип
+        var passwordHasher = new Mock<IPasswordHasher<TUser>>();  
+        var userValidators = new List<IUserValidator<TUser>>();  
+        var passwordValidators = new List<IPasswordValidator<TUser>>();  
         var normalizer = new Mock<ILookupNormalizer>();
         var errors = new Mock<IdentityErrorDescriber>();
         var services = new Mock<IServiceProvider>();

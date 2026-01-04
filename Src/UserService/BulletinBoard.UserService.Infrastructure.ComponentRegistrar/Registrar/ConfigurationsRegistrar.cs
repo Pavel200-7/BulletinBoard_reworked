@@ -12,6 +12,9 @@ public static class ConfigurationsRegistrar
         services.Configure<JwtSettings>(configuration.GetSection("JWT"));
         services.Configure<RefreshTokenSettings>(configuration.GetSection("Refresh"));
 
+        services.Configure<GitHubOAuthSettings>(configuration.GetSection("GitHub"));
+
+
         return services;
     }
 }

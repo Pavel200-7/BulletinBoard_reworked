@@ -1,5 +1,8 @@
 ﻿namespace BulletinBoard.UserService.AppServices.Common.Configurations;
 
+/// <summary>
+/// Настройки JWT.
+/// </summary>
 public class JwtSettings
 {
     public string Key { get; set; } = string.Empty;

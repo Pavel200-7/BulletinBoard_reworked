@@ -20,10 +20,6 @@
     <ProjectReference Include="..\BulletinBoard.UserService.Infrastructure.ComponentRegistrar\BulletinBoard.UserService.Infrastructure.ComponentRegistrar.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\OAuth\Request\" />
-  </ItemGroup>
-
 
 
 </Project>

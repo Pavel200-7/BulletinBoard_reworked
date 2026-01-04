@@ -2,10 +2,10 @@
 using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
 using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RoleCommandHandler;
-using BulletinBoard.UserService.AppServices.User.Enum;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.DeleteRole;
 

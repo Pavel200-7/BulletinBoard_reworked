@@ -1,9 +1,7 @@
-﻿using AutoMapper;
-using BulletinBoard.EventBus.Messages.Events.User;
+﻿using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
 using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;

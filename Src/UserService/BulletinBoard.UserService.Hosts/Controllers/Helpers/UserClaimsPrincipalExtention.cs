@@ -4,8 +4,16 @@ using System.Security.Claims;
 
 namespace BulletinBoard.UserService.Hosts.Controllers.Helpers;
 
+/// <summary>
+/// Доставатель клеймов JWT.
+/// </summary>
 public static class UserClaimsPrincipalExtention
 {
+    /// <summary>
+    /// Получить id пользователя.
+    /// </summary>
+    /// <returns>Id пользователя.</returns>
+    /// <exception cref="AccessDeniedExeption">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
     public static Guid GetId(this ClaimsPrincipal claimsPrincipal)
     {
         var userId = claimsPrincipal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -16,6 +24,11 @@ public static class UserClaimsPrincipalExtention
         return Guid.Parse(userId);
     }
 
+    /// <summary>
+    /// Получить email пользователя.
+    /// </summary>
+    /// <returns>Email пользователя.</returns>
+    /// <exception cref="AccessDeniedExeption">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
     public static string GetEmail(this ClaimsPrincipal claimsPrincipal)
     {
         var email = claimsPrincipal.FindFirst(ClaimTypes.Email)?.Value;
@@ -26,6 +39,11 @@ public static class UserClaimsPrincipalExtention
         return email;
     }
 
+    /// <summary>
+    /// Получить роли пользователя.
+    /// </summary>
+    /// <returns>Роли пользователя.</returns>
+    /// <exception cref="AccessDeniedExeption">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
     public static List<string> GetRoles(this ClaimsPrincipal claimsPrincipal)
     {
         var userRoles = claimsPrincipal.FindAll(ClaimTypes.Role)

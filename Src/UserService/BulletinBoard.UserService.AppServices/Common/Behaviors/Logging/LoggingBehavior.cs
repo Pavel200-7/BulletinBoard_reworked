@@ -4,6 +4,11 @@ using Microsoft.Extensions.Logging;
 
 namespace BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
 
+/// <summary>
+/// Промежуточный логгер команд.
+/// Автоматически наложен на все обработчики команд. 
+/// Логирует начало и конец обработки. 
+/// </summary>
 public class LoggingBehavior<TRequest, TResponse>
          : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {
