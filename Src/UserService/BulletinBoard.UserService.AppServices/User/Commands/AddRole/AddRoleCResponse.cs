@@ -1,7 +1,7 @@
-﻿using BulletinBoard.UserService.AppServices.User.Commands.Helpers.BaseResponse;
+﻿using BulletinBoard.NotificationService.AppServices.User.Commands.Helpers.BaseResponse;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+namespace BulletinBoard.NotificationService.AppServices.User.Commands.AddRole;
 
 public class AddRoleCResponse : BaseCommandResponse
 {

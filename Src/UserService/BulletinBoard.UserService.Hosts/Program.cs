@@ -1,13 +1,13 @@
 using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
-using BulletinBoard.UserService.Hosts.Registrar;
-using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
-using BulletinBoard.UserService.Infrastructure.Middleware;
+using BulletinBoard.NotificationService.Hosts.Registrar;
+using BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
+using BulletinBoard.NotificationService.Infrastructure.Middleware;
 using MassTransit.MultiBus;
 using System.Reflection;
 
 
-namespace BulletinBoard.UserService.Hosts;
+namespace BulletinBoard.NotificationService.Hosts;
 
 public partial class Program
 {
@@ -35,6 +35,8 @@ public partial class Program
         builder.Services.AddSwaggerGen();
         builder.Services.SetSwaggerAuthSettings();
         builder.Services.AddSession—ustom();
+        builder.Services.AddHttpClient();
+
 
         var app = builder.Build();
 

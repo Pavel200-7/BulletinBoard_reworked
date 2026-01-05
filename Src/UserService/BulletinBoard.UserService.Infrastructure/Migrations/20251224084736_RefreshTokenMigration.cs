@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace BulletinBoard.UserService.Infrastructure.Migrations
+namespace BulletinBoard.NotificationService.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class RefreshTokenMigration : Migration

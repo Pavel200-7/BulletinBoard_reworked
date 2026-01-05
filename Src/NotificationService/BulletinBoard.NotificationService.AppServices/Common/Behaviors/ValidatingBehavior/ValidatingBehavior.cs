@@ -4,7 +4,7 @@ using ValidationException = BulletinBoard.NotificationService.AppServices.Common
 using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
-namespace BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
+namespace BulletinBoard.NotificationService.AppServices.Common.Behaviors.ValidatingBehavior;
 
 /// <summary>
 /// Промежуточный валидатор команд.

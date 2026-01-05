@@ -1,7 +1,7 @@
-﻿using BulletinBoard.UserService.Domain.Entityes.Base;
+﻿using BulletinBoard.NotificationService.Domain.Entityes.Base;
 
 
-namespace BulletinBoard.UserService.Domain.Entityes;
+namespace BulletinBoard.NotificationService.Domain.Entityes;
 
 public class RefreshToken : BaseEntity
 {

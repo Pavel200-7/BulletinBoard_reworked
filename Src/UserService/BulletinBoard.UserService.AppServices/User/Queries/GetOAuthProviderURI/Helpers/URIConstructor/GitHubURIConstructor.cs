@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
@@ -18,10 +18,22 @@ public class GitHubURIConstructor : IURIConstructor
 
     public string CreateURI(URIData data)
     {
+        string scopeString = GetDefaultScopesString();
         return $"https://github.com/login/oauth/authorize?" +
             $"client_id={Uri.EscapeDataString(_settings.ClientId)}&" +
             $"redirect_uri={Uri.EscapeDataString(_settings.RedirectURI)}&" +
+            $"scope={Uri.EscapeDataString(scopeString)}&" +
             $"state={Uri.EscapeDataString(data.State)}&" +
             $"allow_signup=false";
+    }
+
+    private string GetDefaultScopesString()
+    {
+        var scopes = new List<string>()
+        {
+            "read:user",    
+            "user:email"    
+        };
+        return string.Join(" ", scopes);
     }
 }

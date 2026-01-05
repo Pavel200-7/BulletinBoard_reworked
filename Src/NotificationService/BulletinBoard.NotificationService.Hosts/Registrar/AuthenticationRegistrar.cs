@@ -46,7 +46,7 @@ public static class AuthenticationRegistrar
                     },
                     OnForbidden = context =>
                     {
-                        throw new AccessDeniedExeption("Недостаточно прав.");
+                        throw new AccessDeniedException("Недостаточно прав.");
                     },
                 };
 

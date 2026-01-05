@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.Hosts.Registrar;
+﻿using BulletinBoard.NotificationService.Hosts.Registrar;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json;
 
 
-namespace BulletinBoard.UserService.Hosts.Registrar;
+namespace BulletinBoard.NotificationService.Hosts.Registrar;
 
 public static class AuthenticationRegistrar
 {

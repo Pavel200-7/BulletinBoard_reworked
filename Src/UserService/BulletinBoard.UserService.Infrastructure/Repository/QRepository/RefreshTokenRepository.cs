@@ -1,10 +1,10 @@
-﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.Domain.Entityes;
+﻿using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+using BulletinBoard.NotificationService.Domain.Entityes;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository;
+namespace BulletinBoard.NotificationService.Infrastructure.Repository.QRepository;
 
 public class RefreshTokenRepository : IRefreshTokenRepository
 {

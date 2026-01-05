@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.Hosts.Controllers.Auth;
+using BulletinBoard.NotificationService.Hosts.Controllers.OAuth.Request;
+using BulletinBoard.NotificationService.Hosts.Controllers.OAuth.Response;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI;
-using BulletinBoard.UserService.Hosts.Controllers.Auth;
-using BulletinBoard.UserService.Hosts.Controllers.OAuth.Request;
-using BulletinBoard.UserService.Hosts.Controllers.OAuth.Response;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace BulletinBoard.UserService.Hosts.Controllers.OAuth;
+namespace BulletinBoard.NotificationService.Hosts.Controllers.OAuth;
 
 [ApiController]
 [Route("api/v1/[controller]")]
@@ -54,18 +54,18 @@ public class OAuthController : ControllerBase
             _logger.LogWarning("Возникла ошибка при входе через провайдер OAuth. Ошибка: {0}, описание: {1}",
                 request.Error,
                 request.ErrorDescription);
-            throw new AccessDeniedExeption(request.Error);
+            throw new AccessDeniedException(request.Error);
         }
 
         if (string.IsNullOrEmpty(request.Code))
         {
-            throw new AccessDeniedExeption("Отсутствует код провайдера OAuth.");
+            throw new AccessDeniedException("Отсутствует код провайдера OAuth.");
         }
 
         string? expectedState = HttpContext.Session.GetString("oauth_state");
         if (expectedState is null)
         {
-            throw new AccessDeniedExeption("Запрос авторизации устарел.");
+            throw new AccessDeniedException("Запрос авторизации устарел.");
         }
 
         OAuthRegisterCommand command = new OAuthRegisterCommand()

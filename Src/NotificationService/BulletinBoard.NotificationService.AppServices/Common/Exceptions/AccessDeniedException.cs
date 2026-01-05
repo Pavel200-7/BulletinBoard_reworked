@@ -3,9 +3,9 @@
 /// <summary>
 /// Ошибка ограничения доступа.
 /// </summary>
-public class AccessDeniedExeption : Exception
+public class AccessDeniedException : Exception
 {
-    public AccessDeniedExeption(string message) 
+    public AccessDeniedException(string message) 
         : base(message)
     {
     }

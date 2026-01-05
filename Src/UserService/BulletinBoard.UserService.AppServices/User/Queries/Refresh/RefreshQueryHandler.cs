@@ -1,12 +1,12 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
+using BulletinBoard.NotificationService.AppServices.User.Repositiry;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Queries.Refresh;
+namespace BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
 
 public class RefreshQueryHandler : IRequestHandler<RefreshQuery, RefreshQResponse>
 {

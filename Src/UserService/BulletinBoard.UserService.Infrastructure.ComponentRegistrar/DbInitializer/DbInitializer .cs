@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.Infrastructure;
+﻿using BulletinBoard.NotificationService.Infrastructure;
 using Extensions.Hosting.AsyncInitialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;

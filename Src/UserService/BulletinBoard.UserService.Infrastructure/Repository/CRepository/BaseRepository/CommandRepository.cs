@@ -1,8 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
+﻿using BulletinBoard.NotificationService.AppServices.Common.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace BulletinBoard.UserService.Infrastructure.Repository.CRepository.BaseRepository;
+namespace BulletinBoard.NotificationService.Infrastructure.Repository.CRepository.BaseRepository;
 
 public class CommandRepository<TEntity> : ICommandRepository<TEntity> where TEntity : class
 {

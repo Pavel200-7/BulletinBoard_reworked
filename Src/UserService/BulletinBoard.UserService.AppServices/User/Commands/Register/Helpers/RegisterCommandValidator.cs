@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;
+namespace BulletinBoard.NotificationService.AppServices.User.Commands.Register.Helpers;
 
 public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
 {

@@ -1,8 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.CommonTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.CommonTests;
 
 public class BusinessRuleExceptionTests
 {

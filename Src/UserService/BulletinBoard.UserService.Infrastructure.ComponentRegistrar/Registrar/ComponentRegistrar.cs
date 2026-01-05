@@ -1,20 +1,22 @@
-﻿using BulletinBoard.UserService.AppServices.Common;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.LoggingBehavior;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
-using BulletinBoard.UserService.AppServices.Common.IRepository;
-using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
-using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+﻿using BulletinBoard.NotificationService.AppServices.Common;
+using BulletinBoard.NotificationService.AppServices.Common.Behaviors.LoggingBehavior;
+using BulletinBoard.NotificationService.AppServices.Common.Behaviors.Transaction;
+using BulletinBoard.NotificationService.AppServices.Common.Behaviors.ValidatingBehavior;
+using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
+using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
+using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+using BulletinBoard.NotificationService.Infrastructure.Repository;
+using BulletinBoard.NotificationService.Infrastructure.Repository.CRepository.BaseRepository;
+using BulletinBoard.NotificationService.Infrastructure.Repository.QRepository;
+using BulletinBoard.NotificationService.Infrastructure.Repository.QRepository.BaseRepository;
+using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.Factories;
+using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.GitHubOAuth;
+using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.GitHubOAuth.Helpers.GitHubHttp;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor.Factories;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.Infrastructure.Repository;
-using BulletinBoard.UserService.Infrastructure.Repository.CRepository.BaseRepository;
-using BulletinBoard.UserService.Infrastructure.Repository.QRepository;
-using BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRepository;
-using BulletinBoard.UserService.Infrastructure.Services.OAuth;
 using FluentValidation;
 using MassTransit;
 using MassTransit.MultiBus;
@@ -22,7 +24,7 @@ using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
+namespace BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
 
 public static class ComponentRegistrar
 {
@@ -49,7 +51,6 @@ public static class ComponentRegistrar
 
 
         services.AddScoped<GitHubOAuthService>();
-        services.AddScoped<IOAuthServiceFactory, OAuthServiceFactory>();
 
         return services;
     }
@@ -62,6 +63,12 @@ public static class ComponentRegistrar
 
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+
+        services.AddScoped<GitHubOAuthService>();
+        services.AddScoped<IOAuthServiceFactory, OAuthServiceFactory>();
+
+        services.AddScoped<IGitHubHttpService, GitHubHttpService>();
+
         //services.AddScoped<IOAuthService, OAuthService>();
 
         return services;

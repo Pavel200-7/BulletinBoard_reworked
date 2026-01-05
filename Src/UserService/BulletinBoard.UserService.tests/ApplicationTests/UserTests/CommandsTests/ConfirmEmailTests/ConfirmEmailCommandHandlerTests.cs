@@ -1,13 +1,13 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
-using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.User.Commands.ConfirmEmail;
+using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.ConfirmEmailCommandTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandTests.ConfirmEmailCommandTests;
 
 public class ConfirmEmailCommandHandlerTests
 {

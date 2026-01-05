@@ -1,7 +1,7 @@
-﻿using BulletinBoard.UserService.AppServices.User.Enum;
+﻿using BulletinBoard.NotificationService.AppServices.User.Enum;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.EnumTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.EnumTests;
 
 public class OAuthProvidersTests
 {

@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.User.Enum;
+﻿using BulletinBoard.NotificationService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor.Factories;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.QueriesTests.GetOAuthProviderURITests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.QueriesTests.GetOAuthProviderURITests;
 
 public class GetOAuthProviderURICommandHandlerTests
 {

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 
 public class IdentityMockInitializer
 {

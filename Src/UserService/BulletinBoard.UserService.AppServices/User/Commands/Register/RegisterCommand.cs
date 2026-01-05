@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
+namespace BulletinBoard.NotificationService.AppServices.User.Commands.Register;
 
 public class RegisterCommand : IRequest<RegisterCResponse>
 {

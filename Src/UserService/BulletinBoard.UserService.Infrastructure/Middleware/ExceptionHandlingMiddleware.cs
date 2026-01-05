@@ -1,12 +1,12 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.Infrastructure.Middleware.Response;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.Infrastructure.Middleware.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
 
-namespace BulletinBoard.UserService.Infrastructure.Middleware;
+namespace BulletinBoard.NotificationService.Infrastructure.Middleware;
 
 public class ExceptionHandlingMiddleware
 {
@@ -53,10 +53,15 @@ public class ExceptionHandlingMiddleware
             _logger.LogError(e, e.Message);
             await HandleUnauthorizedExceptionAsync(context, e);
         }
-        catch (AccessDeniedExeption e)
+        catch (AccessDeniedException e)
         {
             _logger.LogError(e, e.Message);
             await HandleAccessDeniedExeptionAsync(context, e);
+        }
+        catch (InfrastructureException e)
+        {
+            _logger.LogError(e, e.Message);
+            await HandleInfrastructureExceptionAsync(context, e);
         }
         catch (Exception e)
         {
@@ -127,7 +132,7 @@ public class ExceptionHandlingMiddleware
         await context.Response.WriteAsync(JsonSerializer.Serialize(response, _jsonOptions));
     }
 
-    private async Task HandleAccessDeniedExeptionAsync(HttpContext context, AccessDeniedExeption exception)
+    private async Task HandleAccessDeniedExeptionAsync(HttpContext context, AccessDeniedException exception)
     {
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = StatusCodes.Status403Forbidden;
@@ -140,6 +145,11 @@ public class ExceptionHandlingMiddleware
         };
 
         await context.Response.WriteAsync(JsonSerializer.Serialize(response, _jsonOptions));
+    }
+
+    private async Task HandleInfrastructureExceptionAsync(HttpContext context, InfrastructureException exception)
+    {
+        await HandleExceptionAsync(context, exception);
     }
 
     private async Task HandleExceptionAsync(HttpContext context, Exception exception)

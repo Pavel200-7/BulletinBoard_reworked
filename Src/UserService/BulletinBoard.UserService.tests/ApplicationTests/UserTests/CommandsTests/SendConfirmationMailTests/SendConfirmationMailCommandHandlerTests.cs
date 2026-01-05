@@ -1,8 +1,8 @@
 ﻿using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
-using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
-using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
+using BulletinBoard.NotificationService.AppServices.User.Commands.SendConfirmationMail;
+using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -10,7 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.SendConfirmationMailTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandsTests.SendConfirmationMailTests;
 
 public class SendConfirmationMailCommandHandlerTests
 {

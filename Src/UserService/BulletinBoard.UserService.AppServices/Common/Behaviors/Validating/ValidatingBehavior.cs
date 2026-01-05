@@ -1,11 +1,11 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using ValidationException = BulletinBoard.UserService.AppServices.Common.Exceptions.ValidationException;
+using ValidationException = BulletinBoard.NotificationService.AppServices.Common.Exceptions.ValidationException;
 
 
-namespace BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
+namespace BulletinBoard.NotificationService.AppServices.Common.Behaviors.ValidatingBehavior;
 
 /// <summary>
 /// Промежуточный валидатор команд.

@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
+using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
+using BulletinBoard.NotificationService.AppServices.User.Enum;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
+using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.Factories;
+using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
-using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
-using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
-using BulletinBoard.UserService.AppServices.User.Enum;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.Infrastructure.Services.OAuth.Factories;
-using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -23,7 +23,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.OAuthRegisterTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandsTests.OAuthRegisterTests;
 
 public class OAuthRegisterCommandHandlerTests
 {

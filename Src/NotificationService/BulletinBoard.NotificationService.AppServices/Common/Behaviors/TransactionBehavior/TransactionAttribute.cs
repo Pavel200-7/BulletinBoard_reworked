@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
+﻿namespace BulletinBoard.NotificationService.AppServices.Common.Behaviors.TransactionBehavior;
 
 /// <summary>
 /// Атрибут транзакции. Его наложение запускает транзакцию до начала обработки. 

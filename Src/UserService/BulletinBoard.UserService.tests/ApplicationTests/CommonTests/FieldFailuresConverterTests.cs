@@ -1,9 +1,9 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.CommonTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.CommonTests;
 
 public class FieldFailuresConverterTests
 {

@@ -1,7 +1,7 @@
 ﻿using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.OAuthRegisterTests.HelpersTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandsTests.OAuthRegisterTests.HelpersTests;
 
 public class OAuthRegisterCommandValidatorTests
 {

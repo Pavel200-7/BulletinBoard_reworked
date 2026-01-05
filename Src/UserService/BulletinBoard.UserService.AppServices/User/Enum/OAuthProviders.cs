@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace BulletinBoard.UserService.AppServices.User.Enum;
+namespace BulletinBoard.NotificationService.AppServices.User.Enum;
 
 public class OAuthProviders
 {

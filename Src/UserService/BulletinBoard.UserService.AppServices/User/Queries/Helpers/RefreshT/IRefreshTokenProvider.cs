@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
+﻿namespace BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
 
 public interface IRefreshTokenProvider
 {

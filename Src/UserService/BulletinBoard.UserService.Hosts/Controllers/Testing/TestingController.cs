@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.Hosts.Controllers.Auth;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.Hosts.Controllers.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 
-namespace BulletinBoard.UserService.Hosts.Controllers.Testing;
+namespace BulletinBoard.NotificationService.Hosts.Controllers.Testing;
 
 [ApiController]
 [Route("api/v1/[controller]")]

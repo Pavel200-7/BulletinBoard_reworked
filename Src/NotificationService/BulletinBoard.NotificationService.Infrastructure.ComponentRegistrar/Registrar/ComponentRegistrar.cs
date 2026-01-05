@@ -6,8 +6,8 @@ using BulletinBoard.NotificationService.AppServices.Notification.Mail;
 using BulletinBoard.NotificationService.Infrastructure.Repository;
 using BulletinBoard.NotificationService.Infrastructure.Repository.CRepository.BaseRepository;
 using BulletinBoard.NotificationService.Infrastructure.Repository.QRepository.BaseRepository;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.TransactionBehavior;
-using BulletinBoard.UserService.AppServices.Common.Behaviors.ValidatingBehavior;
+using BulletinBoard.NotificationService.AppServices.Common.Behaviors.TransactionBehavior;
+using BulletinBoard.NotificationService.AppServices.Common.Behaviors.ValidatingBehavior;
 using FluentValidation;
 using MassTransit;
 using MediatR;
@@ -15,7 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 
 
-namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
+namespace BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
 
 public static class ComponentRegistrar
 {

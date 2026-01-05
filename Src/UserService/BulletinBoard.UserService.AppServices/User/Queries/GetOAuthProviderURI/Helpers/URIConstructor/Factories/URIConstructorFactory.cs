@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.User.Enum;
+﻿using BulletinBoard.NotificationService.AppServices.User.Enum;
 using Microsoft.Extensions.DependencyInjection;
 
 

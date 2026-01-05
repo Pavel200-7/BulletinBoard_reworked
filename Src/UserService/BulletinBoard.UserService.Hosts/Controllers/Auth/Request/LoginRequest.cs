@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.Hosts.Controllers.Auth.Request;
+﻿namespace BulletinBoard.NotificationService.Hosts.Controllers.Auth.Request;
 
 public class LogInRequest
 {

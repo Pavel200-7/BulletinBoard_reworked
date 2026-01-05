@@ -4,7 +4,7 @@ using BulletinBoard.NotificationService.AppServices.Notification.Commands.SendCo
 using BulletinBoard.NotificationService.AppServices.User.Commands.AddUser;
 
 
-namespace BulletinBoard.UserService.Hosts.Common.Mapper;
+namespace BulletinBoard.NotificationService.Hosts.Common.Mapper;
 
 public class HostsMappingProfile : Profile
 {

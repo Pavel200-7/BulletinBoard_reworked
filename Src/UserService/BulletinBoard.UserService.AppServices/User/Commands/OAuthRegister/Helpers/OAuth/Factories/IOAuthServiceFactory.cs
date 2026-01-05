@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+﻿namespace BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
 
 public interface IOAuthServiceFactory
 {

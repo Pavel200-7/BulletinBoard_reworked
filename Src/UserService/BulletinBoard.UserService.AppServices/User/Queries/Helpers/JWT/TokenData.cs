@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
+﻿namespace BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
 
 public class TokenData
 {

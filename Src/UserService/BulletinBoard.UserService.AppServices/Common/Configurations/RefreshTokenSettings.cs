@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.AppServices.Common.Configurations;
+﻿namespace BulletinBoard.NotificationService.AppServices.Common.Configurations;
 
 /// <summary>
 /// Настройки токена обновления.

@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.UserService.Domain.Entityes.Base;
+﻿namespace BulletinBoard.NotificationService.Domain.Entityes.Base;
 
 public class BaseEntity
 {

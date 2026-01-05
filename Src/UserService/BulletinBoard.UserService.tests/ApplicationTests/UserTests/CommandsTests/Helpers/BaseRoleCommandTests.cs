@@ -1,9 +1,9 @@
-﻿using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+﻿using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandTests.Helpers;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandTests.Helpers;
 
 public abstract class BaseRoleCommandTests
 {

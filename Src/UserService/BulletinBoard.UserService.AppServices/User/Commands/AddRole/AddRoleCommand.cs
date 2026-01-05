@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+namespace BulletinBoard.NotificationService.AppServices.User.Commands.AddRole;
 
 /// <summary>
 /// Добавить роль.

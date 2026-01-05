@@ -1,11 +1,11 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.QueriesTests.GetOAuthProviderURITests.HelpersTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.QueriesTests.GetOAuthProviderURITests.HelpersTests;
 
 public class GitHubURIConstructorTests
 {

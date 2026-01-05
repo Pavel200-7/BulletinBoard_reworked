@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Text.Json;
 
 
-namespace BulletinBoard.UserService.Hosts.Controllers.Auth;
+namespace BulletinBoard.NotificationService.Hosts.Controllers.Auth;
 
 [ApiController]
 [Route("api/v1/[controller]")]

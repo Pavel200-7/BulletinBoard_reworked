@@ -1,4 +1,6 @@
-﻿namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
+﻿using Microsoft.Extensions.Options;
+
+namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
 
 /// <summary>
 /// Частичные данные пользователя для регистрации через oauth 2.
@@ -18,6 +20,6 @@ public class PartialUser
         UserName = email;
         Email = email;
         PhoneNumber = "";
-        Password = Guid.NewGuid().ToString();
+        Password = PasswordGenerator.GeneratePassword();
     }
 }

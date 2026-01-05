@@ -8,10 +8,10 @@ namespace BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI
 
 public class GetOAuthProviderURIQueryHandler : IRequestHandler<GetOAuthProviderURIQuery, GetOAuthProviderURIQResponse>
 {
-    private readonly ILogger _logger;
+    private readonly ILogger<GetOAuthProviderURIQueryHandler> _logger;
     private IURIConstructorFactory _uriConstructorFactory;
 
-    public GetOAuthProviderURIQueryHandler(ILogger logger, IURIConstructorFactory uriConstructorFactory)
+    public GetOAuthProviderURIQueryHandler(ILogger<GetOAuthProviderURIQueryHandler> logger, IURIConstructorFactory uriConstructorFactory)
     {
         _logger = logger;
         _uriConstructorFactory = uriConstructorFactory;

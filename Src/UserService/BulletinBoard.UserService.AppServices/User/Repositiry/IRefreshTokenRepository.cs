@@ -1,7 +1,7 @@
-﻿using BulletinBoard.UserService.Domain.Entityes;
+﻿using BulletinBoard.NotificationService.Domain.Entityes;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Repositiry;
+namespace BulletinBoard.NotificationService.AppServices.User.Repositiry;
 
 public interface IRefreshTokenRepository
 {

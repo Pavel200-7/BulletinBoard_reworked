@@ -1,8 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.User.Commands.Register;
-using BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;
+﻿using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
+using BulletinBoard.NotificationService.AppServices.User.Commands.Register.Helpers;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.RegisterTests.HelpersTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandsTests.RegisterTests.HelpersTests;
 
 public class RegisterCommandValidatorTests
 {

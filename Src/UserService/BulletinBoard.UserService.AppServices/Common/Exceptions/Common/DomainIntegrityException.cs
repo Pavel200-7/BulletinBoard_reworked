@@ -1,9 +1,9 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
 
-namespace BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
+namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common;
 
 /// <summary>
 /// Входные данные не соответствуют правилам домена и их ввод в вистему накушит целостность ее данных.

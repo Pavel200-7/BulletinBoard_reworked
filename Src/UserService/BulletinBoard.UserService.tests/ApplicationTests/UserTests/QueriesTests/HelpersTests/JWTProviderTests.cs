@@ -1,13 +1,13 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
+using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.QueriesTests.HelpersTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.QueriesTests.HelpersTests;
 
 public class JWTProviderTests
 {

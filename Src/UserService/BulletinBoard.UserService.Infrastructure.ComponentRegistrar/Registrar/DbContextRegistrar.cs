@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.Infrastructure;
+﻿using BulletinBoard.NotificationService.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;

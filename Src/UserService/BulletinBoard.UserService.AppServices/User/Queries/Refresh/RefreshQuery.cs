@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.UserService.AppServices.User.Queries.Refresh;
+namespace BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
 
 /// <summary>
 /// Обновить данные авторизации по токену обновления.

@@ -1,13 +1,13 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
-using BulletinBoard.UserService.AppServices.Common.IRepository;
-using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.Domain.Entityes;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
+using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
+using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+using BulletinBoard.NotificationService.Domain.Entityes;
 using Microsoft.Extensions.Options;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.QueriesTests.HelpersTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.QueriesTests.HelpersTests;
 
 public class RefreshTokenProviderTests
 {

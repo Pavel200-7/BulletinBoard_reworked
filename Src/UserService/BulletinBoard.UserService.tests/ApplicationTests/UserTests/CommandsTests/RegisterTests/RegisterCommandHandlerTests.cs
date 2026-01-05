@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
-using BulletinBoard.UserService.AppServices.User.Enum;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
-using BulletinBoard.UserService.tests.ApplicationTests.UserTests.Helpers;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
+using BulletinBoard.NotificationService.AppServices.User.Enum;
+using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Moq;
 
 
-namespace BulletinBoard.UserService.tests.ApplicationTests.AuthTests.CommandTests.AddUserCommandTests;
+namespace BulletinBoard.NotificationService.tests.ApplicationTests.AuthTests.CommandTests.AddUserCommandTests;
 
 public class RegisterCommandHandlerTests
 {

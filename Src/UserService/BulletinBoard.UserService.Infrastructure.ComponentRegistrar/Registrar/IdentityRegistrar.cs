@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Security.Claims;
 
 
-namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
+namespace BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
 
 public static class IdentityRegistrar
 {
@@ -47,7 +47,7 @@ public static class IdentityRegistrar
                 },
                 OnRedirectToAccessDenied = context =>
                 {
-                    throw new AccessDeniedExeption("Не достаточно прав.");
+                    throw new AccessDeniedException("Не достаточно прав.");
                 },
                 OnRedirectToLogout = context =>
                 {

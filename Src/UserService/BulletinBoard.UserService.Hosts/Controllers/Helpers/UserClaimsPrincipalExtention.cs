@@ -1,8 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
 using System.Security.Claims;
 
 
-namespace BulletinBoard.UserService.Hosts.Controllers.Helpers;
+namespace BulletinBoard.NotificationService.Hosts.Controllers.Helpers;
 
 /// <summary>
 /// Доставатель клеймов JWT.
@@ -13,13 +13,13 @@ public static class UserClaimsPrincipalExtention
     /// Получить id пользователя.
     /// </summary>
     /// <returns>Id пользователя.</returns>
-    /// <exception cref="AccessDeniedExeption">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
+    /// <exception cref="AccessDeniedException">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
     public static Guid GetId(this ClaimsPrincipal claimsPrincipal)
     {
         var userId = claimsPrincipal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (userId == null)
         {
-            throw new AccessDeniedExeption("JWT не содержит id пользователя.");
+            throw new AccessDeniedException("JWT не содержит id пользователя.");
         }
         return Guid.Parse(userId);
     }
@@ -28,13 +28,13 @@ public static class UserClaimsPrincipalExtention
     /// Получить email пользователя.
     /// </summary>
     /// <returns>Email пользователя.</returns>
-    /// <exception cref="AccessDeniedExeption">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
+    /// <exception cref="AccessDeniedException">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
     public static string GetEmail(this ClaimsPrincipal claimsPrincipal)
     {
         var email = claimsPrincipal.FindFirst(ClaimTypes.Email)?.Value;
         if (email == null)
         {
-            throw new AccessDeniedExeption("JWT не содержит email пользователя.");
+            throw new AccessDeniedException("JWT не содержит email пользователя.");
         }
         return email;
     }
@@ -43,7 +43,7 @@ public static class UserClaimsPrincipalExtention
     /// Получить роли пользователя.
     /// </summary>
     /// <returns>Роли пользователя.</returns>
-    /// <exception cref="AccessDeniedExeption">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
+    /// <exception cref="AccessDeniedException">Ошибка доступа из-за отсутствуия нужного клейма.</exception>
     public static List<string> GetRoles(this ClaimsPrincipal claimsPrincipal)
     {
         var userRoles = claimsPrincipal.FindAll(ClaimTypes.Role)
@@ -51,7 +51,7 @@ public static class UserClaimsPrincipalExtention
             .ToList();
         if (!userRoles.Any())
         {
-            throw new AccessDeniedExeption("JWT не содержит ролей пользователя.");
+            throw new AccessDeniedException("JWT не содержит ролей пользователя.");
         }
         return userRoles;
     }

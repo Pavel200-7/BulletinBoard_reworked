@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
-using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
-using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
-using BulletinBoard.UserService.AppServices.User.Queries.Refresh;
-using BulletinBoard.UserService.Hosts.Controllers.Auth.Request;
-using BulletinBoard.UserService.Hosts.Controllers.Auth.Response;
-using BulletinBoard.UserService.Hosts.Controllers.Helpers;
+using BulletinBoard.NotificationService.AppServices.User.Commands.ConfirmEmail;
+using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
+using BulletinBoard.NotificationService.AppServices.User.Commands.SendConfirmationMail;
+using BulletinBoard.NotificationService.AppServices.User.Queries.LogIn;
+using BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
+using BulletinBoard.NotificationService.Hosts.Controllers.Auth.Request;
+using BulletinBoard.NotificationService.Hosts.Controllers.Auth.Response;
+using BulletinBoard.NotificationService.Hosts.Controllers.Helpers;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace BulletinBoard.UserService.Hosts.Controllers.Auth;
+namespace BulletinBoard.NotificationService.Hosts.Controllers.Auth;
 
 [ApiController]
 [Route("api/v1/[controller]")]
