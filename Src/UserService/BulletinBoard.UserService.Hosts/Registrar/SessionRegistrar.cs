@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.Hosts.Registrar;
+﻿namespace BulletinBoard.UserService.Hosts.Registrar;
 
 public static class SessionRegistrar
 {

@@ -1,14 +1,12 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
-using BulletinBoard.NotificationService.AppServices.User.Queries.LogIn;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
-using BulletinBoard.NotificationService.AppServices.User.Repositiry;
-using BulletinBoard.NotificationService.Domain.Entityes;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
+using BulletinBoard.UserService.AppServices.User.Queries.Refresh;
+using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.Domain.Entities;
 using Microsoft.Extensions.Logging;
 using Moq;
-using System.Runtime;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+
 
 namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.QueriesTests.RefreshQueryTests;
 

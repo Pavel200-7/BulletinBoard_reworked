@@ -1,13 +1,12 @@
-using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
-using BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
-using BulletinBoard.NotificationService.Hosts.Registrar;
-using BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
-using BulletinBoard.NotificationService.Infrastructure.Middleware;
+using BulletinBoard.UserService.Hosts.Registrar;
+using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;
+using BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
+using BulletinBoard.UserService.Infrastructure.Middleware;
 using MassTransit.MultiBus;
 using System.Reflection;
 
 
-namespace BulletinBoard.NotificationService.Hosts;
+namespace BulletinBoard.UserService.Hosts;
 
 public partial class Program
 {

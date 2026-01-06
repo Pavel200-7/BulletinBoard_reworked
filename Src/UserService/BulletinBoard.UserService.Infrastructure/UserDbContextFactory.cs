@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure;
+namespace BulletinBoard.UserService.Infrastructure;
 
 public class UserDbContextFactory : IDesignTimeDbContextFactory<UserDbContext>
 {

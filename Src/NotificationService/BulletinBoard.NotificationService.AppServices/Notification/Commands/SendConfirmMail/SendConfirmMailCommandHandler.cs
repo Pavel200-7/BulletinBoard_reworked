@@ -5,7 +5,6 @@ using BulletinBoard.NotificationService.Domain.Entities;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System.Net;
 
 
 namespace BulletinBoard.NotificationService.AppServices.Notification.Commands.SendConfirmMail;
@@ -35,7 +34,8 @@ public class SendConfirmMailCommandHandler : IRequestHandler<SendConfirmMailComm
         string messageBody = $"{_gatewayData.Path}/{_gatewayData.ConfirmMailPath}/{request.Id}/{request.Token}";
         var user = await _repository.GetByIdAsync(Guid.Parse(request.Id),
             cancellationToken);
-        await _emailSender.SendEmailAsync(user!.Email, subject, messageBody);
+        var mail = new MailData(user!.Email, subject, messageBody);
+        await _emailSender.SendEmailAsync(mail);
         return new SendConfirmMailCResponse();
     }
 }

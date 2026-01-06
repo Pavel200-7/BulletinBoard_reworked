@@ -1,18 +1,15 @@
 ﻿using AutoMapper;
-using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.Common.Behaviors.Transaction;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
-using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
+using BulletinBoard.UserService.AppServices.User.Repositiry;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.Register;
+namespace BulletinBoard.UserService.AppServices.User.Commands.Register;
 
 [Transaction]
 public class RegisterCommandHandler : BaseRegisterCommandHandler,

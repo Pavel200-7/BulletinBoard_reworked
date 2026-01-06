@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.AppServices.User.Enum;
+﻿using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor.Factories;

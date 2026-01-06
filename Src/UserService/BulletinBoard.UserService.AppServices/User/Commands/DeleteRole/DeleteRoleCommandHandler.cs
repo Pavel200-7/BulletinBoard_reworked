@@ -1,13 +1,13 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
-using BulletinBoard.NotificationService.AppServices.User.Commands.AddRole;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Helpers.RoleCommandHandler;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RoleCommandHandler;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.DeleteRole;
+namespace BulletinBoard.UserService.AppServices.User.Commands.DeleteRole;
 
 public class DeleteRoleCommandHandler : BaseRoleCommandHandler, 
     IRequestHandler<DeleteRoleCommand, DeleteRoleCResponse>

@@ -1,11 +1,11 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.User.Commands.AddRole;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+using BulletinBoard.UserService.AppServices.User.Enum;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.Helpers.RoleCommandHandler;
+namespace BulletinBoard.UserService.AppServices.User.Commands.Helpers.RoleCommandHandler;
 
 /// <summary>
 /// Базовый обработчик изменения ролей.

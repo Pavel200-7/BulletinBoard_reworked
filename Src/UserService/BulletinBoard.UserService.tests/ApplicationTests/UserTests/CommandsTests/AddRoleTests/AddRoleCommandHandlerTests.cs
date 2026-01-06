@@ -1,7 +1,7 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.User.Commands.AddRole;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
-using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandTests.Helpers;
+﻿using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandTests.Helpers;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+using BulletinBoard.UserService.AppServices.User.Enum;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Moq;

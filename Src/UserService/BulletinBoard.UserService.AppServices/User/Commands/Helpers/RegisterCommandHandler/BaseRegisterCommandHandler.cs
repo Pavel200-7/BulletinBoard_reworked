@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+using BulletinBoard.UserService.AppServices.User.Enum;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
+namespace BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
 
 /// <summary>
 /// Базовый обработчик регистрации.

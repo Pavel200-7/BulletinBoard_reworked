@@ -1,10 +1,10 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System.Reflection;
 
 
-namespace BulletinBoard.NotificationService.AppServices.Common.Behaviors.Transaction;
+namespace BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 
 /// <summary>
 /// Промежуточный запускатор транзакции. 

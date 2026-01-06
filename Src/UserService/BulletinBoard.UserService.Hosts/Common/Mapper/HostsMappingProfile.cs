@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.User.Commands.ConfirmEmail;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
-using BulletinBoard.NotificationService.AppServices.User.Commands.SendConfirmationMail;
-using BulletinBoard.NotificationService.AppServices.User.Queries.LogIn;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
-using BulletinBoard.NotificationService.Hosts.Controllers.Auth.Request;
-using BulletinBoard.NotificationService.Hosts.Controllers.Auth.Response;
-using BulletinBoard.NotificationService.Hosts.Controllers.OAuth.Response;
+using BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
-using Microsoft.AspNetCore.Identity;
+using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Commands.ResetPassword;
+using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
+using BulletinBoard.UserService.AppServices.User.Commands.SendResetPasswordMail;
+using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
+using BulletinBoard.UserService.AppServices.User.Queries.Refresh;
+using BulletinBoard.UserService.Hosts.Controllers.Auth.Request;
+using BulletinBoard.UserService.Hosts.Controllers.Auth.Response;
+using BulletinBoard.UserService.Hosts.Controllers.OAuth.Response;
 
 
-namespace BulletinBoard.NotificationService.Hosts.Common.Mapper;
+namespace BulletinBoard.UserService.Hosts.Common.Mapper;
 
 public class HostsMappingProfile : Profile
 {
@@ -33,6 +33,9 @@ public class HostsMappingProfile : Profile
 
         CreateMap<OAuthRegisterCResponse, OAuthLogInCallbackResponse>();
 
+        CreateMap<SendResetPasswordMailCResponse, SendResetPasswordMailResponse>();
 
+        CreateMap<ResetPasswordRequest, ResetPasswordCommand>();
+        CreateMap<ResetPasswordCResponse, ResetPasswordResponse>();
     }
 }

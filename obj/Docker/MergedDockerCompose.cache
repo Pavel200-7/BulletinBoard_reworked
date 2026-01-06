@@ -1,5 +1,52 @@
 name: dockercompose11839620844509240691
 services:
+  bulletinboard.apigateway:
+    build:
+      context: C:\Users\pavli\Desktop\BulletinBoard
+      dockerfile: Src/APIGateway/BulletinBoard.APIGateway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: bulletinboardapigateway
+    networks:
+      app_net: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8090"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\pavli\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
   bulletinboard.notificationservice.hosts:
     build:
       context: C:\Users\pavli\Desktop\BulletinBoard
@@ -16,7 +63,7 @@ services:
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
       ASPNETCORE_URLS: http://+:8080
-      ApiGateway__ConfirmMailPath: confirm_email
+      ApiGateway__ConfirmMailPath: api/v1/auth/confirm_email
       ApiGateway__Path: http://localhost:8090
       ConnectionStrings__DefaultConnection: Host=postgre_notification_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
       EmailSettings__FromName: BulletinBoard
@@ -34,7 +81,7 @@ services:
     ports:
       - mode: ingress
         target: 8080
-        published: "8091"
+        published: "8092"
         protocol: tcp
       - mode: ingress
         target: 8080
@@ -84,6 +131,9 @@ services:
       ASPNETCORE_HTTPS_PORTS: "8081"
       ASPNETCORE_URLS: http://+:8080
       ConnectionStrings__DefaultConnection: Host=postgre_user_db;Port=5432;Database=bulletinboard;Username=dbuser;Password=password
+      GitHub__ClientId: Ov23lilj5vIYQ5eZxiVa
+      GitHub__ClientSecret: a0398c786c3f3b0f94668eaf2c6accfdc6d15afc
+      GitHub__RedirectUri: http://localhost:8090/api/v1/oauth/login_callback/github
       JWT__Audience: BulletinBoard
       JWT__ExpiresIn: "3600"
       JWT__Issuer: BulletinBoard
@@ -95,7 +145,7 @@ services:
     ports:
       - mode: ingress
         target: 8080
-        published: "8090"
+        published: "8091"
         protocol: tcp
       - mode: ingress
         target: 8080

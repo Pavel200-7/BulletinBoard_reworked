@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.ConfirmEmail;
+namespace BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 
 /// <summary>
 /// Подтвердить почту.

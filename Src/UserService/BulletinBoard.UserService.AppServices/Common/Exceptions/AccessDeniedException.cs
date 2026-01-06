@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+﻿namespace BulletinBoard.UserService.AppServices.Common.Exceptions;
 
 /// <summary>
 /// Ошибка ограничения доступа.

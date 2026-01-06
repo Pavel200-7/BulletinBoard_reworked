@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.Hosts.Controllers.OAuth.Response;
+﻿namespace BulletinBoard.UserService.Hosts.Controllers.OAuth.Response;
 
 public class OAuthLogInCallbackResponse
 {

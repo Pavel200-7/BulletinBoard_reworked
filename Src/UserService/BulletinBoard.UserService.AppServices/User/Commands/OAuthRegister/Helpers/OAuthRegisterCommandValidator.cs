@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
+using FluentValidation;
 
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;

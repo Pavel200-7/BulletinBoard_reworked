@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.Common.Configurations;
+﻿namespace BulletinBoard.UserService.AppServices.Common.Configurations;
 
 /// <summary>
 /// Настройки JWT.

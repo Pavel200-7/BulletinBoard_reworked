@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Queries.LogIn;
+namespace BulletinBoard.UserService.AppServices.User.Queries.LogIn;
 
 /// <summary>
 /// Авторизоваться.

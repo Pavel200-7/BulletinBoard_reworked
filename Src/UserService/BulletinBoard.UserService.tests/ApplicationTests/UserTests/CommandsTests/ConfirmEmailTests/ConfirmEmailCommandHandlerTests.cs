@@ -1,6 +1,6 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.User.Commands.ConfirmEmail;
-using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
+﻿using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;

@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
+﻿namespace BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
 
 public interface IJWTProvider
 {

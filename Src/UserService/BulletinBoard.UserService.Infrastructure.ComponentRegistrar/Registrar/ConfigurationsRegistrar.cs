@@ -1,9 +1,10 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
+﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
+using BulletinBoard.UserService.AppServices.Common.Configurations.OAuthSettings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 
 public static class ConfigurationsRegistrar
 {

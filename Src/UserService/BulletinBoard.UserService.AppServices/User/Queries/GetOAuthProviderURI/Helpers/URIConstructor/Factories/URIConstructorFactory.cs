@@ -1,4 +1,5 @@
-﻿using BulletinBoard.NotificationService.AppServices.User.Enum;
+﻿using BulletinBoard.UserService.AppServices.User.Enum;
+using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor;
 using Microsoft.Extensions.DependencyInjection;
 
 

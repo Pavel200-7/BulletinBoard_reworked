@@ -1,5 +1,5 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
 namespace BulletinBoard.NotificationService.tests.ApplicationTests.CommonTests;

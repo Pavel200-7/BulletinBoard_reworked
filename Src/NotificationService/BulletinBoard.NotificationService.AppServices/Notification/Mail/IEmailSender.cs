@@ -8,8 +8,9 @@ public interface IEmailSender
     /// <summary>
     /// Отправить почту.
     /// </summary>
-    /// <param name="toEmail">Адрес электронной почты.</param>
-    /// <param name="subject">Тема сообщения.</param>
-    /// <param name="message">Сообщение.</param>
-    public Task SendEmailAsync(string toEmail, string subject, string message);
+    public Task SendEmailAsync(MailData mail);
+    /// <summary>
+    /// Отправить почту.
+    /// </summary>
+    public Task SendEmailsAsync(List<MailData> mails);
 }

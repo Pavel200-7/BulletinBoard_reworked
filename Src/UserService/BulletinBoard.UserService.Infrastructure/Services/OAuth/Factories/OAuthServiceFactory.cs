@@ -1,10 +1,11 @@
-﻿using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
-using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
-using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.GitHubOAuth;
+﻿using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+using BulletinBoard.UserService.AppServices.User.Enum;
+using BulletinBoard.UserService.Infrastructure.Services.OAuth.GitHubOAuth;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BulletinBoard.NotificationService.Infrastructure.Services.OAuth.Factories;
+
+namespace BulletinBoard.UserService.Infrastructure.Services.OAuth.Factories;
 
 public class OAuthServiceFactory : IOAuthServiceFactory
 {

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
-using BulletinBoard.NotificationService.AppServices.User.Repositiry;
 using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Enum;
+using BulletinBoard.UserService.AppServices.User.Repositiry;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -110,9 +110,7 @@ public class RegisterCommandHandlerTests
     {
         // Arrange
         var command = CreateCommand();
-
-        _userManager
-        .Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
+        _userManager.Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
             .ReturnsAsync(IdentityResult.Failed(new IdentityError() { Code = "Name", Description = "Something invalid" }));
 
         // Act

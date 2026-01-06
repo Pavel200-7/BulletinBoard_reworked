@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
+﻿using BulletinBoard.UserService.AppServices.Common.Configurations.OAuthSettings;
 using BulletinBoard.UserService.Infrastructure.Services.OAuth.GitHubOAuth.Helpers.GitHubHttp.Response;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;

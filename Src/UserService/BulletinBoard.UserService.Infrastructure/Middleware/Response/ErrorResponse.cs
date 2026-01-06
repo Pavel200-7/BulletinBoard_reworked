@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.Infrastructure.Middleware.Response;
+﻿namespace BulletinBoard.UserService.Infrastructure.Middleware.Response;
 
 public class ErrorResponse : BaseErrorResponse
 {

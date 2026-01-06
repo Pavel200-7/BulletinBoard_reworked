@@ -2,7 +2,6 @@ using BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
 using BulletinBoard.NotificationService.Hosts.Registrar;
 using BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
 using BulletinBoard.NotificationService.Infrastructure.Middleware;
-using BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
 using System.Reflection;
 
 

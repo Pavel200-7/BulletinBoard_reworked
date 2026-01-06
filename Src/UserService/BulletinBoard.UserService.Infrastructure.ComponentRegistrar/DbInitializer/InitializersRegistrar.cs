@@ -1,8 +1,7 @@
-﻿using BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.DbInitializer;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 
-namespace BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;
 
 public static class InitializersRegistrar
 {

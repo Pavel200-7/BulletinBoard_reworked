@@ -1,12 +1,11 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using System.Security.Claims;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.Registrar;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 
 public static class IdentityRegistrar
 {

@@ -1,8 +1,8 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
-namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+namespace BulletinBoard.UserService.AppServices.Common.Exceptions;
 
 /// <summary>
 /// Ошибка валидации.

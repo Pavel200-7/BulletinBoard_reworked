@@ -1,10 +1,10 @@
-﻿using BulletinBoard.NotificationService.Domain.Entityes;
+﻿using BulletinBoard.UserService.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure;
+namespace BulletinBoard.UserService.Infrastructure;
 
 public class UserDbContext : IdentityDbContext<IdentityUser>
 {

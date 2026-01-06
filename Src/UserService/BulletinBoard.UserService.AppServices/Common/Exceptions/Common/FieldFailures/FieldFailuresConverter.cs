@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 
 
-namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+namespace BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 public static class FieldFailuresConverter
 {

@@ -1,5 +1,5 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +8,7 @@ using System.Security.Claims;
 using System.Text;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
+namespace BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
 
 public class JWTProvider : IJWTProvider
 {

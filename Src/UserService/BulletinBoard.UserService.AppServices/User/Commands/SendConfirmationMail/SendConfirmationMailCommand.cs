@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.SendConfirmationMail;
+namespace BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
 
 public class SendConfirmationMailCommand : IRequest<SendConfirmationMailCResponse>
 {

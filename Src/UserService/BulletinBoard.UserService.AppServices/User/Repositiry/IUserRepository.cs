@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Repositiry;
+namespace BulletinBoard.UserService.AppServices.User.Repositiry;
 
 public interface IUserRepository
 {

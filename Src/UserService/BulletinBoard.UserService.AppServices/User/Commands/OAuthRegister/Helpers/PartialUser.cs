@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Options;
-
-namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
+﻿namespace BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
 
 /// <summary>
 /// Частичные данные пользователя для регистрации через oauth 2.

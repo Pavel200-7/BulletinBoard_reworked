@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 

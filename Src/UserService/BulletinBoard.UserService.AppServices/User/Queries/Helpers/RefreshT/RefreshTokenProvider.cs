@@ -1,10 +1,11 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
-using BulletinBoard.NotificationService.AppServices.Common.IRepository;
-using BulletinBoard.NotificationService.AppServices.User.Repositiry;
-using BulletinBoard.NotificationService.Domain.Entityes;
+﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
+using BulletinBoard.UserService.AppServices.Common.IRepository;
+using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.Domain.Entities;
 using Microsoft.Extensions.Options;
 
-namespace BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
+
+namespace BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 
 public class RefreshTokenProvider : IRefreshTokenProvider
 {

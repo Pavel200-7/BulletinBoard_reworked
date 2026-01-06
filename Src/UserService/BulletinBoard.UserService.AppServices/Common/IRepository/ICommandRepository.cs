@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.Common.IRepository;
+﻿namespace BulletinBoard.UserService.AppServices.Common.IRepository;
 
 /// <summary>
 /// Базовый репозиторий записи.

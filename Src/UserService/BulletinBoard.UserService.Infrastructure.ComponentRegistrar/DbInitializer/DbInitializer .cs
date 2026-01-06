@@ -1,10 +1,10 @@
-﻿using BulletinBoard.NotificationService.Infrastructure;
+﻿using BulletinBoard.UserService.Infrastructure;
 using Extensions.Hosting.AsyncInitialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.Infrastructure.ComponentRegistrar.DbInitializer;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;
 
 /// <summary>
 /// Проводит миграциб БД

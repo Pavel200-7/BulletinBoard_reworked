@@ -1,10 +1,10 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.IRepository;
-using BulletinBoard.NotificationService.AppServices.User.Repositiry;
+﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
+using BulletinBoard.UserService.AppServices.User.Repositiry;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.Repository.QRepository;
+namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository;
 
 public class UserRepository : IUserRepository
 {

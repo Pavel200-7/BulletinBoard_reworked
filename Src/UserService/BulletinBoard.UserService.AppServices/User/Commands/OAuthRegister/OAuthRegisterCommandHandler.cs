@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
-using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.JWTGenerator;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Helpers.RefreshT;
+using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
+using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;

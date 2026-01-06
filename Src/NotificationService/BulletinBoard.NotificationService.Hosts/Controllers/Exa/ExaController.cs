@@ -48,7 +48,7 @@ public class ExaController : ControllerBase
     }
 
     [HttpGet("send_test")]
-    public async Task<IActionResult>SendTest(CancellationToken cancellationToken)
+    public IActionResult SendTest(CancellationToken cancellationToken)
     {
         //await _sender.SendEmailAsync(
         //    "pavel.yakovlev.elb@gmail.com", 

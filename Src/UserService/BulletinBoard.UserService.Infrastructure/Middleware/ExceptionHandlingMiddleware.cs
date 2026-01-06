@@ -1,12 +1,12 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
-using BulletinBoard.NotificationService.Infrastructure.Middleware.Response;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.Infrastructure.Middleware.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.Middleware;
+namespace BulletinBoard.UserService.Infrastructure.Middleware;
 
 public class ExceptionHandlingMiddleware
 {

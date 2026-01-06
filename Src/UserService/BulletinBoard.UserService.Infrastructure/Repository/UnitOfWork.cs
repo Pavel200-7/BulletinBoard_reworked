@@ -1,8 +1,8 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using Microsoft.EntityFrameworkCore.Storage;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.Repository;
+namespace BulletinBoard.UserService.Infrastructure.Repository;
 
 public class UnitOfWork : IUnitOfWork
 {

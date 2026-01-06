@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿namespace BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 /// <summary>
 /// Ошибки поля.

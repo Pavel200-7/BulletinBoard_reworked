@@ -1,7 +1,7 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.Middleware.Response;
+namespace BulletinBoard.UserService.Infrastructure.Middleware.Response;
 
 public class FieldsErrorResponse : BaseErrorResponse
 {

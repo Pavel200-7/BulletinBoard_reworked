@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.Infrastructure;
+﻿using BulletinBoard.UserService.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.Infrastructure.ComponentRegistrar.Registrar;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.Registrar;
 
 public static class DbContextRegistrar
 {

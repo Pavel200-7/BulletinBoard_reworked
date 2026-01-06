@@ -1,8 +1,8 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using System.Security.Claims;
 
 
-namespace BulletinBoard.NotificationService.Hosts.Controllers.Helpers;
+namespace BulletinBoard.UserService.Hosts.Controllers.Helpers;
 
 /// <summary>
 /// Доставатель клеймов JWT.

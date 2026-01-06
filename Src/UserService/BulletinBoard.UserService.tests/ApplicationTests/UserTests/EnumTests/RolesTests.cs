@@ -1,5 +1,4 @@
-﻿using BulletinBoard.NotificationService.AppServices.User.Enum;
-
+﻿using BulletinBoard.UserService.AppServices.User.Enum;
 
 namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.EnumTests;
 

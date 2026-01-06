@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
+﻿namespace BulletinBoard.UserService.AppServices.User.Queries.Refresh;
 
 public class RefreshQResponse
 {

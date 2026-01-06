@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.AppServices.Common;
+﻿namespace BulletinBoard.UserService.AppServices.Common;
 
 /// <summary>
 /// Объект для поиска сборки AppServices по ссылке.

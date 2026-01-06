@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 
-namespace BulletinBoard.NotificationService.AppServices.User.Enum;
+
+namespace BulletinBoard.UserService.AppServices.User.Enum;
 
 public static class Roles
 {

@@ -1,7 +1,7 @@
 ﻿using MediatR;
 
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.DeleteRole;
+namespace BulletinBoard.UserService.AppServices.User.Commands.DeleteRole;
 
 /// <summary>
 /// Удалить роль.

@@ -1,6 +1,8 @@
-﻿using MassTransit;
+﻿using BulletinBoard.UserService.Hosts.Registrar;
+using MassTransit;
 
-namespace BulletinBoard.NotificationService.Hosts.Registrar;
+
+namespace BulletinBoard.UserService.Hosts.Registrar;
 
 public static class MassTransitRegistra
 {

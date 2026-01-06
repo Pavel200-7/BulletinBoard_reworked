@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.Hosts.Controllers.Auth.Response;
+﻿namespace BulletinBoard.UserService.Hosts.Controllers.Auth.Response;
 
 public class RegisterResponse
 {

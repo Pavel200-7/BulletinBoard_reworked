@@ -1,18 +1,20 @@
 ﻿using AutoMapper;
-using BulletinBoard.NotificationService.AppServices.User.Commands.ConfirmEmail;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
-using BulletinBoard.NotificationService.AppServices.User.Commands.SendConfirmationMail;
-using BulletinBoard.NotificationService.AppServices.User.Queries.LogIn;
-using BulletinBoard.NotificationService.AppServices.User.Queries.Refresh;
-using BulletinBoard.NotificationService.Hosts.Controllers.Auth.Request;
-using BulletinBoard.NotificationService.Hosts.Controllers.Auth.Response;
-using BulletinBoard.NotificationService.Hosts.Controllers.Helpers;
+using BulletinBoard.UserService.AppServices.User.Commands.ConfirmEmail;
+using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Commands.ResetPassword;
+using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
+using BulletinBoard.UserService.AppServices.User.Commands.SendResetPasswordMail;
+using BulletinBoard.UserService.AppServices.User.Queries.LogIn;
+using BulletinBoard.UserService.AppServices.User.Queries.Refresh;
+using BulletinBoard.UserService.Hosts.Controllers.Auth.Request;
+using BulletinBoard.UserService.Hosts.Controllers.Auth.Response;
+using BulletinBoard.UserService.Hosts.Controllers.Helpers;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace BulletinBoard.NotificationService.Hosts.Controllers.Auth;
+namespace BulletinBoard.UserService.Hosts.Controllers.Auth;
 
 [ApiController]
 [Route("api/v1/[controller]")]
@@ -74,6 +76,24 @@ public class AuthController : ControllerBase
         SendConfirmationMailCommand command = new SendConfirmationMailCommand() { Id = userId };
         SendConfirmationMailCResponse cResponse = await _mediator.Send(command, cancellationToken);
         SendConfirmationMailResponse response = _mapper.Map<SendConfirmationMailResponse>(cResponse);
+        return Ok(response);
+    }
+
+    [HttpPost("send_password_reset_mail")]
+    public async Task<IActionResult> ResetPassword(string Email, CancellationToken cancellationToken)
+    {
+        SendResetPasswordMailCommand command = new SendResetPasswordMailCommand() { Email = Email };
+        SendResetPasswordMailCResponse cResponse = await _mediator.Send(command, cancellationToken);
+        SendResetPasswordMailResponse response = _mapper.Map<SendResetPasswordMailResponse>(cResponse);
+        return Ok(response);
+    }
+
+    [HttpPost("password_reset")]
+    public async Task<IActionResult> ResetPassword(ResetPasswordRequest request, CancellationToken cancellationToken)
+    {
+        ResetPasswordCommand command = _mapper.Map<ResetPasswordCommand>(request);
+        ResetPasswordCResponse cResponse = await _mediator.Send(command, cancellationToken);
+        ResetPasswordResponse response = _mapper.Map<ResetPasswordResponse>(cResponse);
         return Ok(response);
     }
 }

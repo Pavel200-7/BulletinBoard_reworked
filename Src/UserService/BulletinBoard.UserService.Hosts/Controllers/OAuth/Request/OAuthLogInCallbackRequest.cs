@@ -1,4 +1,4 @@
-﻿namespace BulletinBoard.NotificationService.Hosts.Controllers.OAuth.Request;
+﻿namespace BulletinBoard.UserService.Hosts.Controllers.OAuth.Request;
 
 /// <summary>
 /// Универсальный запрос - редирект для разных провайдеров oAuth 2.

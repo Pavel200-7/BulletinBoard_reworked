@@ -1,12 +1,13 @@
 ﻿using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
-namespace BulletinBoard.NotificationService.AppServices.User.Commands.SendConfirmationMail;
+
+namespace BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
 
 public class SendConfirmationMailCommandHandler : IRequestHandler<SendConfirmationMailCommand, SendConfirmationMailCResponse>
 {

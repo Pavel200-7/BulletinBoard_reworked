@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Extensions.Hosting.AsyncInitialization;
-using BulletinBoard.NotificationService.AppServices.User.Enum;
+using BulletinBoard.UserService.AppServices.User.Enum;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar.DbInitializer;
+namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;
 
 /// <summary>
 /// Инициализатор ролей в системе

@@ -1,8 +1,8 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.IRepository;
+﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.Repository.QRepository.BaseRepository;
+namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRepository;
 
 public class QueryRepository<TEntity> : IQueryRepository<TEntity> where TEntity : class
 {

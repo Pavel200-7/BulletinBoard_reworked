@@ -1,9 +1,9 @@
-﻿using BulletinBoard.NotificationService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
-using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.GitHubOAuth.Helpers.GitHubHttp;
+﻿using BulletinBoard.NotificationService.Infrastructure.Services.OAuth.GitHubOAuth.Helpers.GitHubHttp;
+using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.NotificationService.Infrastructure.Services.OAuth.GitHubOAuth;
+namespace BulletinBoard.UserService.Infrastructure.Services.OAuth.GitHubOAuth;
 
 public class GitHubOAuthService : IOAuthService
 {

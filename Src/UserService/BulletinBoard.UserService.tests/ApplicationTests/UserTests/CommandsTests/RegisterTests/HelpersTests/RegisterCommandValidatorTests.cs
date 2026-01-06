@@ -1,6 +1,5 @@
-﻿using BulletinBoard.NotificationService.AppServices.User.Commands.Register;
-using BulletinBoard.NotificationService.AppServices.User.Commands.Register.Helpers;
-
+﻿using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.Commands.Register.Helpers;
 
 namespace BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.CommandsTests.RegisterTests.HelpersTests;
 

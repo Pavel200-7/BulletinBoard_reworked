@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace BulletinBoard.NotificationService.Hosts.Controllers.Home;
+
+namespace BulletinBoard.UserService.Hosts.Controllers.Home;
 
 [ApiController]
 [Route("api/v1/[controller]")]

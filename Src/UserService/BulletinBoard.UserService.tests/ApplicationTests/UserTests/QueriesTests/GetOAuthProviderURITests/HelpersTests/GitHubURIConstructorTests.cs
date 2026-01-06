@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
+﻿using BulletinBoard.UserService.AppServices.Common.Configurations.OAuthSettings;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI.Helpers.URIConstructor;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -36,9 +36,9 @@ public class GitHubURIConstructorTests
         var uriData = new URIData { State = "test_state_123" };
         var expectedUrl = "https://github.com/login/oauth/authorize?" +
             "client_id=Iv1.abc123def456ghi78&" +
-            "redirect_uri=http%3A%2F%2Flocalhost%3A8090%2Fapi%2Fv1%2Foauth%2Flogin_callback%2Fgithub&" +
-            "state=test_state_123&" +
-            "allow_signup=false";
+            "redirect_uri=http%3A%2F%2Flocalhost%3A8090%2Fapi%2Fv1%2Foauth%2Flogin_callback%2Fgithub" +
+            "&scope=read%3Auser%20user%3Aemail" +
+            "&state=test_state_123&allow_signup=false";
 
         // Act
         var result = _constructor.CreateURI(uriData);

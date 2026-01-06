@@ -56,13 +56,17 @@ public class SendConfirmMailCommandHandlerTests
 
         // Assert
         Assert.True(result.IsSucceed);
-        _emailSender.Verify(em => em.SendEmailAsync(user.Email, subject, expectedBody));
-
+        _emailSender.Verify(es => es.SendEmailAsync(
+            It.Is<MailData>(md => 
+            md.ToEmail == user.Email &&
+            md.Subject == subject && 
+            md.Message == expectedBody)), 
+            Times.Once);
     }
 
     private void SetupMock()
     {
-        _emailSender.Setup(es => es.SendEmailAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()))
+        _emailSender.Setup(es => es.SendEmailAsync(It.IsAny<MailData>()))
             .Returns(Task.CompletedTask);
 
         _repository.Setup(r => r.GetByIdAsync(CreateUser().Id, _cancellationToken))

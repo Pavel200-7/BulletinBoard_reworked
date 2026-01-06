@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 
 
-namespace BulletinBoard.NotificationService.AppServices.Common.Behaviors.LoggingBehavior;
+namespace BulletinBoard.UserService.AppServices.Common.Behaviors.Logging;
 
 /// <summary>
 /// Промежуточный логгер команд.
