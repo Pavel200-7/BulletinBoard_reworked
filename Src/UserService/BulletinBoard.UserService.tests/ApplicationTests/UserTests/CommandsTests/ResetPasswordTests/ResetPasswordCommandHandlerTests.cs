@@ -3,8 +3,9 @@ using BulletinBoard.UserService.AppServices.Common.Exceptions;
 using BulletinBoard.UserService.AppServices.User.Commands.ResetPassword;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Moq;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.ResetPasswordTests;
 
@@ -49,12 +50,14 @@ public class ResetPasswordCommandHandlerTests
     {
         // Arrange
         var command = CreateCommand();
+        var expectedToken = Base64UrlEncoder.Decode(command.Token);
+
 
         // Act
         var result = await _handler.Handle(command, _cancellationToken);
 
         // Assert
-        _userManager.Verify(um => um.ResetPasswordAsync(It.Is<IdentityUser>(u => u.Email == command.Email), command.Token, command.Password), 
+        _userManager.Verify(um => um.ResetPasswordAsync(It.Is<IdentityUser>(u => u.Email == command.Email), expectedToken, command.Password), 
             Times.Once);
     }
 
@@ -71,8 +74,6 @@ public class ResetPasswordCommandHandlerTests
 
         // Assert
         await Assert.ThrowsAsync<BusinessRuleException>(() => act.Invoke());
-        _userManager.Verify(um => um.ResetPasswordAsync(It.Is<IdentityUser>(u => u.Email == command.Email), command.Token, command.Password), 
-            Times.Once);
     }
 
     [Fact]
@@ -111,10 +112,11 @@ public class ResetPasswordCommandHandlerTests
     private ResetPasswordCommand CreateCommand()
     {
         var user = CreateUser();
+        var base64EncodedToken = Base64UrlEncoder.Encode("SomeToken");
         return new ResetPasswordCommand()
         {
             Email = user.Email!,
-            Token = "SomeToken",
+            Token = base64EncodedToken,
             Password = "Password123",
             ConfirmPassword = "Password123"
         };

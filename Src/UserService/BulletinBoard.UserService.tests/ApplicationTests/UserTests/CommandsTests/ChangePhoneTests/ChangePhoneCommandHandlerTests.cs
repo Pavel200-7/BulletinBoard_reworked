@@ -5,6 +5,7 @@ using BulletinBoard.UserService.AppServices.User.Repositiry;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System.Numerics;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 
@@ -108,11 +109,7 @@ public class ChangePhoneCommandHandlerTests
     private ChangePhoneCommand CreateCommand()
     {
         var user = CreateUser();
-        return new ChangePhoneCommand()
-        {
-            Id = user.Id,
-            Phone = user.PhoneNumber!
-        };
+        return new ChangePhoneCommand(user.Id, user.PhoneNumber!);
     }
 
     private IdentityUser CreateUser()

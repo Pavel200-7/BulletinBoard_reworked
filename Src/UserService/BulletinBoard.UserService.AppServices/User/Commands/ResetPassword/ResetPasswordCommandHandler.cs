@@ -3,6 +3,7 @@ using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailur
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.ResetPassword;
@@ -28,7 +29,8 @@ public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand,
             throw new NotFoundException("Пользователь с такой почтой не обнаружен.");
         }
 
-        var result = await _userManager.ResetPasswordAsync(user, request.Token, request.Password);
+        var token = Base64UrlEncoder.Decode(request.Token);
+        var result = await _userManager.ResetPasswordAsync(user, token, request.Password);
         if (!result.Succeeded)
         {
             throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));

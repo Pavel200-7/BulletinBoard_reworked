@@ -2,6 +2,7 @@
 using BulletinBoard.UserService.AppServices.User.Commands.ChangePhone.Helpers;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using FluentValidation;
+using System.Numerics;
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.ChangePhoneTests.HelpersTests;
 
@@ -65,10 +66,6 @@ public class ChangePhoneCommandValidatorTests
         string id = "SomeId",
         string phone = "+7 (978) 123-45-67")
     {
-        return new ChangePhoneCommand()
-        {
-            Id = id,
-            Phone = phone
-        };
+        return new ChangePhoneCommand(id, phone);
     }
 }

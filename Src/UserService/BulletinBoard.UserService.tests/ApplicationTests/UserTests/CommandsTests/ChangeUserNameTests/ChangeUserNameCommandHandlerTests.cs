@@ -108,11 +108,7 @@ public class ChangeUserNameCommandHandlerTests
     private ChangeUserNameCommand CreateCommand()
     {
         var user = CreateUser();
-        return new ChangeUserNameCommand()
-        {
-            Id = user.Id,
-            UserName = user.UserName!
-        };
+        return new ChangeUserNameCommand(user.Id, user.UserName!);
     }
 
     private IdentityUser CreateUser()

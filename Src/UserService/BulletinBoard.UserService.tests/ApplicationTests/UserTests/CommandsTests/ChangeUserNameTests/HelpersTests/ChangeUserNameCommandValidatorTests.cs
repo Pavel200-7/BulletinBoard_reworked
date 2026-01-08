@@ -127,10 +127,6 @@ public class ChangeUserNameCommandValidatorTests
         string id = "SomeId",
         string name = "User12432")
     {
-        return new ChangeUserNameCommand()
-        {
-            Id = id,
-            UserName = name
-        };
+        return new ChangeUserNameCommand(id, name);
     }
 }

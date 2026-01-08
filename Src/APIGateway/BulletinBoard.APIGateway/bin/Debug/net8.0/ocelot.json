@@ -69,6 +69,20 @@
       ],
       "Key": "notification_exa-service",
       "Priority": 5
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "UpstreamPathTemplate": "/api/v1/user/{everything}",
+      "DownstreamPathTemplate": "/api/v1/user/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bulletinboard.userservice.hosts",
+          "Port": 8080
+        }
+      ],
+      "Key": "userservice_user-service",
+      "Priority": 6
     }
   ],
   "GlobalConfiguration": {

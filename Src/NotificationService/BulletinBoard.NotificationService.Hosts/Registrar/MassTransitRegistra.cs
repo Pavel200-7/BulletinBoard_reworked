@@ -11,6 +11,7 @@ public static class MassTransitRegistra
         {
             x.AddConsumer<UserAddedConsumer>();
             x.AddConsumer<UserEmailConfirmationStartedEventConsumer>();
+            x.AddConsumer<UserResetPasswordStartedEventConsumer>();
 
             x.UsingRabbitMq((context, cfg) =>
             {

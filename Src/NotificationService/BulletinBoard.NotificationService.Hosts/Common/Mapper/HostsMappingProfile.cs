@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.NotificationService.AppServices.Notification.Commands.SendConfirmMail;
+using BulletinBoard.NotificationService.AppServices.Notification.Commands.SendResetPasswordMail;
 using BulletinBoard.NotificationService.AppServices.User.Commands.AddUser;
 
 
@@ -12,6 +13,7 @@ public class HostsMappingProfile : Profile
     {
         CreateMap<UserAddedEvent, AddUserCommand>();
         CreateMap<UserEmailConfirmationStartedEvent, SendConfirmMailCommand>();
+        CreateMap<UserResetPasswordStartedEvent, SendResetPasswordMailCommand>();
 
     }
 }
