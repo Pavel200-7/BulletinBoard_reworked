@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.User.Commands.Register;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 
 
-namespace BulletinBoard.NotificationService.tests.ApplicationTests.AuthTests.CommandTests.AddUserCommandTests;
+namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.CommandsTests.RegisterTests;
 
 public class RegisterCommandHandlerTests
 {
@@ -158,7 +158,7 @@ public class RegisterCommandHandlerTests
         var result = await _handler.Handle(command, _cancellationToken);
 
         // Assert
-        _publishEndpoint.Verify(ep => ep.Publish<UserAddedEvent>(CreateEvent(CreateUser()), _cancellationToken), Times.Once);
+        _publishEndpoint.Verify(ep => ep.Publish(CreateEvent(CreateUser()), _cancellationToken), Times.Once);
     }
 
     private void SetupMock()
@@ -185,7 +185,7 @@ public class RegisterCommandHandlerTests
         _mapper.Setup(m => m.Map<UserAddedEvent>(It.IsAny<IdentityUser>()))
             .Returns(CreateEvent(CreateUser()));
 
-        _publishEndpoint.Setup(pe => pe.Publish<UserAddedEvent>(It.IsAny<Object>(), _cancellationToken))
+        _publishEndpoint.Setup(pe => pe.Publish<UserAddedEvent>(It.IsAny<object>(), _cancellationToken))
             .Returns(Task.CompletedTask);
     }
 

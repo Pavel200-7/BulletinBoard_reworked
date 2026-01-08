@@ -1,6 +1,6 @@
 ﻿using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Commands.SendConfirmationMail;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;

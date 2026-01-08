@@ -1,5 +1,5 @@
 ﻿using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -27,11 +27,8 @@ public class SendResetPasswordMailCommandHandler : IRequestHandler<SendResetPass
 
     public async Task<SendResetPasswordMailCResponse> Handle(SendResetPasswordMailCommand request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByEmailAsync(request.Email);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с таким email не существует");
-        }
+        var user = await _userManager.FindByEmailAsync(request.Email)
+            .ThrowNotFoundIfNull("Пользователь с таким email не существует");
 
         string passwordResetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
         string encodedToken = Base64UrlEncoder.Encode(passwordResetToken);

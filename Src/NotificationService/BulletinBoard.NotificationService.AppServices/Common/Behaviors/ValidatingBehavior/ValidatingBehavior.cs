@@ -1,7 +1,7 @@
-﻿using FluentValidation;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.FieldFailuresException.Base.FieldFailures;
+using FluentValidation;
 using MediatR;
-using ValidationException = BulletinBoard.NotificationService.AppServices.Common.Exceptions.ValidationException;
-using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+using ValidationException = BulletinBoard.NotificationService.AppServices.Common.Exceptions.FieldFailuresException.ValidationException;
 
 
 namespace BulletinBoard.NotificationService.AppServices.Common.Behaviors.ValidatingBehavior;

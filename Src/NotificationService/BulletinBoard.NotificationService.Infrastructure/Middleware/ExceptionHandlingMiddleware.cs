@@ -1,4 +1,8 @@
 ﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions.FieldFailuresException;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions.MessageException;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.NotificationService.Infrastructure.Middleware.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;

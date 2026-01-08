@@ -1,5 +1,5 @@
 ﻿using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -27,11 +27,8 @@ public class SendConfirmationMailCommandHandler : IRequestHandler<SendConfirmati
 
     public async Task<SendConfirmationMailCResponse> Handle(SendConfirmationMailCommand request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByIdAsync(request.Id);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с таким id не существует");
-        }
+        var user = await _userManager.FindByIdAsync(request.Id)
+            .ThrowNotFoundIfNull("Пользователь с таким id не существует");
 
         string confirmToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
         string encodedToken = Base64UrlEncoder.Encode(confirmToken);

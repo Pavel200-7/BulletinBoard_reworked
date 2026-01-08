@@ -1,5 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Configurations;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -48,11 +48,9 @@ public class JWTProvider : IJWTProvider
 
     private async Task<Claim[]> GetClaims(string userId, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByIdAsync(userId);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с данным id не обнаружен.");
-        }
+        var user = await _userManager.FindByIdAsync(userId)
+            .ThrowNotFoundIfNull("Пользователь с данным id не обнаружен.");
+
         var roles = await _userManager.GetRolesAsync(user);
 
         var claims = new List<Claim>();

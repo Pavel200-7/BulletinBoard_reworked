@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.Base.FieldFailures;
 
 
 namespace BulletinBoard.UserService.Infrastructure.Middleware.Response;

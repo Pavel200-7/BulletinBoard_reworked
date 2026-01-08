@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Queries.Refresh;

@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException;
 using System.Security.Claims;
 
 

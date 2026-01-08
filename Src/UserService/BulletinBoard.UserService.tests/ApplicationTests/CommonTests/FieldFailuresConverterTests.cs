@@ -1,4 +1,5 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.Base.FieldFailures;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
 

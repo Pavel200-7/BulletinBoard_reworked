@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
@@ -42,10 +42,8 @@ public class BaseRegisterCommandHandler
     public async Task RegisterAsync(IdentityUser user, string password, CancellationToken cancellationToken)
     {
         var result = await _userManager.CreateAsync(user, password);
-        if (!result.Succeeded)
-        {
-            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
-        }
+        result.Succeeded
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromIdentityErrors(result.Errors));
 
         _logger.LogInformation("Пользователь с именем {0} зарегистрирован.", user.UserName);
         await _userManager.AddToRoleAsync(user, Roles.User);

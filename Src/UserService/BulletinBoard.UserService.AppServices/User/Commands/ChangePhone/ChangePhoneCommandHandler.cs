@@ -1,10 +1,11 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
-using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+
 
 namespace BulletinBoard.UserService.AppServices.User.Commands.ChangePhone;
 
@@ -27,24 +28,15 @@ public class ChangePhoneCommandHandler : IRequestHandler<ChangePhoneCommand, Cha
 
     public async Task<ChangePhoneCResponse> Handle(ChangePhoneCommand request, CancellationToken cancellationToken)
     {
-        var user = await _repository.FindByPhoneAsync(request.Phone, cancellationToken);
-        if (user is not null)
-        {
-            throw new BusinessRuleException(nameof(request.Phone), "Данный телефон уже занят.");
-        }
-
-        user = await _userManager.FindByIdAsync(request.Id);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с таким id не существует");
-        }
+        await _repository.FindByPhoneAsync(request.Phone, cancellationToken)
+            .ThrowBusinessRuleIfNotNull(FieldFailuresConverter.FromSingleFieldError(nameof(request.Phone), "Данный телефон уже занят."));
+        var user = await _userManager.FindByIdAsync(request.Id)
+            .ThrowNotFoundIfNull("Пользователь с таким id не существует");
 
         string token = await _userManager.GenerateChangePhoneNumberTokenAsync(user, request.Phone);
         var result = await _userManager.ChangePhoneNumberAsync(user, request.Phone, token);
-        if (!result.Succeeded)
-        {
-            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
-        }
+        result.Succeeded
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromIdentityErrors(result.Errors));
 
         return new ChangePhoneCResponse();
     }

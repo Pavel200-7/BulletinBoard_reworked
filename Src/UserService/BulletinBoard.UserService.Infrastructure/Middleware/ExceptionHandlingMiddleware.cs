@@ -1,4 +1,7 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.Infrastructure.Middleware.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;

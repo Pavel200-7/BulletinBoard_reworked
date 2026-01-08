@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using MediatR;
@@ -39,24 +41,18 @@ public class LogInQueryHandler : IRequestHandler<LogInQuery, LogInQResponse>
 
     public async Task<LogInQResponse> Handle(LogInQuery request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByEmailAsync(request.Email);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с такой почтой не обнаружен.");
-        }
+        var user = await _userManager.FindByEmailAsync(request.Email)
+            .ThrowNotFoundIfNull("Пользователь с такой почтой не обнаружен.");
 
         bool isPersistent = false;
         bool lockoutOnFailure = false;
         var result = await _signInManager.PasswordSignInAsync(user, request.Password, isPersistent, lockoutOnFailure);
-        if (!result.Succeeded) 
-        {
-            throw new BusinessRuleException("Password", "Неверный пароль.");
-        }
+        result.Succeeded
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromSingleFieldError("Password", "Неверный пароль."));
 
         var tokenData = await _jWTProvider.GenerateTokenAsync(user.Id, cancellationToken);
         var refreshToken = await _refreshTProvider.GenerateTokenAsync(user.Id, cancellationToken);
         _logger.LogInformation("Пользователь с id {0} вошел в систему.", user.Id);
-
         return new LogInQResponse()
         {
             TokenType = tokenData.TokenType,    

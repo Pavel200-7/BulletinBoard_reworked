@@ -1,6 +1,5 @@
-﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.FieldFailuresException.Base.FieldFailures;
 using FluentValidation.Results;
-using Microsoft.AspNetCore.Identity;
 
 
 namespace BulletinBoard.NotificationService.tests.ApplicationTests.CommonTests;

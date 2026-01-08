@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
-using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RegisterCommandHandler;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
 using MassTransit;
@@ -45,17 +46,11 @@ public class RegisterCommandHandler : BaseRegisterCommandHandler,
 
     private async Task ValidateUserUniquenessAsync(RegisterCommand request, CancellationToken cancellationToken)
     {
-        if (await _userManager.FindByNameAsync(request.UserName) is not null)
-        {
-            throw new BusinessRuleException(nameof(request.UserName), "Данное имя пользователя уже занято.");
-        }
-        if (await _userManager.FindByEmailAsync(request.Email) is not null)
-        {
-            throw new BusinessRuleException(nameof(request.Email), "Данный Email уже занят.");
-        }
-        if (await _repository.FindByPhoneAsync(request.PhoneNumber, cancellationToken) is not null)
-        {
-            throw new BusinessRuleException(nameof(request.PhoneNumber), "Данный телефон уже занят.");
-        }
+        await _userManager.FindByNameAsync(request.UserName)
+            .ThrowBusinessRuleIfNotNull(FieldFailuresConverter.FromSingleFieldError(nameof(request.UserName), "Данное имя пользователя уже занято."));
+        await _userManager.FindByEmailAsync(request.Email)
+            .ThrowBusinessRuleIfNotNull(FieldFailuresConverter.FromSingleFieldError(nameof(request.Email), "Данный Email уже занят."));
+        await _repository.FindByPhoneAsync(request.PhoneNumber, cancellationToken)
+            .ThrowBusinessRuleIfNotNull(FieldFailuresConverter.FromSingleFieldError(nameof(request.PhoneNumber), "Данный телефон уже занят."));
     }
 }

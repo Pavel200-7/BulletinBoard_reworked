@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BulletinBoard.UserService.AppServices.Common.Exceptions;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException;
 using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister;
 using BulletinBoard.UserService.AppServices.User.Queries.GetOAuthProviderURI;
 using BulletinBoard.UserService.Hosts.Controllers.Auth;

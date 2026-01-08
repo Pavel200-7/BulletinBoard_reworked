@@ -1,0 +1,15 @@
+﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions.MessageException.Base;
+
+
+namespace BulletinBoard.NotificationService.AppServices.Common.Exceptions.MessageException.NotFound;
+
+/// <summary>
+/// Ошибка ненайденной сущности.
+/// </summary>
+public class NotFoundException : MessageExceptionBase
+{
+    public NotFoundException(string message)
+        : base(message)
+    {
+    }
+}

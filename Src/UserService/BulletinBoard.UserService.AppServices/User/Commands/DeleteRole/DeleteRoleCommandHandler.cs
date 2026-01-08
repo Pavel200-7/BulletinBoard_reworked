@@ -1,5 +1,5 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
 using BulletinBoard.UserService.AppServices.User.Commands.Helpers.RoleCommandHandler;
 using MediatR;
@@ -21,12 +21,9 @@ public class DeleteRoleCommandHandler : BaseRoleCommandHandler,
     {
         var user = await ValidateCommandAndGetUser(request.UserId, request.Role, cancellationToken);
         var result = await _userManager.RemoveFromRoleAsync(user, request.Role);
-        if (!result.Succeeded)
-        {
-            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
-        }
+        result.Succeeded
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromIdentityErrors(result.Errors));
         _logger.LogInformation("Роль {0} убрана у пользователя с  id {1}.", request.Role, request.UserId);
-
         return new DeleteRoleCResponse();
     }
 }

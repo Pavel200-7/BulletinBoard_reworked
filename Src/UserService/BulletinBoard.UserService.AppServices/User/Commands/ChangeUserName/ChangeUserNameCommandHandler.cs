@@ -1,5 +1,8 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Commands.ChangePhone;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -22,23 +25,13 @@ public class ChangeUserNameCommandHandler : IRequestHandler<ChangeUserNameComman
     }
     public async Task<ChangeUserNameCResponse> Handle(ChangeUserNameCommand request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByNameAsync(request.UserName);
-        if (user is not null)
-        {
-            throw new BusinessRuleException(nameof(request.UserName), "Данное имя уже занято.");
-        }
-
-        user = await _userManager.FindByIdAsync(request.Id);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с таким id не существует");
-        }
-
+        await _userManager.FindByNameAsync(request.UserName)
+            .ThrowBusinessRuleIfNotNull(FieldFailuresConverter.FromSingleFieldError(nameof(request.UserName), "Данное имя уже занято."));
+        var user = await _userManager.FindByIdAsync(request.Id)
+            .ThrowNotFoundIfNull("Пользователь с таким id не существует");
         var result = await _userManager.SetUserNameAsync(user, request.UserName);
-        if (!result.Succeeded)
-        {
-            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
-        }
+        result.Succeeded
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromIdentityErrors(result.Errors));
 
         return new ChangeUserNameCResponse();
     }

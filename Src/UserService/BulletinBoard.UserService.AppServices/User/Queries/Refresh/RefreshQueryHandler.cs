@@ -1,7 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.Queries.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.Domain.Entities;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -29,15 +30,11 @@ public class RefreshQueryHandler : IRequestHandler<RefreshQuery, RefreshQRespons
 
     public async Task<RefreshQResponse> Handle(RefreshQuery request, CancellationToken cancellationToken)
     {
-        var refreshTokenData = await _repository.GetRefreshTokensByTokenStringAsync(request.RefreshToken, cancellationToken);
-        if (refreshTokenData is null)
-        {
-            throw new NotFoundException("Refresh токен с такой строкой не найден");
-        }
+        RefreshToken refreshTokenData = await _repository.GetRefreshTokensByTokenStringAsync(request.RefreshToken, cancellationToken)
+            .ThrowNotFoundIfNull("Refresh токен с такой строкой не найден");
 
         var tokenData = await _jWTProvider.GenerateTokenAsync(refreshTokenData.UserId, cancellationToken);
         var refreshToken = await _refreshTProvider.GenerateTokenAsync(refreshTokenData.UserId, cancellationToken);
-
         return new RefreshQResponse()
         {
             TokenType = tokenData.TokenType,

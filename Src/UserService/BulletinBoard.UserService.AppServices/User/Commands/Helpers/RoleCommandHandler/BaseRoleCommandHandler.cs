@@ -1,4 +1,6 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.User.Commands.AddRole;
 using BulletinBoard.UserService.AppServices.User.Enum;
 using Microsoft.AspNetCore.Identity;
@@ -32,16 +34,10 @@ public abstract class BaseRoleCommandHandler
     /// <exception cref="BusinessRuleException">Такой роли не существует</exception>
     public async Task<IdentityUser> ValidateCommandAndGetUser(string userId, string role, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByIdAsync(userId);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с таким id не существует");
-        }
-
-        if (!Roles.IsRole(role))
-        {
-            throw new BusinessRuleException("Role", "Такой роли не существует");
-        }
+        var user = await _userManager.FindByIdAsync(userId)
+            .ThrowNotFoundIfNull("Пользователь с таким id не существует");
+        Roles.IsRole(role)
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromSingleFieldError("Role", "Такой роли не существует"));
 
         return user;        
     }

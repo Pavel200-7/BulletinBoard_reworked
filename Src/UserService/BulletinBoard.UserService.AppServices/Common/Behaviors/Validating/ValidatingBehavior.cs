@@ -1,8 +1,8 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using ValidationException = BulletinBoard.UserService.AppServices.Common.Exceptions.ValidationException;
+using ValidationException = BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.ValidationException;
 
 
 namespace BulletinBoard.UserService.AppServices.Common.Behaviors.Validating;

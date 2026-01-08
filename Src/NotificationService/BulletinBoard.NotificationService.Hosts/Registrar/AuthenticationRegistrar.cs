@@ -1,4 +1,5 @@
 ﻿using BulletinBoard.NotificationService.AppServices.Common.Exceptions;
+using BulletinBoard.NotificationService.AppServices.Common.Exceptions.MessageException;
 using BulletinBoard.NotificationService.Hosts.Registrar;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;

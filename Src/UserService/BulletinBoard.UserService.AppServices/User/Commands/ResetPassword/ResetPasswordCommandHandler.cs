@@ -1,5 +1,6 @@
-﻿using BulletinBoard.UserService.AppServices.Common.Exceptions;
-using BulletinBoard.UserService.AppServices.Common.Exceptions.Common.FieldFailures;
+﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
+using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -23,18 +24,13 @@ public class ResetPasswordCommandHandler : IRequestHandler<ResetPasswordCommand,
 
     public async Task<ResetPasswordCResponse> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
     {
-        var user = await _userManager.FindByEmailAsync(request.Email);
-        if (user is null)
-        {
-            throw new NotFoundException("Пользователь с такой почтой не обнаружен.");
-        }
+        var user = await _userManager.FindByEmailAsync(request.Email)
+            .ThrowNotFoundIfNull("Пользователь с такой почтой не обнаружен.");
 
         var token = Base64UrlEncoder.Decode(request.Token);
         var result = await _userManager.ResetPasswordAsync(user, token, request.Password);
-        if (!result.Succeeded)
-        {
-            throw new BusinessRuleException(FieldFailuresConverter.FromIdentityErrors(result.Errors));
-        }
+        result.Succeeded
+            .ThrowBusinessRuleIfFalse(FieldFailuresConverter.FromIdentityErrors(result.Errors));
 
         return new ResetPasswordCResponse();
     }
