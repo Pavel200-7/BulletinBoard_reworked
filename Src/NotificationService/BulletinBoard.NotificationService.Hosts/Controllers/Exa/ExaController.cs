@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BulletinBoard.NotificationService.AppServices.Notification.Mail;
+using BulletinBoard.NotificationService.AppServices.Notification.Helpers.Mail;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

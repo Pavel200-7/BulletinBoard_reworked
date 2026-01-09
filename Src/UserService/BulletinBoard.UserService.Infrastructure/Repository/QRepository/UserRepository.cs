@@ -1,5 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
-using BulletinBoard.UserService.AppServices.User.Repositiry;
+using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

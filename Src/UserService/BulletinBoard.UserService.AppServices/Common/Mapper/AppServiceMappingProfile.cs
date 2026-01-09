@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers;
-using BulletinBoard.UserService.AppServices.User.Commands.Register;
+using BulletinBoard.UserService.AppServices.User.User.Commands.OAuthRegister.Helpers;
+using BulletinBoard.UserService.AppServices.User.User.Commands.Register;
 using Microsoft.AspNetCore.Identity;
 
 

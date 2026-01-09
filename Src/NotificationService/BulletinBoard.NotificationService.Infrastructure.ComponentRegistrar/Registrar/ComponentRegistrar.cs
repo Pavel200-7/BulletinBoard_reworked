@@ -2,7 +2,6 @@
 using BulletinBoard.NotificationService.AppServices.Common;
 using BulletinBoard.NotificationService.AppServices.Common.Behaviors.LoggingBehavior;
 using BulletinBoard.NotificationService.AppServices.Common.IRepository;
-using BulletinBoard.NotificationService.AppServices.Notification.Mail;
 using BulletinBoard.NotificationService.Infrastructure.Repository;
 using BulletinBoard.NotificationService.Infrastructure.Repository.CRepository.BaseRepository;
 using BulletinBoard.NotificationService.Infrastructure.Repository.QRepository.BaseRepository;
@@ -12,6 +11,7 @@ using FluentValidation;
 using MassTransit;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using BulletinBoard.NotificationService.AppServices.Notification.Helpers.Mail;
 
 
 

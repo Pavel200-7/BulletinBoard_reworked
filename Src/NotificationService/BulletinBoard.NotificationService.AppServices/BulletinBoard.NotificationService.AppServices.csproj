@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Notification\Queries\" />
-    <Folder Include="User\Queries\" />
+    <Folder Include="Notification\User\Queries\" />
+    <Folder Include="User\User\Queries\" />
   </ItemGroup>
 
 </Project>

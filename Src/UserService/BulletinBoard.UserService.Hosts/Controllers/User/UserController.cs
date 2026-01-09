@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using BulletinBoard.UserService.AppServices.User.Commands.ChangePhone;
-using BulletinBoard.UserService.AppServices.User.Commands.ChangeUserName;
+using BulletinBoard.UserService.AppServices.User.User.Commands.ChangePhone;
+using BulletinBoard.UserService.AppServices.User.User.Commands.ChangeUserName;
 using BulletinBoard.UserService.Hosts.Controllers.Auth;
 using BulletinBoard.UserService.Hosts.Controllers.Helpers;
 using BulletinBoard.UserService.Hosts.Controllers.User.Request;

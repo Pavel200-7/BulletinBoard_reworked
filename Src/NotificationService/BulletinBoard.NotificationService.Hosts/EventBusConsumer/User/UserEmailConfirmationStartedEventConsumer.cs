@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.Notification.Commands.SendConfirmMail;
+using BulletinBoard.NotificationService.AppServices.Notification.User.Commands.SendConfirmMail;
 using MassTransit;
 using MediatR;
 

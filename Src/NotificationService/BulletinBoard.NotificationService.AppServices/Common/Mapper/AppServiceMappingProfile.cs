@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BulletinBoard.NotificationService.AppServices.User.Commands.AddUser;
+using BulletinBoard.NotificationService.AppServices.User.User.Commands.AddUser;
 using BulletinBoard.NotificationService.Domain.Entities;
 
 

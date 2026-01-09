@@ -1,6 +1,6 @@
-﻿using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth;
-using BulletinBoard.UserService.AppServices.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
-using BulletinBoard.UserService.AppServices.User.Enum;
+﻿using BulletinBoard.UserService.AppServices.User.User.Commands.OAuthRegister.Helpers.OAuth;
+using BulletinBoard.UserService.AppServices.User.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
+using BulletinBoard.UserService.AppServices.User.User.Helpers.Enum;
 using BulletinBoard.UserService.Infrastructure.Services.OAuth.GitHubOAuth;
 using Microsoft.Extensions.DependencyInjection;
 

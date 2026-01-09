@@ -1,4 +1,4 @@
-﻿using BulletinBoard.NotificationService.AppServices.Notification.Mail;
+﻿using BulletinBoard.NotificationService.AppServices.Notification.Helpers.Mail;
 using BulletinBoard.NotificationService.Infrastructure.Common.Configurations;
 using BulletinBoard.NotificationService.Infrastructure.Mail;
 using MailKit.Net.Smtp;

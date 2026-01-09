@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.Notification.Commands.SendResetPasswordMail;
+using BulletinBoard.NotificationService.AppServices.Notification.User.Commands.SendResetPasswordMail;
 using MassTransit;
 using MediatR;
 

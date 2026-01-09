@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Extensions.Hosting.AsyncInitialization;
-using BulletinBoard.UserService.AppServices.User.Enum;
+using BulletinBoard.UserService.AppServices.User.Helpers.Enum;
 
 
 namespace BulletinBoard.UserService.Infrastructure.ComponentRegistrar.DbInitializer;

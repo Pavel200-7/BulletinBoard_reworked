@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BulletinBoard.EventBus.Messages.Events.User;
-using BulletinBoard.NotificationService.AppServices.User.Commands.AddUser;
+using BulletinBoard.NotificationService.AppServices.User.User.Commands.AddUser;
 using MassTransit;
 using MediatR;
 
