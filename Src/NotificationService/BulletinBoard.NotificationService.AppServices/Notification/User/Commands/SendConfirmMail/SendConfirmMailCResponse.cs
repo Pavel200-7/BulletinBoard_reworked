@@ -5,10 +5,4 @@ namespace BulletinBoard.NotificationService.AppServices.Notification.User.Comman
 
 public class SendConfirmMailCResponse : BaseCResponse
 {
-    public bool IsSucceed { get; init; }
-
-    public SendConfirmMailCResponse(bool isSucceed = true)
-    {
-        IsSucceed = isSucceed;
-    }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae9f7ef4d19013343b5d5eecacdc19fd33846250")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a83e254835b3ce6e26da1246dcc4edc72c2f052")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.NotificationService.Infrastructure.ComponentRegistrar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

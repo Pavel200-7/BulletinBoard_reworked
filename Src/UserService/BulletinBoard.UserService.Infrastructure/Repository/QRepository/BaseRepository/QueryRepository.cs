@@ -6,23 +6,27 @@ namespace BulletinBoard.UserService.Infrastructure.Repository.QRepository.BaseRe
 
 public class QueryRepository<TEntity> : IQueryRepository<TEntity> where TEntity : class
 {
-    protected readonly UserDbContext DbContext;
-
-    protected DbSet<TEntity> DbSet;
+    private readonly UserDbContext _DbContext;
+    private readonly DbSet<TEntity> _DbSet;
 
     public QueryRepository(UserDbContext dbContext)
     {
-        DbContext = dbContext;
-        DbSet = DbContext.Set<TEntity>();
+        _DbContext = dbContext;
+        _DbSet = _DbContext.Set<TEntity>();
     }
 
     public IQueryable<TEntity> GetAll()
     {
-        return DbSet;
+        return _DbSet.AsNoTracking();
     }
 
-    public async Task<TEntity?> GetByIdAsync(Guid id)
+    public async Task<TEntity?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
-        return await DbSet.FindAsync(id);
+        var entity = await _DbSet.FindAsync(id, cancellationToken);
+        if (entity != null)
+        {
+            _DbContext.Entry(entity).State = EntityState.Detached; 
+        }
+        return entity;
     }
 }

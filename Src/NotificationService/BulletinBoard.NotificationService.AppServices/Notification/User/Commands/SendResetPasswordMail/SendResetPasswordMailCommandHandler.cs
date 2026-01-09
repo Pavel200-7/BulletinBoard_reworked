@@ -1,8 +1,6 @@
 ﻿using BulletinBoard.NotificationService.AppServices.Common.Configurations;
 using BulletinBoard.NotificationService.AppServices.Common.IRepository;
-using BulletinBoard.NotificationService.AppServices.Notification.Commands.SendConfirmMail;
 using BulletinBoard.NotificationService.AppServices.Notification.Helpers.Mail;
-using BulletinBoard.NotificationService.AppServices.Notification.Mail;
 using BulletinBoard.NotificationService.Domain.Entities;
 using MediatR;
 using Microsoft.Extensions.Logging;
