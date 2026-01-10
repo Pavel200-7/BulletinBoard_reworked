@@ -1,5 +1,4 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.IRepository;
-using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 

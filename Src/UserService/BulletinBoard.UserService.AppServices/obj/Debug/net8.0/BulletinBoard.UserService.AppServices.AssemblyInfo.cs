@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.UserService.AppServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a83e254835b3ce6e26da1246dcc4edc72c2f052")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65d1862ef5de5941fdd856398b4f196efdf944a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.UserService.AppServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.UserService.AppServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

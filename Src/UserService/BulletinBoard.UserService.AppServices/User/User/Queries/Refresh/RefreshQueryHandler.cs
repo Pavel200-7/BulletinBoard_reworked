@@ -1,4 +1,5 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
+using BulletinBoard.UserService.AppServices.Common.IRepository;
 using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.RefreshT;
