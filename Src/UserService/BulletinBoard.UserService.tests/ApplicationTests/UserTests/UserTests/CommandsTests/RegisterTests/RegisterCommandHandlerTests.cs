@@ -3,7 +3,7 @@ using BulletinBoard.EventBus.Messages.Events.User;
 using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.User.Helpers.Enum;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
+using BulletinBoard.UserService.AppServices.User.Helpers.Repository.UserRepository;
 using BulletinBoard.UserService.AppServices.User.User.Commands.Register;
 using MassTransit;
 using Microsoft.AspNetCore.Identity;
@@ -35,7 +35,7 @@ public class RegisterCommandHandlerTests
         _handler = new RegisterCommandHandler(
             _logger.Object,
             _mapper.Object, 
-            _userManager!.Object, 
+            _userManager.Object,
             _userRepository.Object,
             _publishEndpoint.Object);
         _cancellationToken = CancellationToken.None;
@@ -81,8 +81,7 @@ public class RegisterCommandHandlerTests
         // Arrange
         var command = CreateCommand();
         var user = CreateUser();
-
-        _userRepository.Setup(r => r.FindByPhoneAsync(command.PhoneNumber, _cancellationToken)) 
+        _userRepository.Setup(r => r.FindByPhoneAsync(command.PhoneNumber, _cancellationToken))
             .ReturnsAsync(user);
 
         // Act
@@ -163,20 +162,16 @@ public class RegisterCommandHandlerTests
 
     private void SetupMock()
     {
-        _userManager
-        .Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
-        .ReturnsAsync(IdentityResult.Success);
+        _userManager.Setup(r => r.CreateAsync(It.IsAny<IdentityUser>(), It.IsAny<string>()))
+            .ReturnsAsync(IdentityResult.Success);
 
-        _userManager
-            .Setup(r => r.FindByNameAsync(It.IsAny<string>()))
+        _userManager.Setup(r => r.FindByNameAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
 
-        _userManager
-            .Setup(r => r.FindByEmailAsync(It.IsAny<string>()))
+        _userManager.Setup(r => r.FindByEmailAsync(It.IsAny<string>()))
             .ReturnsAsync((IdentityUser)null!);
 
-        _userRepository
-            .Setup(r => r.FindByPhoneAsync(It.IsAny<string>(), It.IsAny<CancellationToken>()))
+        _userRepository.Setup(r => r.FindByPhoneAsync(It.IsAny<string>(), It.IsAny<CancellationToken>()))
             .ReturnsAsync((IdentityUser)null!);
 
         _mapper.Setup(m => m.Map<IdentityUser>(It.IsAny<RegisterCommand>()))

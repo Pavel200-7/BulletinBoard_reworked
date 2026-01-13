@@ -1,6 +1,6 @@
 ﻿namespace BulletinBoard.UserService.Domain.Entities.Base;
 
-public class BaseEntity
+public class BaseEntity : IBaseEntity
 {
     public Guid Id { get; set; }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BulletinBoard.UserService.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a83e254835b3ce6e26da1246dcc4edc72c2f052")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaa673fe6e99e21af88f99441038678a3170beef")]
 [assembly: System.Reflection.AssemblyProductAttribute("BulletinBoard.UserService.tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BulletinBoard.UserService.tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

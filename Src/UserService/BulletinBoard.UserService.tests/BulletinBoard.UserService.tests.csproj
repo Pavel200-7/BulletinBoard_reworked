@@ -25,8 +25,4 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ApplicationTests\UserTests\AdminTests\QueriesTests\" />
-  </ItemGroup>
-
 </Project>

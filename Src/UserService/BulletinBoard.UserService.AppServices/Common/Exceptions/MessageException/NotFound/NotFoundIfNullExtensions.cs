@@ -18,7 +18,7 @@ public static class NotFoundIfNullExtensions
     public static async Task<T> ThrowNotFoundIfNull<T>(
     [NotNull] this Task<T?> task,
     string message)
-    where T : class
+        where T : class
     {
         var result = await task.ConfigureAwait(false);
 

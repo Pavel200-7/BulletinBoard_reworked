@@ -2,7 +2,7 @@
 using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
+using BulletinBoard.UserService.AppServices.User.Helpers.Repository.UserRepository;
 using BulletinBoard.UserService.AppServices.User.User.Commands.Helpers.RegisterCommandHandler;
 using MassTransit;
 using MediatR;

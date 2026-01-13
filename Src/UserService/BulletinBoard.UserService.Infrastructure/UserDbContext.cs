@@ -1,4 +1,4 @@
-﻿using BulletinBoard.UserService.Domain.Entities;
+﻿using BulletinBoard.UserService.Domain.Entities.RefreshToken;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

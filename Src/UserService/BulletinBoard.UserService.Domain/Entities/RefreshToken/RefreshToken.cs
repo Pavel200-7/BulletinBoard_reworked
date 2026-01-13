@@ -1,9 +1,9 @@
 ﻿using BulletinBoard.UserService.Domain.Entities.Base;
 
 
-namespace BulletinBoard.UserService.Domain.Entities;
+namespace BulletinBoard.UserService.Domain.Entities.RefreshToken;
 
-public class RefreshToken : BaseEntity
+public class RefreshToken : BaseEntity, IRefreshTokenFiltrationFieldsSet
 {
     public string Token { get; set; }
     public DateTime CreationDate { get; set; }

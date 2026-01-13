@@ -4,7 +4,7 @@ using BulletinBoard.UserService.AppServices.Common.Behaviors.Logging;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.Transaction;
 using BulletinBoard.UserService.AppServices.Common.Behaviors.Validating;
 using BulletinBoard.UserService.AppServices.Common.IRepository;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
+using BulletinBoard.UserService.AppServices.User.Helpers.Repository.UserRepository;
 using BulletinBoard.UserService.AppServices.User.User.Commands.OAuthRegister.Helpers.OAuth.Factories;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.RefreshT;
@@ -55,18 +55,16 @@ public static class ComponentRegistrar
     private static IServiceCollection RegistrarInfComponents(this IServiceCollection services)
     {
         services.AddScoped(typeof(ICommandRepository<>), typeof(CommandRepository<>));
-        services.AddScoped(typeof(IQueryRepository<>), typeof(QueryRepository<>));
+        services.AddScoped(typeof(AppServices.Common.IRepository.IQueryRepository<>), typeof(Repository.QRepository.BaseRepository.IQueryRepository<>));
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<IUserRepository, UserRepository>();
-        services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+
 
         services.AddScoped<GitHubOAuthService>();
         services.AddScoped<IOAuthServiceFactory, OAuthServiceFactory>();
 
         services.AddScoped<IGitHubHttpService, GitHubHttpService>();
-
-        //services.AddScoped<IOAuthService, OAuthService>();
 
         return services;
     }

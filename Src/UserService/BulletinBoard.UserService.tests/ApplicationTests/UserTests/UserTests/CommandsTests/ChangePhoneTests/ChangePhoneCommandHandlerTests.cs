@@ -1,7 +1,7 @@
 ﻿using BulletinBoard.NotificationService.tests.ApplicationTests.UserTests.Helpers;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
+using BulletinBoard.UserService.AppServices.User.Helpers.Repository.UserRepository;
 using BulletinBoard.UserService.AppServices.User.User.Commands.ChangePhone;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -27,7 +27,10 @@ public class ChangePhoneCommandHandlerTests
 
         _logger = new Mock<ILogger<ChangePhoneCommandHandler>>();
         _userRepository = new Mock<IUserRepository>();
-        _handler = new ChangePhoneCommandHandler(_logger.Object, _userManager!.Object, _userRepository.Object);
+        _handler = new ChangePhoneCommandHandler(
+            _logger.Object, 
+            _userManager!.Object, 
+            _userRepository.Object);
         _cancellationToken = CancellationToken.None;
         
         SetupMock();

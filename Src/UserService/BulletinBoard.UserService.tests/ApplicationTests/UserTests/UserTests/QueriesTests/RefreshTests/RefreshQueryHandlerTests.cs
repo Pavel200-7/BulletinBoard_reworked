@@ -1,11 +1,12 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
+using BulletinBoard.UserService.AppServices.Common.IRepository;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.RefreshT;
 using BulletinBoard.UserService.AppServices.User.User.Queries.Refresh;
-using BulletinBoard.UserService.Domain.Entities;
+using BulletinBoard.UserService.Domain.Entities.RefreshToken;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System.Linq.Expressions;
 
 
 namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.User.QueriesTests.RefreshTests;
@@ -13,7 +14,7 @@ namespace BulletinBoard.UserService.tests.ApplicationTests.UserTests.User.Querie
 public class RefreshQueryHandlerTests
 {
     private Mock<ILogger<RefreshQueryHandler>> _logger;
-    private Mock<IRefreshTokenRepository> _repository;
+    private Mock<IQueryRepository<RefreshToken>> _repository;
     private Mock<IJWTProvider> _jwtProvider;
     private Mock<IRefreshTokenProvider> _refreshTProvider;
     private RefreshQueryHandler _handler;
@@ -22,17 +23,19 @@ public class RefreshQueryHandlerTests
     public RefreshQueryHandlerTests()
     {
         _logger = new Mock<ILogger<RefreshQueryHandler>>();
-        _repository = new Mock<IRefreshTokenRepository>();
+        _repository = new Mock<IQueryRepository<RefreshToken>>();
         _jwtProvider = new Mock<IJWTProvider>();
         _refreshTProvider = new Mock<IRefreshTokenProvider>();
-        _handler = new RefreshQueryHandler(_logger.Object, _repository.Object, _jwtProvider.Object, _refreshTProvider.Object);
+        _handler = new RefreshQueryHandler(_logger.Object,
+            _repository.Object, 
+            _jwtProvider.Object, _refreshTProvider.Object);
         _cancellationToken = CancellationToken.None;
 
         SetupMock();
     }
 
     [Fact]
-    public async Task MustSearchForTokenData()
+    public async Task SearchForTokenData()
     {
         // Arrange 
         var query = CreateQuery();
@@ -41,15 +44,19 @@ public class RefreshQueryHandlerTests
         var result = await _handler.Handle(query, _cancellationToken);
 
         // Assert
-        _repository.Verify(r => r.GetRefreshTokensByTokenStringAsync(query.RefreshToken, _cancellationToken), Times.Once);
+        _repository.Verify(r => r.GetFirstWithSpecificationAsync(
+            It.IsAny<Expression<Func<RefreshToken, bool>>>(),
+            _cancellationToken), Times.Once);
     }
 
     [Fact]
-    public async Task MustThrowWhenTokenNotFound()
+    public async Task ThrowWhenTokenNotFound()
     {
         // Arrange 
         var query = CreateQuery();
-        _repository.Setup(r => r.GetRefreshTokensByTokenStringAsync(query.RefreshToken, _cancellationToken))
+        _repository.Setup(r => r.GetFirstWithSpecificationAsync(
+            It.IsAny<Expression<Func<RefreshToken, bool>>>(),
+            _cancellationToken))
            .ReturnsAsync((RefreshToken)null!);
 
         // Act
@@ -60,7 +67,7 @@ public class RefreshQueryHandlerTests
     }
 
     [Fact]
-    public async Task MustCreateNewJWT()
+    public async Task CreateNewJWT()
     {
         // Arrange
         var query = CreateQuery();
@@ -73,7 +80,7 @@ public class RefreshQueryHandlerTests
     }
 
     [Fact]
-    public async Task MustCreateNewRefreshToken()
+    public async Task CreateNewRefreshToken()
     {
         // Arrange
         var query = CreateQuery();
@@ -88,7 +95,9 @@ public class RefreshQueryHandlerTests
     private void SetupMock()
     {
         var refreshToken = CreateRefreshToken();
-        _repository.Setup(r => r.GetRefreshTokensByTokenStringAsync(refreshToken, _cancellationToken))
+        _repository.Setup(r => r.GetFirstWithSpecificationAsync(
+            It.IsAny<Expression<Func<RefreshToken, bool>>>(),
+            _cancellationToken))
             .ReturnsAsync(CreateRefreshTokenData());
 
         _jwtProvider.Setup(g => g.GenerateTokenAsync(CreateUserId(), _cancellationToken))

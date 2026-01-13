@@ -1,9 +1,9 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
 using BulletinBoard.UserService.AppServices.Common.IRepository;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.JWT;
 using BulletinBoard.UserService.AppServices.User.User.Helpers.RefreshT;
-using BulletinBoard.UserService.Domain.Entities;
+using BulletinBoard.UserService.Domain.Entities.RefreshToken;
+using BulletinBoard.UserService.Domain.Entities.RefreshToken.Helpers.Specifications;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -13,13 +13,13 @@ namespace BulletinBoard.UserService.AppServices.User.User.Queries.Refresh;
 public class RefreshQueryHandler : IRequestHandler<RefreshQuery, RefreshQResponse>
 {
     private readonly ILogger<RefreshQueryHandler> _logger;
-    private readonly IRefreshTokenRepository _repository;
+    private readonly IQueryRepository<RefreshToken> _repository;
     private readonly IJWTProvider _jWTProvider;
     private readonly IRefreshTokenProvider _refreshTProvider;
 
     public RefreshQueryHandler(
-        ILogger<RefreshQueryHandler> logger, 
-        IRefreshTokenRepository repository,
+        ILogger<RefreshQueryHandler> logger,
+        IQueryRepository<RefreshToken> repository,
         IJWTProvider jWTProvider,
         IRefreshTokenProvider refreshTProvider)
     {
@@ -31,7 +31,9 @@ public class RefreshQueryHandler : IRequestHandler<RefreshQuery, RefreshQRespons
 
     public async Task<RefreshQResponse> Handle(RefreshQuery request, CancellationToken cancellationToken)
     {
-        RefreshToken refreshTokenData = await _repository.GetRefreshTokensByTokenStringAsync(request.RefreshToken, cancellationToken)
+        var filter = new TokenStringSpecification<RefreshToken>(request.RefreshToken);
+        RefreshToken refreshTokenData = await _repository
+            .GetFirstWithSpecificationAsync(filter.ToExpression(), cancellationToken)
             .ThrowNotFoundIfNull("Refresh токен с такой строкой не найден");
 
         var tokenData = await _jWTProvider.GenerateTokenAsync(refreshTokenData.UserId, cancellationToken);

@@ -1,7 +1,7 @@
 ﻿using BulletinBoard.UserService.AppServices.Common.Exceptions.DomainIntegrityException.Base.FieldFailures;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.FieldFailuresException.BusinessRule;
 using BulletinBoard.UserService.AppServices.Common.Exceptions.MessageException.NotFound;
-using BulletinBoard.UserService.AppServices.User.Helpers.Repositiry;
+using BulletinBoard.UserService.AppServices.User.Helpers.Repository.UserRepository;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
@@ -19,7 +19,8 @@ public class ChangePhoneCommandHandler : IRequestHandler<ChangePhoneCommand, Cha
     public ChangePhoneCommandHandler(
         ILogger<ChangePhoneCommandHandler> logger, 
         UserManager<IdentityUser> userManager,
-        IUserRepository repository)
+        IUserRepository repository
+        )
     {
         _logger = logger;
         _userManager = userManager;
